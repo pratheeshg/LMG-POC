@@ -1,0 +1,959 @@
+2019/08/17 13:41:05 [INFO] Packer version: 1.4.2
+2019/08/17 13:41:05 Packer Target OS/Arch: darwin amd64
+2019/08/17 13:41:05 Built with Go Version: go1.12.6
+2019/08/17 13:41:05 Detected home directory from env var: /Users/pratheesh.gopi
+2019/08/17 13:41:05 Using internal plugin for file
+2019/08/17 13:41:05 Using internal plugin for hcloud
+2019/08/17 13:41:05 Using internal plugin for lxc
+2019/08/17 13:41:05 Using internal plugin for profitbricks
+2019/08/17 13:41:05 Using internal plugin for amazon-ebs
+2019/08/17 13:41:05 Using internal plugin for null
+2019/08/17 13:41:05 Using internal plugin for oneandone
+2019/08/17 13:41:05 Using internal plugin for oracle-classic
+2019/08/17 13:41:05 Using internal plugin for tencentcloud-cvm
+2019/08/17 13:41:05 Using internal plugin for vagrant
+2019/08/17 13:41:05 Using internal plugin for amazon-ebssurrogate
+2019/08/17 13:41:05 Using internal plugin for triton
+2019/08/17 13:41:05 Using internal plugin for virtualbox-iso
+2019/08/17 13:41:05 Using internal plugin for lxd
+2019/08/17 13:41:05 Using internal plugin for amazon-instance
+2019/08/17 13:41:05 Using internal plugin for cloudstack
+2019/08/17 13:41:05 Using internal plugin for digitalocean
+2019/08/17 13:41:05 Using internal plugin for ncloud
+2019/08/17 13:41:05 Using internal plugin for openstack
+2019/08/17 13:41:05 Using internal plugin for parallels-iso
+2019/08/17 13:41:05 Using internal plugin for qemu
+2019/08/17 13:41:05 Using internal plugin for alicloud-ecs
+2019/08/17 13:41:05 Using internal plugin for scaleway
+2019/08/17 13:41:05 Using internal plugin for docker
+2019/08/17 13:41:05 Using internal plugin for googlecompute
+2019/08/17 13:41:05 Using internal plugin for hyperv-vmcx
+2019/08/17 13:41:05 Using internal plugin for proxmox
+2019/08/17 13:41:05 Using internal plugin for vmware-iso
+2019/08/17 13:41:05 Using internal plugin for vmware-vmx
+2019/08/17 13:41:05 Using internal plugin for azure-arm
+2019/08/17 13:41:05 Using internal plugin for hyperv-iso
+2019/08/17 13:41:05 Using internal plugin for linode
+2019/08/17 13:41:05 Using internal plugin for hyperone
+2019/08/17 13:41:05 Using internal plugin for oracle-oci
+2019/08/17 13:41:05 Using internal plugin for yandex
+2019/08/17 13:41:05 Using internal plugin for amazon-chroot
+2019/08/17 13:41:05 Using internal plugin for parallels-pvm
+2019/08/17 13:41:05 Using internal plugin for virtualbox-ovf
+2019/08/17 13:41:05 Using internal plugin for amazon-ebsvolume
+2019/08/17 13:41:05 Using internal plugin for shell
+2019/08/17 13:41:05 Using internal plugin for sleep
+2019/08/17 13:41:05 Using internal plugin for ansible
+2019/08/17 13:41:05 Using internal plugin for ansible-local
+2019/08/17 13:41:05 Using internal plugin for chef-client
+2019/08/17 13:41:05 Using internal plugin for chef-solo
+2019/08/17 13:41:05 Using internal plugin for converge
+2019/08/17 13:41:05 Using internal plugin for salt-masterless
+2019/08/17 13:41:05 Using internal plugin for file
+2019/08/17 13:41:05 Using internal plugin for inspec
+2019/08/17 13:41:05 Using internal plugin for windows-restart
+2019/08/17 13:41:05 Using internal plugin for windows-shell
+2019/08/17 13:41:05 Using internal plugin for breakpoint
+2019/08/17 13:41:05 Using internal plugin for powershell
+2019/08/17 13:41:05 Using internal plugin for puppet-server
+2019/08/17 13:41:05 Using internal plugin for puppet-masterless
+2019/08/17 13:41:05 Using internal plugin for shell-local
+2019/08/17 13:41:05 Using internal plugin for shell-local
+2019/08/17 13:41:05 Using internal plugin for vagrant
+2019/08/17 13:41:05 Using internal plugin for vsphere-template
+2019/08/17 13:41:05 Using internal plugin for alicloud-import
+2019/08/17 13:41:05 Using internal plugin for docker-push
+2019/08/17 13:41:05 Using internal plugin for vagrant-cloud
+2019/08/17 13:41:05 Using internal plugin for docker-import
+2019/08/17 13:41:05 Using internal plugin for docker-save
+2019/08/17 13:41:05 Using internal plugin for docker-tag
+2019/08/17 13:41:05 Using internal plugin for googlecompute-export
+2019/08/17 13:41:05 Using internal plugin for manifest
+2019/08/17 13:41:05 Using internal plugin for vsphere
+2019/08/17 13:41:05 Using internal plugin for artifice
+2019/08/17 13:41:05 Using internal plugin for checksum
+2019/08/17 13:41:05 Using internal plugin for digitalocean-import
+2019/08/17 13:41:05 Using internal plugin for googlecompute-import
+2019/08/17 13:41:05 Using internal plugin for amazon-import
+2019/08/17 13:41:05 Using internal plugin for compress
+2019/08/17 13:41:05 Detected home directory from env var: /Users/pratheesh.gopi
+2019/08/17 13:41:05 Attempting to open config file: /Users/pratheesh.gopi/.packerconfig
+2019/08/17 13:41:05 [WARN] Config file doesn't exist: /Users/pratheesh.gopi/.packerconfig
+2019/08/17 13:41:05 Packer config: &{DisableCheckpoint:false DisableCheckpointSignature:false PluginMinPort:10000 PluginMaxPort:25000 Builders:map[alicloud-ecs:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-alicloud-ecs amazon-chroot:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-amazon-chroot amazon-ebs:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-amazon-ebs amazon-ebssurrogate:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-amazon-ebssurrogate amazon-ebsvolume:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-amazon-ebsvolume amazon-instance:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-amazon-instance azure-arm:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-azure-arm cloudstack:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-cloudstack digitalocean:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-digitalocean docker:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-docker file:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-file googlecompute:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-googlecompute hcloud:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-hcloud hyperone:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-hyperone hyperv-iso:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-hyperv-iso hyperv-vmcx:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-hyperv-vmcx linode:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-linode lxc:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-lxc lxd:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-lxd ncloud:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-ncloud null:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-null oneandone:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-oneandone openstack:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-openstack oracle-classic:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-oracle-classic oracle-oci:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-oracle-oci parallels-iso:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-parallels-iso parallels-pvm:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-parallels-pvm profitbricks:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-profitbricks proxmox:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-proxmox qemu:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-qemu scaleway:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-scaleway tencentcloud-cvm:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-tencentcloud-cvm triton:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-triton vagrant:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-vagrant virtualbox-iso:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-virtualbox-iso virtualbox-ovf:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-virtualbox-ovf vmware-iso:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-vmware-iso vmware-vmx:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-vmware-vmx yandex:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-yandex] PostProcessors:map[alicloud-import:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-alicloud-import amazon-import:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-amazon-import artifice:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-artifice checksum:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-checksum compress:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-compress digitalocean-import:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-digitalocean-import docker-import:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-docker-import docker-push:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-docker-push docker-save:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-docker-save docker-tag:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-docker-tag googlecompute-export:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-googlecompute-export googlecompute-import:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-googlecompute-import manifest:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-manifest shell-local:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-shell-local vagrant:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-vagrant vagrant-cloud:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-vagrant-cloud vsphere:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-vsphere vsphere-template:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-vsphere-template] Provisioners:map[ansible:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-ansible ansible-local:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-ansible-local breakpoint:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-breakpoint chef-client:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-chef-client chef-solo:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-chef-solo converge:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-converge file:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-file inspec:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-inspec powershell:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-powershell puppet-masterless:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-puppet-masterless puppet-server:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-puppet-server salt-masterless:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-salt-masterless shell:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-shell shell-local:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-shell-local sleep:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-sleep windows-restart:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-windows-restart windows-shell:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-windows-shell]}
+2019/08/17 13:41:05 Detected home directory from env var: /Users/pratheesh.gopi
+2019/08/17 13:41:05 Setting cache directory: /Users/pratheesh.gopi/Documents/Projects/POC/packer/packer_cache
+2019/08/17 13:41:05 Detected home directory from env var: /Users/pratheesh.gopi
+2019/08/17 13:41:05 Loading builder: azure-arm
+2019/08/17 13:41:05 Plugin could not be found. Checking same directory as executable.
+2019/08/17 13:41:05 Current exe path: /usr/local/bin/packer
+2019/08/17 13:41:05 Creating plugin client for path: /usr/local/bin/packer
+2019/08/17 13:41:05 Starting plugin: /usr/local/bin/packer []string{"/usr/local/bin/packer", "plugin", "packer-builder-azure-arm"}
+2019/08/17 13:41:05 Waiting for RPC address for: /usr/local/bin/packer
+2019/08/17 13:41:05 packer: 2019/08/17 13:41:05 [INFO] Packer version: 1.4.2
+2019/08/17 13:41:05 packer: 2019/08/17 13:41:05 Packer Target OS/Arch: darwin amd64
+2019/08/17 13:41:05 packer: 2019/08/17 13:41:05 Built with Go Version: go1.12.6
+2019/08/17 13:41:05 packer: 2019/08/17 13:41:05 Detected home directory from env var: /Users/pratheesh.gopi
+2019/08/17 13:41:05 packer: 2019/08/17 13:41:05 Attempting to open config file: /Users/pratheesh.gopi/.packerconfig
+2019/08/17 13:41:05 packer: 2019/08/17 13:41:05 [WARN] Config file doesn't exist: /Users/pratheesh.gopi/.packerconfig
+2019/08/17 13:41:05 packer: 2019/08/17 13:41:05 Packer config: &{DisableCheckpoint:false DisableCheckpointSignature:false PluginMinPort:10000 PluginMaxPort:25000 Builders:map[] PostProcessors:map[] Provisioners:map[]}
+2019/08/17 13:41:05 packer: 2019/08/17 13:41:05 Detected home directory from env var: /Users/pratheesh.gopi
+2019/08/17 13:41:05 packer: 2019/08/17 13:41:05 Setting cache directory: /Users/pratheesh.gopi/Documents/Projects/POC/packer/packer_cache
+2019/08/17 13:41:05 packer: 2019/08/17 13:41:05 Detected home directory from env var: /Users/pratheesh.gopi
+2019/08/17 13:41:05 packer: 2019/08/17 13:41:05 args: []string{"packer-builder-azure-arm"}
+2019/08/17 13:41:05 packer: 2019/08/17 13:41:05 Plugin minimum port: 10000
+2019/08/17 13:41:05 packer: 2019/08/17 13:41:05 Plugin maximum port: 25000
+2019/08/17 13:41:05 packer: 2019/08/17 13:41:05 Plugin address: unix /var/folders/pm/ybh4slqj32zcwn7t4qbxvdpm0000gp/T/packer-plugin952798085
+2019/08/17 13:41:05 packer: 2019/08/17 13:41:05 Waiting for connection...
+2019/08/17 13:41:05 packer: 2019/08/17 13:41:05 Serving a plugin connection...
+2019/08/17 13:41:05 Loading provisioner: shell
+2019/08/17 13:41:05 Plugin could not be found. Checking same directory as executable.
+2019/08/17 13:41:05 Current exe path: /usr/local/bin/packer
+2019/08/17 13:41:05 Creating plugin client for path: /usr/local/bin/packer
+2019/08/17 13:41:05 Starting plugin: /usr/local/bin/packer []string{"/usr/local/bin/packer", "plugin", "packer-provisioner-shell"}
+2019/08/17 13:41:05 Waiting for RPC address for: /usr/local/bin/packer
+2019/08/17 13:41:05 packer: 2019/08/17 13:41:05 [INFO] Packer version: 1.4.2
+2019/08/17 13:41:05 packer: 2019/08/17 13:41:05 Packer Target OS/Arch: darwin amd64
+2019/08/17 13:41:05 packer: 2019/08/17 13:41:05 Built with Go Version: go1.12.6
+2019/08/17 13:41:05 packer: 2019/08/17 13:41:05 Detected home directory from env var: /Users/pratheesh.gopi
+2019/08/17 13:41:05 packer: 2019/08/17 13:41:05 Attempting to open config file: /Users/pratheesh.gopi/.packerconfig
+2019/08/17 13:41:05 packer: 2019/08/17 13:41:05 [WARN] Config file doesn't exist: /Users/pratheesh.gopi/.packerconfig
+2019/08/17 13:41:05 packer: 2019/08/17 13:41:05 Packer config: &{DisableCheckpoint:false DisableCheckpointSignature:false PluginMinPort:10000 PluginMaxPort:25000 Builders:map[] PostProcessors:map[] Provisioners:map[]}
+2019/08/17 13:41:05 packer: 2019/08/17 13:41:05 Detected home directory from env var: /Users/pratheesh.gopi
+2019/08/17 13:41:05 packer: 2019/08/17 13:41:05 Setting cache directory: /Users/pratheesh.gopi/Documents/Projects/POC/packer/packer_cache
+2019/08/17 13:41:05 packer: 2019/08/17 13:41:05 Detected home directory from env var: /Users/pratheesh.gopi
+2019/08/17 13:41:05 packer: 2019/08/17 13:41:05 args: []string{"packer-provisioner-shell"}
+2019/08/17 13:41:05 packer: 2019/08/17 13:41:05 Plugin minimum port: 10000
+2019/08/17 13:41:05 packer: 2019/08/17 13:41:05 Plugin maximum port: 25000
+2019/08/17 13:41:05 packer: 2019/08/17 13:41:05 Plugin address: unix /var/folders/pm/ybh4slqj32zcwn7t4qbxvdpm0000gp/T/packer-plugin977312537
+2019/08/17 13:41:05 packer: 2019/08/17 13:41:05 Waiting for connection...
+2019/08/17 13:41:05 packer: 2019/08/17 13:41:05 Serving a plugin connection...
+2019/08/17 13:41:05 ui: [1;32mazure-arm output will be in this color.[0m
+2019/08/17 13:41:05 ui: 
+2019/08/17 13:41:05 Build debug mode: false
+2019/08/17 13:41:05 Force build: true
+2019/08/17 13:41:05 On error: 
+2019/08/17 13:41:05 Preparing build: azure-arm
+2019/08/17 13:41:06 Waiting on builds to complete...
+2019/08/17 13:41:06 Starting build run: azure-arm
+2019/08/17 13:41:06 Running builder: azure-arm
+2019/08/17 13:41:06 [INFO] (telemetry) Starting builder azure-arm
+2019/08/17 13:41:06 ui: [1;32m==> azure-arm: Running builder ...[0m
+2019/08/17 13:41:06 packer: 2019/08/17 13:41:06 :: Configuration
+2019/08/17 13:41:06 packer: 2019/08/17 13:41:06 CaptureNamePrefix=
+2019/08/17 13:41:06 packer: 2019/08/17 13:41:06 CaptureContainerName=
+2019/08/17 13:41:06 packer: 2019/08/17 13:41:06 ImagePublisher=OpenLogic
+2019/08/17 13:41:06 packer: 2019/08/17 13:41:06 ImageOffer=CentOS
+2019/08/17 13:41:06 packer: 2019/08/17 13:41:06 ImageSku=7.6
+2019/08/17 13:41:06 packer: 2019/08/17 13:41:06 ImageVersion=latest
+2019/08/17 13:41:06 packer: 2019/08/17 13:41:06 ImageUrl=
+2019/08/17 13:41:06 packer: 2019/08/17 13:41:06 CustomManagedImageResourceGroupName=
+2019/08/17 13:41:06 packer: 2019/08/17 13:41:06 CustomManagedImageName=
+2019/08/17 13:41:06 packer: 2019/08/17 13:41:06 Location=southindia
+2019/08/17 13:41:06 packer: 2019/08/17 13:41:06 VMSize=Standard_DS2_v2
+2019/08/17 13:41:06 packer: 2019/08/17 13:41:06 ManagedImageResourceGroupName=LMG-terraform
+2019/08/17 13:41:06 packer: 2019/08/17 13:41:06 ManagedImageName=MyNginx
+2019/08/17 13:41:06 packer: 2019/08/17 13:41:06 ManagedImageStorageAccountType=
+2019/08/17 13:41:06 packer: 2019/08/17 13:41:06 ManagedImageOSDiskSnapshotName=
+2019/08/17 13:41:06 packer: 2019/08/17 13:41:06 ManagedImageDataDiskSnapshotPrefix=
+2019/08/17 13:41:06 packer: 2019/08/17 13:41:06 ResourceGroupName=
+2019/08/17 13:41:06 packer: 2019/08/17 13:41:06 StorageAccount=
+2019/08/17 13:41:06 packer: 2019/08/17 13:41:06 TempComputeName=
+2019/08/17 13:41:06 packer: 2019/08/17 13:41:06 TempResourceGroupName=
+2019/08/17 13:41:06 packer: 2019/08/17 13:41:06 BuildResourceGroupName=
+2019/08/17 13:41:06 packer: 2019/08/17 13:41:06 VirtualNetworkName=
+2019/08/17 13:41:06 packer: 2019/08/17 13:41:06 VirtualNetworkSubnetName=
+2019/08/17 13:41:06 packer: 2019/08/17 13:41:06 VirtualNetworkResourceGroupName=
+2019/08/17 13:41:06 packer: 2019/08/17 13:41:06 CustomDataFile=
+2019/08/17 13:41:06 packer: 2019/08/17 13:41:06 OSType=Linux
+2019/08/17 13:41:06 packer: 2019/08/17 13:41:06 DiskCachingType=
+2019/08/17 13:41:06 packer: 2019/08/17 13:41:06 UserName=centos
+2019/08/17 13:41:06 packer: 2019/08/17 13:41:06 Password=************
+2019/08/17 13:41:06 ui: [1;32m==> azure-arm: Getting tokens using client secret[0m
+2019/08/17 13:41:07 ui: [0;32m    azure-arm: Creating Azure Resource Manager (ARM) client ...[0m
+2019/08/17 13:41:07 packer: 2019/08/17 13:41:07 Azure request request="https://management.azure.com/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/resourcegroups/LMG-terraform?api-version=2018-02-01" body="" method="GET"
+2019/08/17 13:41:07 packer: 2019/08/17 13:41:07 Azure response status="200 OK" method="GET" request="https://management.azure.com/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/resourcegroups/LMG-terraform?api-version=2018-02-01" x-ms-request-id="36fc108a-815b-4f1d-852b-6a487a8c0317" body="{\"id\":\"/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/resourceGroups/LMG-terraform\",\"name\":\"LMG-terraform\",\"location\":\"southindia\",\"tags\":{},\"properties\":{\"provisioningState\":\"Succeeded\"}}"
+2019/08/17 13:41:07 packer: 2019/08/17 13:41:07 Azure response status="200 OK" method="GET" request="https://management.azure.com/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/resourcegroups/LMG-terraform?api-version=2018-02-01" x-ms-request-id="36fc108a-815b-4f1d-852b-6a487a8c0317" body="{\"id\":\"/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/resourceGroups/LMG-terraform\",\"name\":\"LMG-terraform\",\"location\":\"southindia\",\"tags\":{},\"properties\":{\"provisioningState\":\"Succeeded\"}}"
+2019/08/17 13:41:07 packer: 2019/08/17 13:41:07 Azure request body="" method="GET" request="https://management.azure.com/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/resourceGroups/LMG-terraform/providers/Microsoft.Compute/images/MyNginx?api-version=2018-04-01"
+2019/08/17 13:41:07 packer: 2019/08/17 13:41:07 Azure response method="GET" request="https://management.azure.com/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/resourceGroups/LMG-terraform/providers/Microsoft.Compute/images/MyNginx?api-version=2018-04-01" x-ms-request-id="17765be4-fe94-4c3a-a43b-551ecde65729" body="{\r\n  \"name\": \"MyNginx\",\r\n  \"id\": \"/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/resourceGroups/LMG-terraform/providers/Microsoft.Compute/images/MyNginx\",\r\n  \"type\": \"Microsoft.Compute/images\",\r\n  \"location\": \"southindia\",\r\n  \"tags\": {\r\n    \"dept\": \"Engineering\",\r\n    \"task\": \"Image deployment\"\r\n  },\r\n  \"properties\": {\r\n    \"sourceVirtualMachine\": {\r\n      \"id\": \"/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/resourceGroups/packer-Resource-Group-0astsrfnn3/providers/Microsoft.Compute/virtualMachines/pkrvm0astsrfnn3\"\r\n    },\r\n    \"storageProfile\": {\r\n      \"osDisk\": {\r\n        \"osType\": \"Linux\",\r\n        \"osState\": \"Generalized\",\r\n        \"diskSizeGB\": 30,\r\n        \"managedDisk\": {\r\n          \"id\": \"/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/resourceGroups/packer-Resource-Group-0astsrfnn3/providers/Microsoft.Compute/disks/pkros0astsrfnn3\"\r\n        },\r\n        \"caching\": \"ReadWrite\",\r\n        \"storageAccountType\": \"Standard_LRS\"\r\n      },\r\n      \"dataDisks\": [],\r\n      \"zoneResilient\": false\r\n    },\r\n    \"provisioningState\": \"Succeeded\"\r\n  }\r\n}" status="200 OK"
+2019/08/17 13:41:07 packer: 2019/08/17 13:41:07 Azure response x-ms-request-id="17765be4-fe94-4c3a-a43b-551ecde65729" body="{\r\n  \"name\": \"MyNginx\",\r\n  \"id\": \"/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/resourceGroups/LMG-terraform/providers/Microsoft.Compute/images/MyNginx\",\r\n  \"type\": \"Microsoft.Compute/images\",\r\n  \"location\": \"southindia\",\r\n  \"tags\": {\r\n    \"dept\": \"Engineering\",\r\n    \"task\": \"Image deployment\"\r\n  },\r\n  \"properties\": {\r\n    \"sourceVirtualMachine\": {\r\n      \"id\": \"/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/resourceGroups/packer-Resource-Group-0astsrfnn3/providers/Microsoft.Compute/virtualMachines/pkrvm0astsrfnn3\"\r\n    },\r\n    \"storageProfile\": {\r\n      \"osDisk\": {\r\n        \"osType\": \"Linux\",\r\n        \"osState\": \"Generalized\",\r\n        \"diskSizeGB\": 30,\r\n        \"managedDisk\": {\r\n          \"id\": \"/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/resourceGroups/packer-Resource-Group-0astsrfnn3/providers/Microsoft.Compute/disks/pkros0astsrfnn3\"\r\n        },\r\n        \"caching\": \"ReadWrite\",\r\n        \"storageAccountType\": \"Standard_LRS\"\r\n      },\r\n      \"dataDisks\": [],\r\n      \"zoneResilient\": false\r\n    },\r\n    \"provisioningState\": \"Succeeded\"\r\n  }\r\n}" status="200 OK" method="GET" request="https://management.azure.com/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/resourceGroups/LMG-terraform/providers/Microsoft.Compute/images/MyNginx?api-version=2018-04-01"
+2019/08/17 13:41:07 ui: [1;32m==> azure-arm: the managed image named MyNginx already exists, but deleting it due to -force flag[0m
+2019/08/17 13:41:07 packer: 2019/08/17 13:41:07 Azure request method="DELETE" request="https://management.azure.com/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/resourceGroups/LMG-terraform/providers/Microsoft.Compute/images/MyNginx?api-version=2018-04-01" body=""
+2019/08/17 13:41:07 packer: 2019/08/17 13:41:07 Azure response status="202 Accepted" method="DELETE" request="https://management.azure.com/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/resourceGroups/LMG-terraform/providers/Microsoft.Compute/images/MyNginx?api-version=2018-04-01" x-ms-request-id="695af7d8-0778-4c9a-abd9-1cedf3a80bc0" body=""
+2019/08/17 13:41:07 packer: 2019/08/17 13:41:07 Azure request method="GET" request="https://management.azure.com/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/providers/Microsoft.Compute/locations/SouthIndia/operations/695af7d8-0778-4c9a-abd9-1cedf3a80bc0?api-version=2018-04-01" body=""
+2019/08/17 13:41:07 packer: 2019/08/17 13:41:07 Azure response request="https://management.azure.com/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/providers/Microsoft.Compute/locations/SouthIndia/operations/695af7d8-0778-4c9a-abd9-1cedf3a80bc0?api-version=2018-04-01" x-ms-request-id="72ad0f5f-c908-49c6-b6fa-777aceed34a1" body="{\r\n  \"startTime\": \"2019-08-17T08:11:07.5153438+00:00\",\r\n  \"status\": \"InProgress\",\r\n  \"name\": \"695af7d8-0778-4c9a-abd9-1cedf3a80bc0\"\r\n}" status="200 OK" method="GET"
+2019/08/17 13:42:07 packer: 2019/08/17 13:42:07 Azure request method="GET" request="https://management.azure.com/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/providers/Microsoft.Compute/locations/SouthIndia/operations/695af7d8-0778-4c9a-abd9-1cedf3a80bc0?api-version=2018-04-01" body=""
+2019/08/17 13:42:07 packer: 2019/08/17 13:42:07 Azure response status="200 OK" method="GET" request="https://management.azure.com/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/providers/Microsoft.Compute/locations/SouthIndia/operations/695af7d8-0778-4c9a-abd9-1cedf3a80bc0?api-version=2018-04-01" x-ms-request-id="4833f45a-62e2-4b7d-8d0a-f80308d8f229" body="{\r\n  \"startTime\": \"2019-08-17T08:11:07.5153438+00:00\",\r\n  \"endTime\": \"2019-08-17T08:11:12.6718047+00:00\",\r\n  \"status\": \"Succeeded\",\r\n  \"name\": \"695af7d8-0778-4c9a-abd9-1cedf3a80bc0\"\r\n}"
+2019/08/17 13:42:07 ui: [1;32m==> azure-arm: WARNING: Zone resiliency may not be supported in southindia, checkout the docs at https://docs.microsoft.com/en-us/azure/availability-zones/[0m
+2019/08/17 13:42:07 packer: 2019/08/17 13:42:07 Azure request method="HEAD" request="https://management.azure.com/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/resourcegroups/packer-Resource-Group-tch49kgyu3?api-version=2018-02-01" body=""
+2019/08/17 13:42:07 packer: 2019/08/17 13:42:07 Azure response x-ms-request-id="28e21493-cfa1-4808-bd47-8abdd3304863" body="" status="404 Not Found" method="HEAD" request="https://management.azure.com/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/resourcegroups/packer-Resource-Group-tch49kgyu3?api-version=2018-02-01"
+2019/08/17 13:42:07 packer: 2019/08/17 13:42:07 Azure response body="" status="404 Not Found" method="HEAD" request="https://management.azure.com/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/resourcegroups/packer-Resource-Group-tch49kgyu3?api-version=2018-02-01" x-ms-request-id="28e21493-cfa1-4808-bd47-8abdd3304863"
+2019/08/17 13:42:07 ui: [1;32m==> azure-arm: Creating resource group ...[0m
+2019/08/17 13:42:07 ui: [1;32m==> azure-arm:  -> ResourceGroupName : 'packer-Resource-Group-tch49kgyu3'[0m
+2019/08/17 13:42:07 ui: [1;32m==> azure-arm:  -> Location          : 'southindia'[0m
+2019/08/17 13:42:07 ui: [1;32m==> azure-arm:  -> Tags              :[0m
+2019/08/17 13:42:07 ui: [1;32m==> azure-arm:  ->> dept : SysOps[0m
+2019/08/17 13:42:07 ui: [1;32m==> azure-arm:  ->> task : Image deployment[0m
+2019/08/17 13:42:07 packer: 2019/08/17 13:42:07 Azure request request="https://management.azure.com/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/resourcegroups/packer-Resource-Group-tch49kgyu3?api-version=2018-02-01" body="{\"location\":\"southindia\",\"tags\":{\"dept\":\"SysOps\",\"task\":\"Image deployment\"}}" method="PUT"
+2019/08/17 13:42:09 packer: 2019/08/17 13:42:09 Azure response status="201 Created" method="PUT" request="https://management.azure.com/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/resourcegroups/packer-Resource-Group-tch49kgyu3?api-version=2018-02-01" x-ms-request-id="c8c522fe-6e76-48ad-bdcf-0c7adbd12477" body="{\"id\":\"/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/resourceGroups/packer-Resource-Group-tch49kgyu3\",\"name\":\"packer-Resource-Group-tch49kgyu3\",\"location\":\"southindia\",\"tags\":{\"dept\":\"SysOps\",\"task\":\"Image deployment\"},\"properties\":{\"provisioningState\":\"Succeeded\"}}"
+2019/08/17 13:42:09 packer: 2019/08/17 13:42:09 Azure response request="https://management.azure.com/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/resourcegroups/packer-Resource-Group-tch49kgyu3?api-version=2018-02-01" x-ms-request-id="c8c522fe-6e76-48ad-bdcf-0c7adbd12477" body="{\"id\":\"/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/resourceGroups/packer-Resource-Group-tch49kgyu3\",\"name\":\"packer-Resource-Group-tch49kgyu3\",\"location\":\"southindia\",\"tags\":{\"dept\":\"SysOps\",\"task\":\"Image deployment\"},\"properties\":{\"provisioningState\":\"Succeeded\"}}" status="201 Created" method="PUT"
+2019/08/17 13:42:09 ui: [1;32m==> azure-arm: Validating deployment template ...[0m
+2019/08/17 13:42:09 ui: [1;32m==> azure-arm:  -> ResourceGroupName : 'packer-Resource-Group-tch49kgyu3'[0m
+2019/08/17 13:42:09 ui: [1;32m==> azure-arm:  -> DeploymentName    : 'pkrdptch49kgyu3'[0m
+2019/08/17 13:42:09 packer: 2019/08/17 13:42:09 Azure request method="POST" request="https://management.azure.com/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/resourcegroups/packer-Resource-Group-tch49kgyu3/providers/Microsoft.Resources/deployments/pkrdptch49kgyu3/validate?api-version=2018-02-01" body="{\"properties\":{\"template\":{\"$schema\":\"http://schema.management.azure.com/schemas/2014-04-01-preview/deploymentTemplate.json\",\"contentVersion\":\"1.0.0.0\",\"parameters\":{\"adminPassword\":{\"type\":\"string\"},\"adminUsername\":{\"type\":\"string\"},\"dnsNameForPublicIP\":{\"type\":\"string\"},\"nicName\":{\"type\":\"string\"},\"osDiskName\":{\"type\":\"string\"},\"publicIPAddressName\":{\"type\":\"string\"},\"storageAccountBlobEndpoint\":{\"type\":\"string\"},\"subnetName\":{\"type\":\"string\"},\"virtualNetworkName\":{\"type\":\"string\"},\"vmName\":{\"type\":\"string\"},\"vmSize\":{\"type\":\"string\"}},\"resources\":[{\"apiVersion\":\"[variables('publicIPAddressApiVersion')]\",\"location\":\"[variables('location')]\",\"name\":\"[parameters('publicIPAddressName')]\",\"properties\":{\"dnsSettings\":{\"domainNameLabel\":\"[parameters('dnsNameForPublicIP')]\"},\"publicIPAllocationMethod\":\"[variables('publicIPAddressType')]\"},\"tags\":{\"dept\":\"SysOps\",\"task\":\"Image deployment\"},\"type\":\"Microsoft.Network/publicIPAddresses\"},{\"apiVersion\":\"[variables('virtualNetworksApiVersion')]\",\"location\":\"[variables('location')]\",\"name\":\"[variables('virtualNetworkName')]\",\"properties\":{\"addressSpace\":{\"addressPrefixes\":[\"[variables('addressPrefix')]\"]},\"subnets\":[{\"name\":\"[variables('subnetName')]\",\"properties\":{\"addressPrefix\":\"[variables('subnetAddressPrefix')]\"}}]},\"tags\":{\"dept\":\"SysOps\",\"task\":\"Image deployment\"},\"type\":\"Microsoft.Network/virtualNetworks\"},{\"apiVersion\":\"[variables('networkInterfacesApiVersion')]\",\"dependsOn\":[\"[concat('Microsoft.Network/publicIPAddresses/', parameters('publicIPAddressName'))]\",\"[concat('Microsoft.Network/virtualNetworks/', variables('virtualNetworkName'))]\"],\"location\":\"[variables('location')]\",\"name\":\"[parameters('nicName')]\",\"properties\":{\"ipConfigurations\":[{\"name\":\"ipconfig\",\"properties\":{\"privateIPAllocationMethod\":\"Dynamic\",\"publicIPAddress\":{\"id\":\"[resourceId('Microsoft.Network/publicIPAddresses', parameters('publicIPAddressName'))]\"},\"subnet\":{\"id\":\"[variables('subnetRef')]\"}}}]},\"tags\":{\"dept\":\"SysOps\",\"task\":\"Image deployment\"},\"type\":\"Microsoft.Network/networkInterfaces\"},{\"apiVersion\":\"[variables('apiVersion')]\",\"dependsOn\":[\"[concat('Microsoft.Network/networkInterfaces/', parameters('nicName'))]\"],\"location\":\"[variables('location')]\",\"name\":\"[parameters('vmName')]\",\"properties\":{\"diagnosticsProfile\":{\"bootDiagnostics\":{\"enabled\":false}},\"hardwareProfile\":{\"vmSize\":\"[parameters('vmSize')]\"},\"networkProfile\":{\"networkInterfaces\":[{\"id\":\"[resourceId('Microsoft.Network/networkInterfaces', parameters('nicName'))]\"}]},\"osProfile\":{\"adminPassword\":\"[parameters('adminPassword')]\",\"adminUsername\":\"[parameters('adminUsername')]\",\"computerName\":\"[parameters('vmName')]\",\"linuxConfiguration\":{\"ssh\":{\"publicKeys\":[{\"keyData\":\"ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDg6lBR2R0wYYkOkkI9bnEb7ZjiG6YyHXMMpvWpcIRvUwgQ8OK5JLCAhbJcYvlBoEFbLn4XnPibsGqmZ2Orhnc6gaB2gb8l6mqUiwS3ovpzKhhK6Qfg2OjsS6k7VqLCW/7bpOkjNix2Ug3vJy0MgAdr0+fgttWoIJjk5Daozel0Bd1qAyVim9FXCs+EpCMDWW0mEGZ7ioGg+8iJALHe9hrBkZkyq1ay2VbViyhZtsyQBJEVb2SrEqH2/d9np6uE+95Xm58+BKrgh3C1yKu1oKY6Hasg03dOX+Tnmite+6n3PpVZ5VbXsC8p66jto0EEtaP0ThcE6He7CJKYkSsxXwCt packer Azure Deployment2019-08-17T13:41:06+05:30\",\"path\":\"[variables('sshKeyPath')]\"}]}}},\"storageProfile\":{\"imageReference\":{\"offer\":\"CentOS\",\"publisher\":\"OpenLogic\",\"sku\":\"7.6\",\"version\":\"latest\"},\"osDisk\":{\"caching\":\"ReadWrite\",\"createOption\":\"FromImage\",\"managedDisk\":{\"storageAccountType\":\"Standard_LRS\"},\"name\":\"[parameters('osDiskName')]\",\"osType\":\"Linux\"}}},\"tags\":{\"dept\":\"SysOps\",\"task\":\"Image deployment\"},\"type\":\"Microsoft.Compute/virtualMachines\"}],\"variables\":{\"addressPrefix\":\"10.0.0.0/16\",\"apiVersion\":\"2017-03-30\",\"location\":\"[resourceGroup().location]\",\"managedDiskApiVersion\":\"2017-03-30\",\"networkInterfacesApiVersion\":\"2017-04-01\",\"publicIPAddressApiVersion\":\"2017-04-01\",\"publicIPAddressType\":\"Dynamic\",\"sshKeyPath\":\"[concat('/home/',parameters('adminUsername'),'/.ssh/authorized_keys')]\",\"subnetAddressPrefix\":\"10.0.0.0/24\",\"subnetName\":\"[parameters('subnetName')]\",\"subnetRef\":\"[concat(variables('vnetID'),'/subnets/',variables('subnetName'))]\",\"virtualNetworkName\":\"[parameters('virtualNetworkName')]\",\"virtualNetworkResourceGroup\":\"[resourceGroup().name]\",\"virtualNetworksApiVersion\":\"2017-04-01\",\"vmStorageAccountContainerName\":\"images\",\"vnetID\":\"[resourceId(variables('virtualNetworkResourceGroup'), 'Microsoft.Network/virtualNetworks', variables('virtualNetworkName'))]\"}},\"parameters\":{\"adminPassword\":{\"value\":\"Landmark@123\"},\"adminUsername\":{\"value\":\"centos\"},\"dnsNameForPublicIP\":{\"value\":\"pkrvmtch49kgyu3\"},\"nicName\":{\"value\":\"pkrnitch49kgyu3\"},\"osDiskName\":{\"value\":\"pkrostch49kgyu3\"},\"publicIPAddressName\":{\"value\":\"pkriptch49kgyu3\"},\"storageAccountBlobEndpoint\":{\"value\":\"\"},\"subnetName\":{\"value\":\"pkrsntch49kgyu3\"},\"virtualNetworkName\":{\"value\":\"pkrvntch49kgyu3\"},\"vmName\":{\"value\":\"pkrvmtch49kgyu3\"},\"vmSize\":{\"value\":\"Standard_DS2_v2\"}},\"mode\":\"Incremental\"}}"
+2019/08/17 13:42:10 packer: 2019/08/17 13:42:10 Azure response status="200 OK" method="POST" request="https://management.azure.com/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/resourcegroups/packer-Resource-Group-tch49kgyu3/providers/Microsoft.Resources/deployments/pkrdptch49kgyu3/validate?api-version=2018-02-01" x-ms-request-id="842a7afb-ee9b-4729-a321-86dc288d131f" body="{\"id\":\"/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/resourceGroups/packer-Resource-Group-tch49kgyu3/providers/Microsoft.Resources/deployments/pkrdptch49kgyu3\",\"name\":\"pkrdptch49kgyu3\",\"properties\":{\"templateHash\":\"2596375858088044339\",\"parameters\":{\"adminPassword\":{\"type\":\"String\",\"value\":\"Landmark@123\"},\"adminUsername\":{\"type\":\"String\",\"value\":\"centos\"},\"dnsNameForPublicIP\":{\"type\":\"String\",\"value\":\"pkrvmtch49kgyu3\"},\"nicName\":{\"type\":\"String\",\"value\":\"pkrnitch49kgyu3\"},\"osDiskName\":{\"type\":\"String\",\"value\":\"pkrostch49kgyu3\"},\"publicIPAddressName\":{\"type\":\"String\",\"value\":\"pkriptch49kgyu3\"},\"storageAccountBlobEndpoint\":{\"type\":\"String\",\"value\":\"\"},\"subnetName\":{\"type\":\"String\",\"value\":\"pkrsntch49kgyu3\"},\"virtualNetworkName\":{\"type\":\"String\",\"value\":\"pkrvntch49kgyu3\"},\"vmName\":{\"type\":\"String\",\"value\":\"pkrvmtch49kgyu3\"},\"vmSize\":{\"type\":\"String\",\"value\":\"Standard_DS2_v2\"}},\"mode\":\"Incremental\",\"provisioningState\":\"Succeeded\",\"timestamp\":\"2019-08-17T08:12:09.8538974Z\",\"duration\":\"PT0S\",\"correlationId\":\"842a7afb-ee9b-4729-a321-86dc288d131f\",\"providers\":[{\"namespace\":\"Microsoft.Network\",\"resourceTypes\":[{\"resourceType\":\"publicIPAddresses\",\"locations\":[\"southindia\"]},{\"resourceType\":\"virtualNetworks\",\"locations\":[\"southindia\"]},{\"resourceType\":\"networkInterfaces\",\"locations\":[\"southindia\"]}]},{\"namespace\":\"Microsoft.Compute\",\"resourceTypes\":[{\"resourceType\":\"virtualMachines\",\"locations\":[\"southindia\"]}]}],\"dependencies\":[{\"dependsOn\":[{\"id\":\"/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/resourceGroups/packer-Resource-Group-tch49kgyu3/providers/Microsoft.Network/publicIPAddresses/pkriptch49kgyu3\",\"resourceType\":\"Microsoft.Network/publicIPAddresses\",\"resourceName\":\"pkriptch49kgyu3\"},{\"id\":\"/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/resourceGroups/packer-Resource-Group-tch49kgyu3/providers/Microsoft.Network/virtualNetworks/pkrvntch49kgyu3\",\"resourceType\":\"Microsoft.Network/virtualNetworks\",\"resourceName\":\"pkrvntch49kgyu3\"}],\"id\":\"/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/resourceGroups/packer-Resource-Group-tch49kgyu3/providers/Microsoft.Network/networkInterfaces/pkrnitch49kgyu3\",\"resourceType\":\"Microsoft.Network/networkInterfaces\",\"resourceName\":\"pkrnitch49kgyu3\"},{\"dependsOn\":[{\"id\":\"/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/resourceGroups/packer-Resource-Group-tch49kgyu3/providers/Microsoft.Network/networkInterfaces/pkrnitch49kgyu3\",\"resourceType\":\"Microsoft.Network/networkInterfaces\",\"resourceName\":\"pkrnitch49kgyu3\"}],\"id\":\"/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/resourceGroups/packer-Resource-Group-tch49kgyu3/providers/Microsoft.Compute/virtualMachines/pkrvmtch49kgyu3\",\"resourceType\":\"Microsoft.Compute/virtualMachines\",\"resourceName\":\"pkrvmtch49kgyu3\"}],\"validatedResources\":[{\"apiVersion\":\"2017-04-01\",\"id\":\"/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/resourceGroups/packer-Resource-Group-tch49kgyu3/providers/Microsoft.Network/publicIPAddresses/pkriptch49kgyu3\",\"name\":\"pkriptch49kgyu3\",\"type\":\"Microsoft.Network/publicIPAddresses\",\"location\":\"southindia\",\"tags\":{\"dept\":\"SysOps\",\"task\":\"Image deployment\"},\"properties\":{\"dnsSettings\":{\"domainNameLabel\":\"pkrvmtch49kgyu3\"},\"publicIPAllocationMethod\":\"Dynamic\"}},{\"apiVersion\":\"2017-04-01\",\"id\":\"/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/resourceGroups/packer-Resource-Group-tch49kgyu3/providers/Microsoft.Network/virtualNetworks/pkrvntch49kgyu3\",\"name\":\"pkrvntch49kgyu3\",\"type\":\"Microsoft.Network/virtualNetworks\",\"location\":\"southindia\",\"tags\":{\"dept\":\"SysOps\",\"task\":\"Image deployment\"},\"properties\":{\"addressSpace\":{\"addressPrefixes\":[\"10.0.0.0/16\"]},\"subnets\":[{\"name\":\"pkrsntch49kgyu3\",\"properties\":{\"addressPrefix\":\"10.0.0.0/24\"}}]}},{\"dependsOn\":[\"/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/resourceGroups/packer-Resource-Group-tch49kgyu3/providers/Microsoft.Network/publicIPAddresses/pkriptch49kgyu3\",\"/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/resourceGroups/packer-Resource-Group-tch49kgyu3/providers/Microsoft.Network/virtualNetworks/pkrvntch49kgyu3\"],\"apiVersion\":\"2017-04-01\",\"id\":\"/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/resourceGroups/packer-Resource-Group-tch49kgyu3/providers/Microsoft.Network/networkInterfaces/pkrnitch49kgyu3\",\"name\":\"pkrnitch49kgyu3\",\"type\":\"Microsoft.Network/networkInterfaces\",\"location\":\"southindia\",\"tags\":{\"dept\":\"SysOps\",\"task\":\"Image deployment\"},\"properties\":{\"ipConfigurations\":[{\"name\":\"ipconfig\",\"properties\":{\"privateIPAllocationMethod\":\"Dynamic\",\"publicIPAddress\":{\"id\":\"/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/resourceGroups/packer-Resource-Group-tch49kgyu3/providers/Microsoft.Network/publicIPAddresses/pkriptch49kgyu3\"},\"subnet\":{\"id\":\"/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/resourceGroups/packer-Resource-Group-tch49kgyu3/providers/Microsoft.Network/virtualNetworks/pkrvntch49kgyu3/subnets/pkrsntch49kgyu3\"}}}]}},{\"dependsOn\":[\"/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/resourceGroups/packer-Resource-Group-tch49kgyu3/providers/Microsoft.Network/networkInterfaces/pkrnitch49kgyu3\"],\"apiVersion\":\"2017-03-30\",\"id\":\"/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/resourceGroups/packer-Resource-Group-tch49kgyu3/providers/Microsoft.Compute/virtualMachines/pkrvmtch49kgyu3\",\"name\":\"pkrvmtch49kgyu3\",\"type\":\"Microsoft.Compute/virtualMachines\",\"location\":\"southindia\",\"tags\":{\"dept\":\"SysOps\",\"task\":\"Image deployment\"},\"properties\":{\"diagnosticsProfile\":{\"bootDiagnostics\":{\"enabled\":false}},\"hardwareProfile\":{\"vmSize\":\"Standard_DS2_v2\"},\"networkProfile\":{\"networkInterfaces\":[{\"id\":\"/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/resourceGroups/packer-Resource-Group-tch49kgyu3/providers/Microsoft.Network/networkInterfaces/pkrnitch49kgyu3\"}]},\"osProfile\":{\"adminPassword\":\"Landmark@123\",\"adminUsername\":\"centos\",\"computerName\":\"pkrvmtch49kgyu3\",\"linuxConfiguration\":{\"ssh\":{\"publicKeys\":[{\"keyData\":\"ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDg6lBR2R0wYYkOkkI9bnEb7ZjiG6YyHXMMpvWpcIRvUwgQ8OK5JLCAhbJcYvlBoEFbLn4XnPibsGqmZ2Orhnc6gaB2gb8l6mqUiwS3ovpzKhhK6Qfg2OjsS6k7VqLCW/7bpOkjNix2Ug3vJy0MgAdr0+fgttWoIJjk5Daozel0Bd1qAyVim9FXCs+EpCMDWW0mEGZ7ioGg+8iJALHe9hrBkZkyq1ay2VbViyhZtsyQBJEVb2SrEqH2/d9np6uE+95Xm58+BKrgh3C1yKu1oKY6Hasg03dOX+Tnmite+6n3PpVZ5VbXsC8p66jto0EEtaP0ThcE6He7CJKYkSsxXwCt packer Azure Deployment2019-08-17T13:41:06+05:30\",\"path\":\"/home/centos/.ssh/authorized_keys\"}]}}},\"storageProfile\":{\"imageReference\":{\"offer\":\"CentOS\",\"publisher\":\"OpenLogic\",\"sku\":\"7.6\",\"version\":\"latest\"},\"osDisk\":{\"caching\":\"ReadWrite\",\"createOption\":\"FromImage\",\"managedDisk\":{\"storageAccountType\":\"Standard_LRS\"},\"name\":\"pkrostch49kgyu3\",\"osType\":\"Linux\"}}}}]}}"
+2019/08/17 13:42:10 packer: 2019/08/17 13:42:10 Azure response status="200 OK" method="POST" request="https://management.azure.com/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/resourcegroups/packer-Resource-Group-tch49kgyu3/providers/Microsoft.Resources/deployments/pkrdptch49kgyu3/validate?api-version=2018-02-01" x-ms-request-id="842a7afb-ee9b-4729-a321-86dc288d131f" body="{\"id\":\"/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/resourceGroups/packer-Resource-Group-tch49kgyu3/providers/Microsoft.Resources/deployments/pkrdptch49kgyu3\",\"name\":\"pkrdptch49kgyu3\",\"properties\":{\"templateHash\":\"2596375858088044339\",\"parameters\":{\"adminPassword\":{\"type\":\"String\",\"value\":\"Landmark@123\"},\"adminUsername\":{\"type\":\"String\",\"value\":\"centos\"},\"dnsNameForPublicIP\":{\"type\":\"String\",\"value\":\"pkrvmtch49kgyu3\"},\"nicName\":{\"type\":\"String\",\"value\":\"pkrnitch49kgyu3\"},\"osDiskName\":{\"type\":\"String\",\"value\":\"pkrostch49kgyu3\"},\"publicIPAddressName\":{\"type\":\"String\",\"value\":\"pkriptch49kgyu3\"},\"storageAccountBlobEndpoint\":{\"type\":\"String\",\"value\":\"\"},\"subnetName\":{\"type\":\"String\",\"value\":\"pkrsntch49kgyu3\"},\"virtualNetworkName\":{\"type\":\"String\",\"value\":\"pkrvntch49kgyu3\"},\"vmName\":{\"type\":\"String\",\"value\":\"pkrvmtch49kgyu3\"},\"vmSize\":{\"type\":\"String\",\"value\":\"Standard_DS2_v2\"}},\"mode\":\"Incremental\",\"provisioningState\":\"Succeeded\",\"timestamp\":\"2019-08-17T08:12:09.8538974Z\",\"duration\":\"PT0S\",\"correlationId\":\"842a7afb-ee9b-4729-a321-86dc288d131f\",\"providers\":[{\"namespace\":\"Microsoft.Network\",\"resourceTypes\":[{\"resourceType\":\"publicIPAddresses\",\"locations\":[\"southindia\"]},{\"resourceType\":\"virtualNetworks\",\"locations\":[\"southindia\"]},{\"resourceType\":\"networkInterfaces\",\"locations\":[\"southindia\"]}]},{\"namespace\":\"Microsoft.Compute\",\"resourceTypes\":[{\"resourceType\":\"virtualMachines\",\"locations\":[\"southindia\"]}]}],\"dependencies\":[{\"dependsOn\":[{\"id\":\"/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/resourceGroups/packer-Resource-Group-tch49kgyu3/providers/Microsoft.Network/publicIPAddresses/pkriptch49kgyu3\",\"resourceType\":\"Microsoft.Network/publicIPAddresses\",\"resourceName\":\"pkriptch49kgyu3\"},{\"id\":\"/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/resourceGroups/packer-Resource-Group-tch49kgyu3/providers/Microsoft.Network/virtualNetworks/pkrvntch49kgyu3\",\"resourceType\":\"Microsoft.Network/virtualNetworks\",\"resourceName\":\"pkrvntch49kgyu3\"}],\"id\":\"/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/resourceGroups/packer-Resource-Group-tch49kgyu3/providers/Microsoft.Network/networkInterfaces/pkrnitch49kgyu3\",\"resourceType\":\"Microsoft.Network/networkInterfaces\",\"resourceName\":\"pkrnitch49kgyu3\"},{\"dependsOn\":[{\"id\":\"/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/resourceGroups/packer-Resource-Group-tch49kgyu3/providers/Microsoft.Network/networkInterfaces/pkrnitch49kgyu3\",\"resourceType\":\"Microsoft.Network/networkInterfaces\",\"resourceName\":\"pkrnitch49kgyu3\"}],\"id\":\"/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/resourceGroups/packer-Resource-Group-tch49kgyu3/providers/Microsoft.Compute/virtualMachines/pkrvmtch49kgyu3\",\"resourceType\":\"Microsoft.Compute/virtualMachines\",\"resourceName\":\"pkrvmtch49kgyu3\"}],\"validatedResources\":[{\"apiVersion\":\"2017-04-01\",\"id\":\"/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/resourceGroups/packer-Resource-Group-tch49kgyu3/providers/Microsoft.Network/publicIPAddresses/pkriptch49kgyu3\",\"name\":\"pkriptch49kgyu3\",\"type\":\"Microsoft.Network/publicIPAddresses\",\"location\":\"southindia\",\"tags\":{\"dept\":\"SysOps\",\"task\":\"Image deployment\"},\"properties\":{\"dnsSettings\":{\"domainNameLabel\":\"pkrvmtch49kgyu3\"},\"publicIPAllocationMethod\":\"Dynamic\"}},{\"apiVersion\":\"2017-04-01\",\"id\":\"/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/resourceGroups/packer-Resource-Group-tch49kgyu3/providers/Microsoft.Network/virtualNetworks/pkrvntch49kgyu3\",\"name\":\"pkrvntch49kgyu3\",\"type\":\"Microsoft.Network/virtualNetworks\",\"location\":\"southindia\",\"tags\":{\"dept\":\"SysOps\",\"task\":\"Image deployment\"},\"properties\":{\"addressSpace\":{\"addressPrefixes\":[\"10.0.0.0/16\"]},\"subnets\":[{\"name\":\"pkrsntch49kgyu3\",\"properties\":{\"addressPrefix\":\"10.0.0.0/24\"}}]}},{\"dependsOn\":[\"/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/resourceGroups/packer-Resource-Group-tch49kgyu3/providers/Microsoft.Network/publicIPAddresses/pkriptch49kgyu3\",\"/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/resourceGroups/packer-Resource-Group-tch49kgyu3/providers/Microsoft.Network/virtualNetworks/pkrvntch49kgyu3\"],\"apiVersion\":\"2017-04-01\",\"id\":\"/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/resourceGroups/packer-Resource-Group-tch49kgyu3/providers/Microsoft.Network/networkInterfaces/pkrnitch49kgyu3\",\"name\":\"pkrnitch49kgyu3\",\"type\":\"Microsoft.Network/networkInterfaces\",\"location\":\"southindia\",\"tags\":{\"dept\":\"SysOps\",\"task\":\"Image deployment\"},\"properties\":{\"ipConfigurations\":[{\"name\":\"ipconfig\",\"properties\":{\"privateIPAllocationMethod\":\"Dynamic\",\"publicIPAddress\":{\"id\":\"/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/resourceGroups/packer-Resource-Group-tch49kgyu3/providers/Microsoft.Network/publicIPAddresses/pkriptch49kgyu3\"},\"subnet\":{\"id\":\"/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/resourceGroups/packer-Resource-Group-tch49kgyu3/providers/Microsoft.Network/virtualNetworks/pkrvntch49kgyu3/subnets/pkrsntch49kgyu3\"}}}]}},{\"dependsOn\":[\"/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/resourceGroups/packer-Resource-Group-tch49kgyu3/providers/Microsoft.Network/networkInterfaces/pkrnitch49kgyu3\"],\"apiVersion\":\"2017-03-30\",\"id\":\"/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/resourceGroups/packer-Resource-Group-tch49kgyu3/providers/Microsoft.Compute/virtualMachines/pkrvmtch49kgyu3\",\"name\":\"pkrvmtch49kgyu3\",\"type\":\"Microsoft.Compute/virtualMachines\",\"location\":\"southindia\",\"tags\":{\"dept\":\"SysOps\",\"task\":\"Image deployment\"},\"properties\":{\"diagnosticsProfile\":{\"bootDiagnostics\":{\"enabled\":false}},\"hardwareProfile\":{\"vmSize\":\"Standard_DS2_v2\"},\"networkProfile\":{\"networkInterfaces\":[{\"id\":\"/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/resourceGroups/packer-Resource-Group-tch49kgyu3/providers/Microsoft.Network/networkInterfaces/pkrnitch49kgyu3\"}]},\"osProfile\":{\"adminPassword\":\"Landmark@123\",\"adminUsername\":\"centos\",\"computerName\":\"pkrvmtch49kgyu3\",\"linuxConfiguration\":{\"ssh\":{\"publicKeys\":[{\"keyData\":\"ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDg6lBR2R0wYYkOkkI9bnEb7ZjiG6YyHXMMpvWpcIRvUwgQ8OK5JLCAhbJcYvlBoEFbLn4XnPibsGqmZ2Orhnc6gaB2gb8l6mqUiwS3ovpzKhhK6Qfg2OjsS6k7VqLCW/7bpOkjNix2Ug3vJy0MgAdr0+fgttWoIJjk5Daozel0Bd1qAyVim9FXCs+EpCMDWW0mEGZ7ioGg+8iJALHe9hrBkZkyq1ay2VbViyhZtsyQBJEVb2SrEqH2/d9np6uE+95Xm58+BKrgh3C1yKu1oKY6Hasg03dOX+Tnmite+6n3PpVZ5VbXsC8p66jto0EEtaP0ThcE6He7CJKYkSsxXwCt packer Azure Deployment2019-08-17T13:41:06+05:30\",\"path\":\"/home/centos/.ssh/authorized_keys\"}]}}},\"storageProfile\":{\"imageReference\":{\"offer\":\"CentOS\",\"publisher\":\"OpenLogic\",\"sku\":\"7.6\",\"version\":\"latest\"},\"osDisk\":{\"caching\":\"ReadWrite\",\"createOption\":\"FromImage\",\"managedDisk\":{\"storageAccountType\":\"Standard_LRS\"},\"name\":\"pkrostch49kgyu3\",\"osType\":\"Linux\"}}}}]}}"
+2019/08/17 13:42:10 ui: [1;32m==> azure-arm: Deploying deployment template ...[0m
+2019/08/17 13:42:10 ui: [1;32m==> azure-arm:  -> ResourceGroupName : 'packer-Resource-Group-tch49kgyu3'[0m
+2019/08/17 13:42:10 ui: [1;32m==> azure-arm:  -> DeploymentName    : 'pkrdptch49kgyu3'[0m
+2019/08/17 13:42:10 packer: 2019/08/17 13:42:10 Azure request method="PUT" request="https://management.azure.com/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/resourcegroups/packer-Resource-Group-tch49kgyu3/providers/Microsoft.Resources/deployments/pkrdptch49kgyu3?api-version=2018-02-01" body="{\"properties\":{\"template\":{\"$schema\":\"http://schema.management.azure.com/schemas/2014-04-01-preview/deploymentTemplate.json\",\"contentVersion\":\"1.0.0.0\",\"parameters\":{\"adminPassword\":{\"type\":\"string\"},\"adminUsername\":{\"type\":\"string\"},\"dnsNameForPublicIP\":{\"type\":\"string\"},\"nicName\":{\"type\":\"string\"},\"osDiskName\":{\"type\":\"string\"},\"publicIPAddressName\":{\"type\":\"string\"},\"storageAccountBlobEndpoint\":{\"type\":\"string\"},\"subnetName\":{\"type\":\"string\"},\"virtualNetworkName\":{\"type\":\"string\"},\"vmName\":{\"type\":\"string\"},\"vmSize\":{\"type\":\"string\"}},\"resources\":[{\"apiVersion\":\"[variables('publicIPAddressApiVersion')]\",\"location\":\"[variables('location')]\",\"name\":\"[parameters('publicIPAddressName')]\",\"properties\":{\"dnsSettings\":{\"domainNameLabel\":\"[parameters('dnsNameForPublicIP')]\"},\"publicIPAllocationMethod\":\"[variables('publicIPAddressType')]\"},\"tags\":{\"dept\":\"SysOps\",\"task\":\"Image deployment\"},\"type\":\"Microsoft.Network/publicIPAddresses\"},{\"apiVersion\":\"[variables('virtualNetworksApiVersion')]\",\"location\":\"[variables('location')]\",\"name\":\"[variables('virtualNetworkName')]\",\"properties\":{\"addressSpace\":{\"addressPrefixes\":[\"[variables('addressPrefix')]\"]},\"subnets\":[{\"name\":\"[variables('subnetName')]\",\"properties\":{\"addressPrefix\":\"[variables('subnetAddressPrefix')]\"}}]},\"tags\":{\"dept\":\"SysOps\",\"task\":\"Image deployment\"},\"type\":\"Microsoft.Network/virtualNetworks\"},{\"apiVersion\":\"[variables('networkInterfacesApiVersion')]\",\"dependsOn\":[\"[concat('Microsoft.Network/publicIPAddresses/', parameters('publicIPAddressName'))]\",\"[concat('Microsoft.Network/virtualNetworks/', variables('virtualNetworkName'))]\"],\"location\":\"[variables('location')]\",\"name\":\"[parameters('nicName')]\",\"properties\":{\"ipConfigurations\":[{\"name\":\"ipconfig\",\"properties\":{\"privateIPAllocationMethod\":\"Dynamic\",\"publicIPAddress\":{\"id\":\"[resourceId('Microsoft.Network/publicIPAddresses', parameters('publicIPAddressName'))]\"},\"subnet\":{\"id\":\"[variables('subnetRef')]\"}}}]},\"tags\":{\"dept\":\"SysOps\",\"task\":\"Image deployment\"},\"type\":\"Microsoft.Network/networkInterfaces\"},{\"apiVersion\":\"[variables('apiVersion')]\",\"dependsOn\":[\"[concat('Microsoft.Network/networkInterfaces/', parameters('nicName'))]\"],\"location\":\"[variables('location')]\",\"name\":\"[parameters('vmName')]\",\"properties\":{\"diagnosticsProfile\":{\"bootDiagnostics\":{\"enabled\":false}},\"hardwareProfile\":{\"vmSize\":\"[parameters('vmSize')]\"},\"networkProfile\":{\"networkInterfaces\":[{\"id\":\"[resourceId('Microsoft.Network/networkInterfaces', parameters('nicName'))]\"}]},\"osProfile\":{\"adminPassword\":\"[parameters('adminPassword')]\",\"adminUsername\":\"[parameters('adminUsername')]\",\"computerName\":\"[parameters('vmName')]\",\"linuxConfiguration\":{\"ssh\":{\"publicKeys\":[{\"keyData\":\"ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDg6lBR2R0wYYkOkkI9bnEb7ZjiG6YyHXMMpvWpcIRvUwgQ8OK5JLCAhbJcYvlBoEFbLn4XnPibsGqmZ2Orhnc6gaB2gb8l6mqUiwS3ovpzKhhK6Qfg2OjsS6k7VqLCW/7bpOkjNix2Ug3vJy0MgAdr0+fgttWoIJjk5Daozel0Bd1qAyVim9FXCs+EpCMDWW0mEGZ7ioGg+8iJALHe9hrBkZkyq1ay2VbViyhZtsyQBJEVb2SrEqH2/d9np6uE+95Xm58+BKrgh3C1yKu1oKY6Hasg03dOX+Tnmite+6n3PpVZ5VbXsC8p66jto0EEtaP0ThcE6He7CJKYkSsxXwCt packer Azure Deployment2019-08-17T13:41:06+05:30\",\"path\":\"[variables('sshKeyPath')]\"}]}}},\"storageProfile\":{\"imageReference\":{\"offer\":\"CentOS\",\"publisher\":\"OpenLogic\",\"sku\":\"7.6\",\"version\":\"latest\"},\"osDisk\":{\"caching\":\"ReadWrite\",\"createOption\":\"FromImage\",\"managedDisk\":{\"storageAccountType\":\"Standard_LRS\"},\"name\":\"[parameters('osDiskName')]\",\"osType\":\"Linux\"}}},\"tags\":{\"dept\":\"SysOps\",\"task\":\"Image deployment\"},\"type\":\"Microsoft.Compute/virtualMachines\"}],\"variables\":{\"addressPrefix\":\"10.0.0.0/16\",\"apiVersion\":\"2017-03-30\",\"location\":\"[resourceGroup().location]\",\"managedDiskApiVersion\":\"2017-03-30\",\"networkInterfacesApiVersion\":\"2017-04-01\",\"publicIPAddressApiVersion\":\"2017-04-01\",\"publicIPAddressType\":\"Dynamic\",\"sshKeyPath\":\"[concat('/home/',parameters('adminUsername'),'/.ssh/authorized_keys')]\",\"subnetAddressPrefix\":\"10.0.0.0/24\",\"subnetName\":\"[parameters('subnetName')]\",\"subnetRef\":\"[concat(variables('vnetID'),'/subnets/',variables('subnetName'))]\",\"virtualNetworkName\":\"[parameters('virtualNetworkName')]\",\"virtualNetworkResourceGroup\":\"[resourceGroup().name]\",\"virtualNetworksApiVersion\":\"2017-04-01\",\"vmStorageAccountContainerName\":\"images\",\"vnetID\":\"[resourceId(variables('virtualNetworkResourceGroup'), 'Microsoft.Network/virtualNetworks', variables('virtualNetworkName'))]\"}},\"parameters\":{\"adminPassword\":{\"value\":\"Landmark@123\"},\"adminUsername\":{\"value\":\"centos\"},\"dnsNameForPublicIP\":{\"value\":\"pkrvmtch49kgyu3\"},\"nicName\":{\"value\":\"pkrnitch49kgyu3\"},\"osDiskName\":{\"value\":\"pkrostch49kgyu3\"},\"publicIPAddressName\":{\"value\":\"pkriptch49kgyu3\"},\"storageAccountBlobEndpoint\":{\"value\":\"\"},\"subnetName\":{\"value\":\"pkrsntch49kgyu3\"},\"virtualNetworkName\":{\"value\":\"pkrvntch49kgyu3\"},\"vmName\":{\"value\":\"pkrvmtch49kgyu3\"},\"vmSize\":{\"value\":\"Standard_DS2_v2\"}},\"mode\":\"Incremental\"}}"
+2019/08/17 13:42:10 packer: 2019/08/17 13:42:10 Azure response status="201 Created" method="PUT" request="https://management.azure.com/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/resourcegroups/packer-Resource-Group-tch49kgyu3/providers/Microsoft.Resources/deployments/pkrdptch49kgyu3?api-version=2018-02-01" x-ms-request-id="117771e0-adff-4d72-9e96-6066f776b56a" body="{\"id\":\"/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/resourceGroups/packer-Resource-Group-tch49kgyu3/providers/Microsoft.Resources/deployments/pkrdptch49kgyu3\",\"name\":\"pkrdptch49kgyu3\",\"properties\":{\"templateHash\":\"2596375858088044339\",\"parameters\":{\"adminPassword\":{\"type\":\"String\",\"value\":\"Landmark@123\"},\"adminUsername\":{\"type\":\"String\",\"value\":\"centos\"},\"dnsNameForPublicIP\":{\"type\":\"String\",\"value\":\"pkrvmtch49kgyu3\"},\"nicName\":{\"type\":\"String\",\"value\":\"pkrnitch49kgyu3\"},\"osDiskName\":{\"type\":\"String\",\"value\":\"pkrostch49kgyu3\"},\"publicIPAddressName\":{\"type\":\"String\",\"value\":\"pkriptch49kgyu3\"},\"storageAccountBlobEndpoint\":{\"type\":\"String\",\"value\":\"\"},\"subnetName\":{\"type\":\"String\",\"value\":\"pkrsntch49kgyu3\"},\"virtualNetworkName\":{\"type\":\"String\",\"value\":\"pkrvntch49kgyu3\"},\"vmName\":{\"type\":\"String\",\"value\":\"pkrvmtch49kgyu3\"},\"vmSize\":{\"type\":\"String\",\"value\":\"Standard_DS2_v2\"}},\"mode\":\"Incremental\",\"provisioningState\":\"Accepted\",\"timestamp\":\"2019-08-17T08:12:10.5070457Z\",\"duration\":\"PT0.2557699S\",\"correlationId\":\"117771e0-adff-4d72-9e96-6066f776b56a\",\"providers\":[{\"namespace\":\"Microsoft.Network\",\"resourceTypes\":[{\"resourceType\":\"publicIPAddresses\",\"locations\":[\"southindia\"]},{\"resourceType\":\"virtualNetworks\",\"locations\":[\"southindia\"]},{\"resourceType\":\"networkInterfaces\",\"locations\":[\"southindia\"]}]},{\"namespace\":\"Microsoft.Compute\",\"resourceTypes\":[{\"resourceType\":\"virtualMachines\",\"locations\":[\"southindia\"]}]}],\"dependencies\":[{\"dependsOn\":[{\"id\":\"/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/resourceGroups/packer-Resource-Group-tch49kgyu3/providers/Microsoft.Network/publicIPAddresses/pkriptch49kgyu3\",\"resourceType\":\"Microsoft.Network/publicIPAddresses\",\"resourceName\":\"pkriptch49kgyu3\"},{\"id\":\"/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/resourceGroups/packer-Resource-Group-tch49kgyu3/providers/Microsoft.Network/virtualNetworks/pkrvntch49kgyu3\",\"resourceType\":\"Microsoft.Network/virtualNetworks\",\"resourceName\":\"pkrvntch49kgyu3\"}],\"id\":\"/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/resourceGroups/packer-Resource-Group-tch49kgyu3/providers/Microsoft.Network/networkInterfaces/pkrnitch49kgyu3\",\"resourceType\":\"Microsoft.Network/networkInterfaces\",\"resourceName\":\"pkrnitch49kgyu3\"},{\"dependsOn\":[{\"id\":\"/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/resourceGroups/packer-Resource-Group-tch49kgyu3/providers/Microsoft.Network/networkInterfaces/pkrnitch49kgyu3\",\"resourceType\":\"Microsoft.Network/networkInterfaces\",\"resourceName\":\"pkrnitch49kgyu3\"}],\"id\":\"/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/resourceGroups/packer-Resource-Group-tch49kgyu3/providers/Microsoft.Compute/virtualMachines/pkrvmtch49kgyu3\",\"resourceType\":\"Microsoft.Compute/virtualMachines\",\"resourceName\":\"pkrvmtch49kgyu3\"}]}}"
+2019/08/17 13:42:10 packer: 2019/08/17 13:42:10 Azure request method="GET" request="https://management.azure.com/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/resourcegroups/packer-Resource-Group-tch49kgyu3/providers/Microsoft.Resources/deployments/pkrdptch49kgyu3/operationStatuses/08586355773552263661?api-version=2018-02-01" body=""
+2019/08/17 13:42:10 packer: 2019/08/17 13:42:10 Azure response status="200 OK" method="GET" request="https://management.azure.com/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/resourcegroups/packer-Resource-Group-tch49kgyu3/providers/Microsoft.Resources/deployments/pkrdptch49kgyu3/operationStatuses/08586355773552263661?api-version=2018-02-01" x-ms-request-id="7d9ef77d-e437-4b12-abfd-8ffda97d2c6e" body="{\"status\":\"Accepted\"}"
+2019/08/17 13:43:10 packer: 2019/08/17 13:43:10 Azure request method="GET" request="https://management.azure.com/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/resourcegroups/packer-Resource-Group-tch49kgyu3/providers/Microsoft.Resources/deployments/pkrdptch49kgyu3/operationStatuses/08586355773552263661?api-version=2018-02-01" body=""
+2019/08/17 13:43:10 packer: 2019/08/17 13:43:10 Azure response request="https://management.azure.com/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/resourcegroups/packer-Resource-Group-tch49kgyu3/providers/Microsoft.Resources/deployments/pkrdptch49kgyu3/operationStatuses/08586355773552263661?api-version=2018-02-01" x-ms-request-id="fe65972b-acd8-4953-a434-6e31ce614260" body="{\"status\":\"Running\"}" status="200 OK" method="GET"
+2019/08/17 13:44:10 packer: 2019/08/17 13:44:10 Azure request request="https://management.azure.com/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/resourcegroups/packer-Resource-Group-tch49kgyu3/providers/Microsoft.Resources/deployments/pkrdptch49kgyu3/operationStatuses/08586355773552263661?api-version=2018-02-01" body="" method="GET"
+2019/08/17 13:44:10 packer: 2019/08/17 13:44:10 Azure response status="200 OK" method="GET" request="https://management.azure.com/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/resourcegroups/packer-Resource-Group-tch49kgyu3/providers/Microsoft.Resources/deployments/pkrdptch49kgyu3/operationStatuses/08586355773552263661?api-version=2018-02-01" x-ms-request-id="04700896-1767-4464-b7fc-73523858e8ea" body="{\"status\":\"Succeeded\"}"
+2019/08/17 13:44:10 ui: [1;32m==> azure-arm: Getting the VM's IP address ...[0m
+2019/08/17 13:44:10 ui: [1;32m==> azure-arm:  -> ResourceGroupName   : 'packer-Resource-Group-tch49kgyu3'[0m
+2019/08/17 13:44:10 ui: [1;32m==> azure-arm:  -> PublicIPAddressName : 'pkriptch49kgyu3'[0m
+2019/08/17 13:44:10 ui: [1;32m==> azure-arm:  -> NicName             : 'pkrnitch49kgyu3'[0m
+2019/08/17 13:44:10 ui: [1;32m==> azure-arm:  -> Network Connection  : 'PublicEndpoint'[0m
+2019/08/17 13:44:10 packer: 2019/08/17 13:44:10 Azure request method="GET" request="https://management.azure.com/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/resourceGroups/packer-Resource-Group-tch49kgyu3/providers/Microsoft.Network/publicIPAddresses/pkriptch49kgyu3?api-version=2018-01-01" body=""
+2019/08/17 13:44:10 packer: 2019/08/17 13:44:10 Azure response status="200 OK" method="GET" request="https://management.azure.com/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/resourceGroups/packer-Resource-Group-tch49kgyu3/providers/Microsoft.Network/publicIPAddresses/pkriptch49kgyu3?api-version=2018-01-01" x-ms-request-id="ecb0e301-5f25-41bf-97a8-1bc394bc44bd" body="{\r\n  \"name\": \"pkriptch49kgyu3\",\r\n  \"id\": \"/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/resourceGroups/packer-Resource-Group-tch49kgyu3/providers/Microsoft.Network/publicIPAddresses/pkriptch49kgyu3\",\r\n  \"etag\": \"W/\\\"7b3a81a1-f9ee-4122-bff0-76f17ce7ca4c\\\"\",\r\n  \"location\": \"southindia\",\r\n  \"tags\": {\r\n    \"dept\": \"SysOps\",\r\n    \"task\": \"Image deployment\"\r\n  },\r\n  \"properties\": {\r\n    \"provisioningState\": \"Succeeded\",\r\n    \"resourceGuid\": \"c7cdc3eb-a154-4401-9053-8e08b476e209\",\r\n    \"ipAddress\": \"104.211.213.88\",\r\n    \"publicIPAddressVersion\": \"IPv4\",\r\n    \"publicIPAllocationMethod\": \"Dynamic\",\r\n    \"idleTimeoutInMinutes\": 4,\r\n    \"dnsSettings\": {\r\n      \"domainNameLabel\": \"pkrvmtch49kgyu3\",\r\n      \"fqdn\": \"pkrvmtch49kgyu3.southindia.cloudapp.azure.com\"\r\n    },\r\n    \"ipTags\": [],\r\n    \"ipConfiguration\": {\r\n      \"id\": \"/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/resourceGroups/packer-Resource-Group-tch49kgyu3/providers/Microsoft.Network/networkInterfaces/pkrnitch49kgyu3/ipConfigurations/ipconfig\"\r\n    }\r\n  },\r\n  \"type\": \"Microsoft.Network/publicIPAddresses\",\r\n  \"sku\": {\r\n    \"name\": \"Basic\",\r\n    \"tier\": \"Regional\"\r\n  }\r\n}"
+2019/08/17 13:44:10 packer: 2019/08/17 13:44:10 Azure response status="200 OK" method="GET" request="https://management.azure.com/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/resourceGroups/packer-Resource-Group-tch49kgyu3/providers/Microsoft.Network/publicIPAddresses/pkriptch49kgyu3?api-version=2018-01-01" x-ms-request-id="ecb0e301-5f25-41bf-97a8-1bc394bc44bd" body="{\r\n  \"name\": \"pkriptch49kgyu3\",\r\n  \"id\": \"/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/resourceGroups/packer-Resource-Group-tch49kgyu3/providers/Microsoft.Network/publicIPAddresses/pkriptch49kgyu3\",\r\n  \"etag\": \"W/\\\"7b3a81a1-f9ee-4122-bff0-76f17ce7ca4c\\\"\",\r\n  \"location\": \"southindia\",\r\n  \"tags\": {\r\n    \"dept\": \"SysOps\",\r\n    \"task\": \"Image deployment\"\r\n  },\r\n  \"properties\": {\r\n    \"provisioningState\": \"Succeeded\",\r\n    \"resourceGuid\": \"c7cdc3eb-a154-4401-9053-8e08b476e209\",\r\n    \"ipAddress\": \"104.211.213.88\",\r\n    \"publicIPAddressVersion\": \"IPv4\",\r\n    \"publicIPAllocationMethod\": \"Dynamic\",\r\n    \"idleTimeoutInMinutes\": 4,\r\n    \"dnsSettings\": {\r\n      \"domainNameLabel\": \"pkrvmtch49kgyu3\",\r\n      \"fqdn\": \"pkrvmtch49kgyu3.southindia.cloudapp.azure.com\"\r\n    },\r\n    \"ipTags\": [],\r\n    \"ipConfiguration\": {\r\n      \"id\": \"/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/resourceGroups/packer-Resource-Group-tch49kgyu3/providers/Microsoft.Network/networkInterfaces/pkrnitch49kgyu3/ipConfigurations/ipconfig\"\r\n    }\r\n  },\r\n  \"type\": \"Microsoft.Network/publicIPAddresses\",\r\n  \"sku\": {\r\n    \"name\": \"Basic\",\r\n    \"tier\": \"Regional\"\r\n  }\r\n}"
+2019/08/17 13:44:10 ui: [1;32m==> azure-arm:  -> IP Address          : '104.211.213.88'[0m
+2019/08/17 13:44:10 packer: 2019/08/17 13:44:10 [INFO] Waiting for SSH, up to timeout: 20m0s
+2019/08/17 13:44:10 ui: [1;32m==> azure-arm: Waiting for SSH to become available...[0m
+2019/08/17 13:44:10 packer: 2019/08/17 13:44:10 [INFO] Attempting SSH connection to 104.211.213.88:22...
+2019/08/17 13:44:10 packer: 2019/08/17 13:44:10 [DEBUG] Config to &ssh.Config{SSHConfig:(*ssh.ClientConfig)(0xc0003cd040), Connection:(func() (net.Conn, error))(0x1d58350), Pty:false, DisableAgentForwarding:false, HandshakeTimeout:0, UseSftp:false, KeepAliveInterval:5000000000, Timeout:0}...
+2019/08/17 13:44:10 packer: 2019/08/17 13:44:10 [DEBUG] reconnecting to TCP connection for SSH
+2019/08/17 13:44:10 packer: 2019/08/17 13:44:10 [DEBUG] handshaking with SSH
+2019/08/17 13:44:11 packer: 2019/08/17 13:44:11 [DEBUG] handshake complete!
+2019/08/17 13:44:11 packer: 2019/08/17 13:44:11 [DEBUG] Opening new ssh session
+2019/08/17 13:44:11 packer: 2019/08/17 13:44:11 [INFO] agent forwarding enabled
+2019/08/17 13:44:11 ui: [1;32m==> azure-arm: Connected to SSH![0m
+2019/08/17 13:44:11 packer: 2019/08/17 13:44:11 Running the provision hook
+2019/08/17 13:44:11 [INFO] (telemetry) Starting provisioner shell
+2019/08/17 13:44:11 ui: [1;32m==> azure-arm: Provisioning with shell script: /var/folders/pm/ybh4slqj32zcwn7t4qbxvdpm0000gp/T/packer-shell186021796[0m
+2019/08/17 13:44:11 packer: 2019/08/17 13:44:11 Opening /var/folders/pm/ybh4slqj32zcwn7t4qbxvdpm0000gp/T/packer-shell186021796 for reading
+2019/08/17 13:44:11 packer: 2019/08/17 13:44:11 [INFO] 188 bytes written for 'uploadData'
+2019/08/17 13:44:11 [INFO] 188 bytes written for 'uploadData'
+2019/08/17 13:44:11 packer: 2019/08/17 13:44:11 [DEBUG] Opening new ssh session
+2019/08/17 13:44:11 packer: 2019/08/17 13:44:11 [DEBUG] Starting remote scp process:  scp -vt /tmp
+2019/08/17 13:44:11 packer: 2019/08/17 13:44:11 [DEBUG] Started SCP session, beginning transfers...
+2019/08/17 13:44:11 packer: 2019/08/17 13:44:11 [DEBUG] Copying input data into temporary file so we can read the length
+2019/08/17 13:44:11 packer: 2019/08/17 13:44:11 [DEBUG] scp: Uploading script_1648.sh: perms=C0644 size=188
+2019/08/17 13:44:12 packer: 2019/08/17 13:44:12 [DEBUG] SCP session complete, closing stdin pipe.
+2019/08/17 13:44:12 packer: 2019/08/17 13:44:12 [DEBUG] Waiting for SSH session to complete.
+2019/08/17 13:44:12 packer: 2019/08/17 13:44:12 [DEBUG] scp stderr (length 31): Sink: C0644 188 script_1648.sh
+2019/08/17 13:44:12 packer: 2019/08/17 13:44:12 [DEBUG] Opening new ssh session
+2019/08/17 13:44:12 packer: 2019/08/17 13:44:12 [DEBUG] starting remote command: chmod 0755 /tmp/script_1648.sh
+2019/08/17 13:44:12 packer: 2019/08/17 13:44:12 [INFO] RPC endpoint: Communicator ended with: 0
+2019/08/17 13:44:12 [INFO] RPC client: Communicator ended with: 0
+2019/08/17 13:44:12 [INFO] RPC endpoint: Communicator ended with: 0
+2019/08/17 13:44:12 packer: 2019/08/17 13:44:12 [INFO] RPC client: Communicator ended with: 0
+2019/08/17 13:44:12 packer: 2019/08/17 13:44:12 [DEBUG] Opening new ssh session
+2019/08/17 13:44:12 packer: 2019/08/17 13:44:12 [DEBUG] starting remote command: chmod +x /tmp/script_1648.sh; PACKER_BUILDER_TYPE='azure-arm' PACKER_BUILD_NAME='azure-arm'  sudo -E sh '/tmp/script_1648.sh'
+2019/08/17 13:44:14 ui: [0;32m    azure-arm: Loaded plugins: fastestmirror, langpacks[0m
+2019/08/17 13:44:16 ui: [0;32m    azure-arm: Determining fastest mirrors[0m
+2019/08/17 13:44:20 ui: [0;32m    azure-arm: Resolving Dependencies[0m
+2019/08/17 13:44:20 ui: [0;32m    azure-arm: --> Running transaction check[0m
+2019/08/17 13:44:20 ui: [0;32m    azure-arm: ---> Package WALinuxAgent.noarch 0:2.2.38-1.el7 will be updated[0m
+2019/08/17 13:44:20 ui: [0;32m    azure-arm: ---> Package WALinuxAgent.noarch 0:2.2.42-1.el7 will be an update[0m
+2019/08/17 13:44:22 ui: [0;32m    azure-arm: ---> Package bind-libs.x86_64 32:9.9.4-74.el7_6.1 will be updated[0m
+2019/08/17 13:44:22 ui: [0;32m    azure-arm: ---> Package bind-libs.x86_64 32:9.9.4-74.el7_6.2 will be an update[0m
+2019/08/17 13:44:22 ui: [0;32m    azure-arm: ---> Package bind-libs-lite.x86_64 32:9.9.4-74.el7_6.1 will be updated[0m
+2019/08/17 13:44:22 ui: [0;32m    azure-arm: ---> Package bind-libs-lite.x86_64 32:9.9.4-74.el7_6.2 will be an update[0m
+2019/08/17 13:44:22 ui: [0;32m    azure-arm: ---> Package bind-license.noarch 32:9.9.4-74.el7_6.1 will be updated[0m
+2019/08/17 13:44:22 ui: [0;32m    azure-arm: ---> Package bind-license.noarch 32:9.9.4-74.el7_6.2 will be an update[0m
+2019/08/17 13:44:22 ui: [0;32m    azure-arm: ---> Package bind-utils.x86_64 32:9.9.4-74.el7_6.1 will be updated[0m
+2019/08/17 13:44:22 ui: [0;32m    azure-arm: ---> Package bind-utils.x86_64 32:9.9.4-74.el7_6.2 will be an update[0m
+2019/08/17 13:44:22 ui: [0;32m    azure-arm: ---> Package bpftool.x86_64 0:3.10.0-957.21.3.el7 will be updated[0m
+2019/08/17 13:44:22 ui: [0;32m    azure-arm: ---> Package bpftool.x86_64 0:3.10.0-957.27.2.el7 will be an update[0m
+2019/08/17 13:44:22 ui: [0;32m    azure-arm: ---> Package curl.x86_64 0:7.29.0-51.el7 will be updated[0m
+2019/08/17 13:44:22 ui: [0;32m    azure-arm: ---> Package curl.x86_64 0:7.29.0-51.el7_6.3 will be an update[0m
+2019/08/17 13:44:22 ui: [0;32m    azure-arm: ---> Package kernel.x86_64 0:3.10.0-957.27.2.el7 will be installed[0m
+2019/08/17 13:44:22 ui: [0;32m    azure-arm: ---> Package kernel-tools.x86_64 0:3.10.0-957.21.3.el7 will be updated[0m
+2019/08/17 13:44:22 ui: [0;32m    azure-arm: ---> Package kernel-tools.x86_64 0:3.10.0-957.27.2.el7 will be an update[0m
+2019/08/17 13:44:22 ui: [0;32m    azure-arm: ---> Package kernel-tools-libs.x86_64 0:3.10.0-957.21.3.el7 will be updated[0m
+2019/08/17 13:44:22 ui: [0;32m    azure-arm: ---> Package kernel-tools-libs.x86_64 0:3.10.0-957.27.2.el7 will be an update[0m
+2019/08/17 13:44:22 ui: [0;32m    azure-arm: ---> Package kexec-tools.x86_64 0:2.0.15-21.el7_6.3 will be updated[0m
+2019/08/17 13:44:22 ui: [0;32m    azure-arm: ---> Package kexec-tools.x86_64 0:2.0.15-21.el7_6.4 will be an update[0m
+2019/08/17 13:44:22 ui: [0;32m    azure-arm: ---> Package libcurl.x86_64 0:7.29.0-51.el7 will be updated[0m
+2019/08/17 13:44:22 ui: [0;32m    azure-arm: ---> Package libcurl.x86_64 0:7.29.0-51.el7_6.3 will be an update[0m
+2019/08/17 13:44:22 ui: [0;32m    azure-arm: ---> Package libssh2.x86_64 0:1.4.3-12.el7_6.2 will be updated[0m
+2019/08/17 13:44:22 ui: [0;32m    azure-arm: ---> Package libssh2.x86_64 0:1.4.3-12.el7_6.3 will be an update[0m
+2019/08/17 13:44:22 ui: [0;32m    azure-arm: ---> Package libwbclient.x86_64 0:4.8.3-4.el7 will be updated[0m
+2019/08/17 13:44:22 ui: [0;32m    azure-arm: ---> Package libwbclient.x86_64 0:4.8.3-6.el7_6 will be an update[0m
+2019/08/17 13:44:22 ui: [0;32m    azure-arm: ---> Package python-perf.x86_64 0:3.10.0-957.21.3.el7 will be updated[0m
+2019/08/17 13:44:22 ui: [0;32m    azure-arm: ---> Package python-perf.x86_64 0:3.10.0-957.27.2.el7 will be an update[0m
+2019/08/17 13:44:22 ui: [0;32m    azure-arm: ---> Package samba-client-libs.x86_64 0:4.8.3-4.el7 will be updated[0m
+2019/08/17 13:44:22 ui: [0;32m    azure-arm: ---> Package samba-client-libs.x86_64 0:4.8.3-6.el7_6 will be an update[0m
+2019/08/17 13:44:22 ui: [0;32m    azure-arm: ---> Package samba-common.noarch 0:4.8.3-4.el7 will be updated[0m
+2019/08/17 13:44:22 ui: [0;32m    azure-arm: ---> Package samba-common.noarch 0:4.8.3-6.el7_6 will be an update[0m
+2019/08/17 13:44:22 ui: [0;32m    azure-arm: ---> Package samba-common-libs.x86_64 0:4.8.3-4.el7 will be updated[0m
+2019/08/17 13:44:22 ui: [0;32m    azure-arm: ---> Package samba-common-libs.x86_64 0:4.8.3-6.el7_6 will be an update[0m
+2019/08/17 13:44:22 ui: [0;32m    azure-arm: ---> Package selinux-policy.noarch 0:3.13.1-229.el7_6.12 will be updated[0m
+2019/08/17 13:44:22 ui: [0;32m    azure-arm: ---> Package selinux-policy.noarch 0:3.13.1-229.el7_6.15 will be an update[0m
+2019/08/17 13:44:22 ui: [0;32m    azure-arm: ---> Package selinux-policy-targeted.noarch 0:3.13.1-229.el7_6.12 will be updated[0m
+2019/08/17 13:44:22 ui: [0;32m    azure-arm: ---> Package selinux-policy-targeted.noarch 0:3.13.1-229.el7_6.15 will be an update[0m
+2019/08/17 13:44:22 ui: [0;32m    azure-arm: ---> Package sos.noarch 0:3.6-17.el7.centos will be updated[0m
+2019/08/17 13:44:22 ui: [0;32m    azure-arm: ---> Package sos.noarch 0:3.6-19.el7.centos will be an update[0m
+2019/08/17 13:44:22 ui: [0;32m    azure-arm: ---> Package sysstat.x86_64 0:10.1.5-17.el7 will be updated[0m
+2019/08/17 13:44:22 ui: [0;32m    azure-arm: ---> Package sysstat.x86_64 0:10.1.5-17.el7_6.1 will be an update[0m
+2019/08/17 13:44:22 ui: [0;32m    azure-arm: ---> Package systemd.x86_64 0:219-62.el7_6.7 will be updated[0m
+2019/08/17 13:44:22 ui: [0;32m    azure-arm: ---> Package systemd.x86_64 0:219-62.el7_6.9 will be an update[0m
+2019/08/17 13:44:22 ui: [0;32m    azure-arm: ---> Package systemd-libs.x86_64 0:219-62.el7_6.7 will be updated[0m
+2019/08/17 13:44:22 ui: [0;32m    azure-arm: ---> Package systemd-libs.x86_64 0:219-62.el7_6.9 will be an update[0m
+2019/08/17 13:44:22 ui: [0;32m    azure-arm: ---> Package systemd-python.x86_64 0:219-62.el7_6.7 will be updated[0m
+2019/08/17 13:44:22 ui: [0;32m    azure-arm: ---> Package systemd-python.x86_64 0:219-62.el7_6.9 will be an update[0m
+2019/08/17 13:44:22 ui: [0;32m    azure-arm: ---> Package systemd-sysv.x86_64 0:219-62.el7_6.7 will be updated[0m
+2019/08/17 13:44:22 ui: [0;32m    azure-arm: ---> Package systemd-sysv.x86_64 0:219-62.el7_6.9 will be an update[0m
+2019/08/17 13:44:22 ui: [0;32m    azure-arm: ---> Package tuned.noarch 0:2.10.0-6.el7_6.3 will be updated[0m
+2019/08/17 13:44:22 ui: [0;32m    azure-arm: ---> Package tuned.noarch 0:2.10.0-6.el7_6.4 will be an update[0m
+2019/08/17 13:44:22 ui: [0;32m    azure-arm: ---> Package tzdata.noarch 0:2019a-1.el7 will be updated[0m
+2019/08/17 13:44:22 ui: [0;32m    azure-arm: ---> Package tzdata.noarch 0:2019b-1.el7 will be an update[0m
+2019/08/17 13:44:24 ui: [0;32m    azure-arm: --> Finished Dependency Resolution[0m
+2019/08/17 13:44:24 ui: [0;32m    azure-arm:[0m
+2019/08/17 13:44:24 ui: [0;32m    azure-arm: Dependencies Resolved[0m
+2019/08/17 13:44:24 ui: [0;32m    azure-arm:[0m
+2019/08/17 13:44:24 ui: [0;32m    azure-arm: ================================================================================[0m
+2019/08/17 13:44:24 ui: [0;32m    azure-arm:  Package                    Arch      Version                Repository    Size[0m
+2019/08/17 13:44:24 ui: [0;32m    azure-arm: ================================================================================[0m
+2019/08/17 13:44:24 ui: [0;32m    azure-arm: Installing:[0m
+2019/08/17 13:44:24 ui: [0;32m    azure-arm:  kernel                     x86_64    3.10.0-957.27.2.el7    updates       48 M[0m
+2019/08/17 13:44:24 ui: [0;32m    azure-arm: Updating:[0m
+2019/08/17 13:44:24 ui: [0;32m    azure-arm:  WALinuxAgent               noarch    2.2.42-1.el7           openlogic    399 k[0m
+2019/08/17 13:44:24 ui: [0;32m    azure-arm:  bind-libs                  x86_64    32:9.9.4-74.el7_6.2    updates      1.0 M[0m
+2019/08/17 13:44:24 ui: [0;32m    azure-arm:  bind-libs-lite             x86_64    32:9.9.4-74.el7_6.2    updates      742 k[0m
+2019/08/17 13:44:24 ui: [0;32m    azure-arm:  bind-license               noarch    32:9.9.4-74.el7_6.2    updates       87 k[0m
+2019/08/17 13:44:24 ui: [0;32m    azure-arm:  bind-utils                 x86_64    32:9.9.4-74.el7_6.2    updates      206 k[0m
+2019/08/17 13:44:24 ui: [0;32m    azure-arm:  bpftool                    x86_64    3.10.0-957.27.2.el7    updates      7.5 M[0m
+2019/08/17 13:44:24 ui: [0;32m    azure-arm:  curl                       x86_64    7.29.0-51.el7_6.3      updates      269 k[0m
+2019/08/17 13:44:24 ui: [0;32m    azure-arm:  kernel-tools               x86_64    3.10.0-957.27.2.el7    updates      7.2 M[0m
+2019/08/17 13:44:24 ui: [0;32m    azure-arm:  kernel-tools-libs          x86_64    3.10.0-957.27.2.el7    updates      7.1 M[0m
+2019/08/17 13:44:24 ui: [0;32m    azure-arm:  kexec-tools                x86_64    2.0.15-21.el7_6.4      updates      344 k[0m
+2019/08/17 13:44:24 ui: [0;32m    azure-arm:  libcurl                    x86_64    7.29.0-51.el7_6.3      updates      222 k[0m
+2019/08/17 13:44:24 ui: [0;32m    azure-arm:  libssh2                    x86_64    1.4.3-12.el7_6.3       updates      135 k[0m
+2019/08/17 13:44:24 ui: [0;32m    azure-arm:  libwbclient                x86_64    4.8.3-6.el7_6          updates      109 k[0m
+2019/08/17 13:44:24 ui: [0;32m    azure-arm:  python-perf                x86_64    3.10.0-957.27.2.el7    updates      7.1 M[0m
+2019/08/17 13:44:24 ui: [0;32m    azure-arm:  samba-client-libs          x86_64    4.8.3-6.el7_6          updates      4.8 M[0m
+2019/08/17 13:44:24 ui: [0;32m    azure-arm:  samba-common               noarch    4.8.3-6.el7_6          updates      206 k[0m
+2019/08/17 13:44:24 ui: [0;32m    azure-arm:  samba-common-libs          x86_64    4.8.3-6.el7_6          updates      164 k[0m
+2019/08/17 13:44:24 ui: [0;32m    azure-arm:  selinux-policy             noarch    3.13.1-229.el7_6.15    updates      484 k[0m
+2019/08/17 13:44:24 ui: [0;32m    azure-arm:  selinux-policy-targeted    noarch    3.13.1-229.el7_6.15    updates      6.9 M[0m
+2019/08/17 13:44:24 ui: [0;32m    azure-arm:  sos                        noarch    3.6-19.el7.centos      updates      473 k[0m
+2019/08/17 13:44:24 ui: [0;32m    azure-arm:  sysstat                    x86_64    10.1.5-17.el7_6.1      updates      315 k[0m
+2019/08/17 13:44:24 ui: [0;32m    azure-arm:  systemd                    x86_64    219-62.el7_6.9         updates      5.1 M[0m
+2019/08/17 13:44:24 ui: [0;32m    azure-arm:  systemd-libs               x86_64    219-62.el7_6.9         updates      408 k[0m
+2019/08/17 13:44:24 ui: [0;32m    azure-arm:  systemd-python             x86_64    219-62.el7_6.9         updates      133 k[0m
+2019/08/17 13:44:24 ui: [0;32m    azure-arm:  systemd-sysv               x86_64    219-62.el7_6.9         updates       84 k[0m
+2019/08/17 13:44:24 ui: [0;32m    azure-arm:  tuned                      noarch    2.10.0-6.el7_6.4       updates      254 k[0m
+2019/08/17 13:44:24 ui: [0;32m    azure-arm:  tzdata                     noarch    2019b-1.el7            updates      491 k[0m
+2019/08/17 13:44:24 ui: [0;32m    azure-arm:[0m
+2019/08/17 13:44:24 ui: [0;32m    azure-arm: Transaction Summary[0m
+2019/08/17 13:44:24 ui: [0;32m    azure-arm: ================================================================================[0m
+2019/08/17 13:44:24 ui: [0;32m    azure-arm: Install   1 Package[0m
+2019/08/17 13:44:24 ui: [0;32m    azure-arm: Upgrade  27 Packages[0m
+2019/08/17 13:44:24 ui: [0;32m    azure-arm:[0m
+2019/08/17 13:44:24 ui: [0;32m    azure-arm: Total download size: 100 M[0m
+2019/08/17 13:44:24 ui: [0;32m    azure-arm: Is this ok [y/d/N]: Exiting on user command[0m
+2019/08/17 13:44:24 ui: [0;32m    azure-arm: Your transaction was saved, rerun it with:[0m
+2019/08/17 13:44:24 ui: [0;32m    azure-arm:  yum load-transaction /tmp/yum_save_tx.2019-08-17.08-14.quIkl0.yumtx[0m
+2019/08/17 13:44:24 ui: [0;32m    azure-arm: Loaded plugins: fastestmirror, langpacks[0m
+2019/08/17 13:44:24 ui: [0;32m    azure-arm: Loading mirror speeds from cached hostfile[0m
+2019/08/17 13:44:24 ui: [0;32m    azure-arm: Resolving Dependencies[0m
+2019/08/17 13:44:24 ui: [0;32m    azure-arm: --> Running transaction check[0m
+2019/08/17 13:44:24 ui: [0;32m    azure-arm: ---> Package WALinuxAgent.noarch 0:2.2.38-1.el7 will be updated[0m
+2019/08/17 13:44:25 ui: [0;32m    azure-arm: ---> Package WALinuxAgent.noarch 0:2.2.42-1.el7 will be an update[0m
+2019/08/17 13:44:25 ui: [0;32m    azure-arm: ---> Package bind-libs.x86_64 32:9.9.4-74.el7_6.1 will be updated[0m
+2019/08/17 13:44:25 ui: [0;32m    azure-arm: ---> Package bind-libs.x86_64 32:9.9.4-74.el7_6.2 will be an update[0m
+2019/08/17 13:44:25 ui: [0;32m    azure-arm: ---> Package bind-libs-lite.x86_64 32:9.9.4-74.el7_6.1 will be updated[0m
+2019/08/17 13:44:25 ui: [0;32m    azure-arm: ---> Package bind-libs-lite.x86_64 32:9.9.4-74.el7_6.2 will be an update[0m
+2019/08/17 13:44:25 ui: [0;32m    azure-arm: ---> Package bind-license.noarch 32:9.9.4-74.el7_6.1 will be updated[0m
+2019/08/17 13:44:25 ui: [0;32m    azure-arm: ---> Package bind-license.noarch 32:9.9.4-74.el7_6.2 will be an update[0m
+2019/08/17 13:44:25 ui: [0;32m    azure-arm: ---> Package bind-utils.x86_64 32:9.9.4-74.el7_6.1 will be updated[0m
+2019/08/17 13:44:25 ui: [0;32m    azure-arm: ---> Package bind-utils.x86_64 32:9.9.4-74.el7_6.2 will be an update[0m
+2019/08/17 13:44:25 ui: [0;32m    azure-arm: ---> Package bpftool.x86_64 0:3.10.0-957.21.3.el7 will be updated[0m
+2019/08/17 13:44:25 ui: [0;32m    azure-arm: ---> Package bpftool.x86_64 0:3.10.0-957.27.2.el7 will be an update[0m
+2019/08/17 13:44:25 ui: [0;32m    azure-arm: ---> Package curl.x86_64 0:7.29.0-51.el7 will be updated[0m
+2019/08/17 13:44:25 ui: [0;32m    azure-arm: ---> Package curl.x86_64 0:7.29.0-51.el7_6.3 will be an update[0m
+2019/08/17 13:44:25 ui: [0;32m    azure-arm: ---> Package kernel.x86_64 0:3.10.0-957.27.2.el7 will be installed[0m
+2019/08/17 13:44:25 ui: [0;32m    azure-arm: ---> Package kernel-tools.x86_64 0:3.10.0-957.21.3.el7 will be updated[0m
+2019/08/17 13:44:25 ui: [0;32m    azure-arm: ---> Package kernel-tools.x86_64 0:3.10.0-957.27.2.el7 will be an update[0m
+2019/08/17 13:44:25 ui: [0;32m    azure-arm: ---> Package kernel-tools-libs.x86_64 0:3.10.0-957.21.3.el7 will be updated[0m
+2019/08/17 13:44:25 ui: [0;32m    azure-arm: ---> Package kernel-tools-libs.x86_64 0:3.10.0-957.27.2.el7 will be an update[0m
+2019/08/17 13:44:25 ui: [0;32m    azure-arm: ---> Package kexec-tools.x86_64 0:2.0.15-21.el7_6.3 will be updated[0m
+2019/08/17 13:44:25 ui: [0;32m    azure-arm: ---> Package kexec-tools.x86_64 0:2.0.15-21.el7_6.4 will be an update[0m
+2019/08/17 13:44:25 ui: [0;32m    azure-arm: ---> Package libcurl.x86_64 0:7.29.0-51.el7 will be updated[0m
+2019/08/17 13:44:25 ui: [0;32m    azure-arm: ---> Package libcurl.x86_64 0:7.29.0-51.el7_6.3 will be an update[0m
+2019/08/17 13:44:25 ui: [0;32m    azure-arm: ---> Package libssh2.x86_64 0:1.4.3-12.el7_6.2 will be updated[0m
+2019/08/17 13:44:25 ui: [0;32m    azure-arm: ---> Package libssh2.x86_64 0:1.4.3-12.el7_6.3 will be an update[0m
+2019/08/17 13:44:25 ui: [0;32m    azure-arm: ---> Package libwbclient.x86_64 0:4.8.3-4.el7 will be updated[0m
+2019/08/17 13:44:25 ui: [0;32m    azure-arm: ---> Package libwbclient.x86_64 0:4.8.3-6.el7_6 will be an update[0m
+2019/08/17 13:44:25 ui: [0;32m    azure-arm: ---> Package python-perf.x86_64 0:3.10.0-957.21.3.el7 will be updated[0m
+2019/08/17 13:44:25 ui: [0;32m    azure-arm: ---> Package python-perf.x86_64 0:3.10.0-957.27.2.el7 will be an update[0m
+2019/08/17 13:44:25 ui: [0;32m    azure-arm: ---> Package samba-client-libs.x86_64 0:4.8.3-4.el7 will be updated[0m
+2019/08/17 13:44:25 ui: [0;32m    azure-arm: ---> Package samba-client-libs.x86_64 0:4.8.3-6.el7_6 will be an update[0m
+2019/08/17 13:44:25 ui: [0;32m    azure-arm: ---> Package samba-common.noarch 0:4.8.3-4.el7 will be updated[0m
+2019/08/17 13:44:25 ui: [0;32m    azure-arm: ---> Package samba-common.noarch 0:4.8.3-6.el7_6 will be an update[0m
+2019/08/17 13:44:25 ui: [0;32m    azure-arm: ---> Package samba-common-libs.x86_64 0:4.8.3-4.el7 will be updated[0m
+2019/08/17 13:44:25 ui: [0;32m    azure-arm: ---> Package samba-common-libs.x86_64 0:4.8.3-6.el7_6 will be an update[0m
+2019/08/17 13:44:25 ui: [0;32m    azure-arm: ---> Package selinux-policy.noarch 0:3.13.1-229.el7_6.12 will be updated[0m
+2019/08/17 13:44:25 ui: [0;32m    azure-arm: ---> Package selinux-policy.noarch 0:3.13.1-229.el7_6.15 will be an update[0m
+2019/08/17 13:44:25 ui: [0;32m    azure-arm: ---> Package selinux-policy-targeted.noarch 0:3.13.1-229.el7_6.12 will be updated[0m
+2019/08/17 13:44:25 ui: [0;32m    azure-arm: ---> Package selinux-policy-targeted.noarch 0:3.13.1-229.el7_6.15 will be an update[0m
+2019/08/17 13:44:25 ui: [0;32m    azure-arm: ---> Package sos.noarch 0:3.6-17.el7.centos will be updated[0m
+2019/08/17 13:44:25 ui: [0;32m    azure-arm: ---> Package sos.noarch 0:3.6-19.el7.centos will be an update[0m
+2019/08/17 13:44:25 ui: [0;32m    azure-arm: ---> Package sysstat.x86_64 0:10.1.5-17.el7 will be updated[0m
+2019/08/17 13:44:25 ui: [0;32m    azure-arm: ---> Package sysstat.x86_64 0:10.1.5-17.el7_6.1 will be an update[0m
+2019/08/17 13:44:25 ui: [0;32m    azure-arm: ---> Package systemd.x86_64 0:219-62.el7_6.7 will be updated[0m
+2019/08/17 13:44:25 ui: [0;32m    azure-arm: ---> Package systemd.x86_64 0:219-62.el7_6.9 will be an update[0m
+2019/08/17 13:44:25 ui: [0;32m    azure-arm: ---> Package systemd-libs.x86_64 0:219-62.el7_6.7 will be updated[0m
+2019/08/17 13:44:25 ui: [0;32m    azure-arm: ---> Package systemd-libs.x86_64 0:219-62.el7_6.9 will be an update[0m
+2019/08/17 13:44:25 ui: [0;32m    azure-arm: ---> Package systemd-python.x86_64 0:219-62.el7_6.7 will be updated[0m
+2019/08/17 13:44:25 ui: [0;32m    azure-arm: ---> Package systemd-python.x86_64 0:219-62.el7_6.9 will be an update[0m
+2019/08/17 13:44:25 ui: [0;32m    azure-arm: ---> Package systemd-sysv.x86_64 0:219-62.el7_6.7 will be updated[0m
+2019/08/17 13:44:25 ui: [0;32m    azure-arm: ---> Package systemd-sysv.x86_64 0:219-62.el7_6.9 will be an update[0m
+2019/08/17 13:44:25 ui: [0;32m    azure-arm: ---> Package tuned.noarch 0:2.10.0-6.el7_6.3 will be updated[0m
+2019/08/17 13:44:25 ui: [0;32m    azure-arm: ---> Package tuned.noarch 0:2.10.0-6.el7_6.4 will be an update[0m
+2019/08/17 13:44:25 ui: [0;32m    azure-arm: ---> Package tzdata.noarch 0:2019a-1.el7 will be updated[0m
+2019/08/17 13:44:25 ui: [0;32m    azure-arm: ---> Package tzdata.noarch 0:2019b-1.el7 will be an update[0m
+2019/08/17 13:44:25 ui: [0;32m    azure-arm: --> Finished Dependency Resolution[0m
+2019/08/17 13:44:25 ui: [0;32m    azure-arm:[0m
+2019/08/17 13:44:25 ui: [0;32m    azure-arm: Dependencies Resolved[0m
+2019/08/17 13:44:25 ui: [0;32m    azure-arm:[0m
+2019/08/17 13:44:25 ui: [0;32m    azure-arm: ================================================================================[0m
+2019/08/17 13:44:25 ui: [0;32m    azure-arm:  Package                    Arch      Version                Repository    Size[0m
+2019/08/17 13:44:25 ui: [0;32m    azure-arm: ================================================================================[0m
+2019/08/17 13:44:25 ui: [0;32m    azure-arm: Installing:[0m
+2019/08/17 13:44:25 ui: [0;32m    azure-arm:  kernel                     x86_64    3.10.0-957.27.2.el7    updates       48 M[0m
+2019/08/17 13:44:25 ui: [0;32m    azure-arm: Updating:[0m
+2019/08/17 13:44:25 ui: [0;32m    azure-arm:  WALinuxAgent               noarch    2.2.42-1.el7           openlogic    399 k[0m
+2019/08/17 13:44:25 ui: [0;32m    azure-arm:  bind-libs                  x86_64    32:9.9.4-74.el7_6.2    updates      1.0 M[0m
+2019/08/17 13:44:25 ui: [0;32m    azure-arm:  bind-libs-lite             x86_64    32:9.9.4-74.el7_6.2    updates      742 k[0m
+2019/08/17 13:44:25 ui: [0;32m    azure-arm:  bind-license               noarch    32:9.9.4-74.el7_6.2    updates       87 k[0m
+2019/08/17 13:44:25 ui: [0;32m    azure-arm:  bind-utils                 x86_64    32:9.9.4-74.el7_6.2    updates      206 k[0m
+2019/08/17 13:44:25 ui: [0;32m    azure-arm:  bpftool                    x86_64    3.10.0-957.27.2.el7    updates      7.5 M[0m
+2019/08/17 13:44:25 ui: [0;32m    azure-arm:  curl                       x86_64    7.29.0-51.el7_6.3      updates      269 k[0m
+2019/08/17 13:44:25 ui: [0;32m    azure-arm:  kernel-tools               x86_64    3.10.0-957.27.2.el7    updates      7.2 M[0m
+2019/08/17 13:44:25 ui: [0;32m    azure-arm:  kernel-tools-libs          x86_64    3.10.0-957.27.2.el7    updates      7.1 M[0m
+2019/08/17 13:44:25 ui: [0;32m    azure-arm:  kexec-tools                x86_64    2.0.15-21.el7_6.4      updates      344 k[0m
+2019/08/17 13:44:25 ui: [0;32m    azure-arm:  libcurl                    x86_64    7.29.0-51.el7_6.3      updates      222 k[0m
+2019/08/17 13:44:25 ui: [0;32m    azure-arm:  libssh2                    x86_64    1.4.3-12.el7_6.3       updates      135 k[0m
+2019/08/17 13:44:25 ui: [0;32m    azure-arm:  libwbclient                x86_64    4.8.3-6.el7_6          updates      109 k[0m
+2019/08/17 13:44:25 ui: [0;32m    azure-arm:  python-perf                x86_64    3.10.0-957.27.2.el7    updates      7.1 M[0m
+2019/08/17 13:44:25 ui: [0;32m    azure-arm:  samba-client-libs          x86_64    4.8.3-6.el7_6          updates      4.8 M[0m
+2019/08/17 13:44:25 ui: [0;32m    azure-arm:  samba-common               noarch    4.8.3-6.el7_6          updates      206 k[0m
+2019/08/17 13:44:25 ui: [0;32m    azure-arm:  samba-common-libs          x86_64    4.8.3-6.el7_6          updates      164 k[0m
+2019/08/17 13:44:25 ui: [0;32m    azure-arm:  selinux-policy             noarch    3.13.1-229.el7_6.15    updates      484 k[0m
+2019/08/17 13:44:25 ui: [0;32m    azure-arm:  selinux-policy-targeted    noarch    3.13.1-229.el7_6.15    updates      6.9 M[0m
+2019/08/17 13:44:25 ui: [0;32m    azure-arm:  sos                        noarch    3.6-19.el7.centos      updates      473 k[0m
+2019/08/17 13:44:25 ui: [0;32m    azure-arm:  sysstat                    x86_64    10.1.5-17.el7_6.1      updates      315 k[0m
+2019/08/17 13:44:25 ui: [0;32m    azure-arm:  systemd                    x86_64    219-62.el7_6.9         updates      5.1 M[0m
+2019/08/17 13:44:25 ui: [0;32m    azure-arm:  systemd-libs               x86_64    219-62.el7_6.9         updates      408 k[0m
+2019/08/17 13:44:25 ui: [0;32m    azure-arm:  systemd-python             x86_64    219-62.el7_6.9         updates      133 k[0m
+2019/08/17 13:44:25 ui: [0;32m    azure-arm:  systemd-sysv               x86_64    219-62.el7_6.9         updates       84 k[0m
+2019/08/17 13:44:25 ui: [0;32m    azure-arm:  tuned                      noarch    2.10.0-6.el7_6.4       updates      254 k[0m
+2019/08/17 13:44:25 ui: [0;32m    azure-arm:  tzdata                     noarch    2019b-1.el7            updates      491 k[0m
+2019/08/17 13:44:25 ui: [0;32m    azure-arm:[0m
+2019/08/17 13:44:25 ui: [0;32m    azure-arm: Transaction Summary[0m
+2019/08/17 13:44:25 ui: [0;32m    azure-arm: ================================================================================[0m
+2019/08/17 13:44:25 ui: [0;32m    azure-arm: Install   1 Package[0m
+2019/08/17 13:44:25 ui: [0;32m    azure-arm: Upgrade  27 Packages[0m
+2019/08/17 13:44:25 ui: [0;32m    azure-arm:[0m
+2019/08/17 13:44:25 ui: [0;32m    azure-arm: Total download size: 100 M[0m
+2019/08/17 13:44:25 ui: [0;32m    azure-arm: Downloading packages:[0m
+2019/08/17 13:44:25 ui: [0;32m    azure-arm: Delta RPMs disabled because /usr/bin/applydeltarpm not installed.[0m
+2019/08/17 13:44:27 ui: [0;32m    azure-arm: --------------------------------------------------------------------------------[0m
+2019/08/17 13:44:27 ui: [0;32m    azure-arm: Total                                               50 MB/s | 100 MB  00:01[0m
+2019/08/17 13:44:28 ui: [0;32m    azure-arm: Running transaction check[0m
+2019/08/17 13:44:28 ui: [0;32m    azure-arm: Running transaction test[0m
+2019/08/17 13:44:31 ui: [0;32m    azure-arm: Transaction test succeeded[0m
+2019/08/17 13:44:31 ui: [0;32m    azure-arm: Running transaction[0m
+2019/08/17 13:44:32 ui: [0;32m    azure-arm:   Updating   : systemd-libs-219-62.el7_6.9.x86_64                          1/55[0m
+2019/08/17 13:44:32 ui: [0;32m    azure-arm:   Updating   : 32:bind-license-9.9.4-74.el7_6.2.noarch                     2/55[0m
+2019/08/17 13:44:32 ui: [0;32m    azure-arm:   Updating   : 32:bind-libs-9.9.4-74.el7_6.2.x86_64                        3/55[0m
+2019/08/17 13:44:33 ui: [0;32m    azure-arm:   Updating   : libssh2-1.4.3-12.el7_6.3.x86_64                             4/55[0m
+2019/08/17 13:44:35 ui: [0;32m    azure-arm:   Updating   : libcurl-7.29.0-51.el7_6.3.x86_64                            5/55[0m
+2019/08/17 13:44:36 ui: [0;32m    azure-arm:   Updating   : systemd-219-62.el7_6.9.x86_64                               6/55[0m
+2019/08/17 13:44:36 ui: [0;32m    azure-arm:   Updating   : samba-common-4.8.3-6.el7_6.noarch                           7/55[0m
+2019/08/17 13:44:36 ui: [0;32m    azure-arm:   Updating   : libwbclient-4.8.3-6.el7_6.x86_64                            8/55[0m
+2019/08/17 13:44:36 ui: [0;32m    azure-arm:   Updating   : samba-client-libs-4.8.3-6.el7_6.x86_64                      9/55[0m
+2019/08/17 13:44:36 ui: [0;32m    azure-arm:   Updating   : samba-common-libs-4.8.3-6.el7_6.x86_64                     10/55[0m
+2019/08/17 13:44:37 ui: [0;32m    azure-arm:   Updating   : systemd-sysv-219-62.el7_6.9.x86_64                         11/55[0m
+2019/08/17 13:44:52 ui: [0;32m    azure-arm:   Updating   : selinux-policy-3.13.1-229.el7_6.15.noarch                  12/55[0m
+2019/08/17 13:44:52 ui: [0;32m    azure-arm:   Updating   : python-perf-3.10.0-957.27.2.el7.x86_64                     13/55[0m
+2019/08/17 13:44:53 ui: [0;32m    azure-arm:   Updating   : kernel-tools-libs-3.10.0-957.27.2.el7.x86_64               14/55[0m
+2019/08/17 13:45:04 ui: [0;32m    azure-arm:   Updating   : kernel-tools-3.10.0-957.27.2.el7.x86_64                    15/55[0m
+2019/08/17 13:45:04 ui: [0;32m    azure-arm:   Updating   : tuned-2.10.0-6.el7_6.4.noarch                              16/55[0m
+2019/08/17 13:45:18 ui: [0;32m    azure-arm:   Updating   : selinux-policy-targeted-3.13.1-229.el7_6.15.noarch         17/55[0m
+2019/08/17 13:45:18 ui: [0;32m    azure-arm:   Updating   : sysstat-10.1.5-17.el7_6.1.x86_64                           18/55[0m
+2019/08/17 13:45:18 ui: [0;32m    azure-arm:   Updating   : kexec-tools-2.0.15-21.el7_6.4.x86_64                       19/55[0m
+2019/08/17 13:45:19 ui: [0;32m    azure-arm:   Updating   : systemd-python-219-62.el7_6.9.x86_64                       20/55[0m
+2019/08/17 13:45:19 ui: [0;32m    azure-arm:   Updating   : WALinuxAgent-2.2.42-1.el7.noarch                           21/55[0m
+2019/08/17 13:45:19 ui: [0;32m    azure-arm:   Updating   : curl-7.29.0-51.el7_6.3.x86_64                              22/55[0m
+2019/08/17 13:45:19 ui: [0;32m    azure-arm:   Updating   : 32:bind-utils-9.9.4-74.el7_6.2.x86_64                      23/55[0m
+2019/08/17 13:45:24 ui: [0;32m    azure-arm:   Updating   : 32:bind-libs-lite-9.9.4-74.el7_6.2.x86_64                  24/55[0m
+2019/08/17 13:45:28 ui: [0;32m    azure-arm:   Installing : kernel-3.10.0-957.27.2.el7.x86_64                          25/55[0m
+2019/08/17 13:45:28 ui: [0;32m    azure-arm:   Updating   : tzdata-2019b-1.el7.noarch                                  26/55[0m
+2019/08/17 13:45:30 ui: [0;32m    azure-arm:   Updating   : bpftool-3.10.0-957.27.2.el7.x86_64                         27/55[0m
+2019/08/17 13:45:30 ui: [0;32m    azure-arm:   Updating   : sos-3.6-19.el7.centos.noarch                               28/55[0m
+2019/08/17 13:45:31 ui: [0;32m    azure-arm:   Cleanup    : tuned-2.10.0-6.el7_6.3.noarch                              29/55[0m
+2019/08/17 13:45:32 ui: [0;32m    azure-arm:   Cleanup    : WALinuxAgent-2.2.38-1.el7.noarch                           30/55[0m
+2019/08/17 13:45:32 ui: [0;32m    azure-arm:   Cleanup    : selinux-policy-targeted-3.13.1-229.el7_6.12.noarch         31/55[0m
+2019/08/17 13:45:32 ui: [0;32m    azure-arm:   Cleanup    : selinux-policy-3.13.1-229.el7_6.12.noarch                  32/55[0m
+2019/08/17 13:45:32 ui: [0;32m    azure-arm:   Cleanup    : tzdata-2019a-1.el7.noarch                                  33/55[0m
+2019/08/17 13:45:32 ui: [0;32m    azure-arm:   Cleanup    : sos-3.6-17.el7.centos.noarch                               34/55[0m
+2019/08/17 13:45:32 ui: [0;32m    azure-arm:   Cleanup    : libwbclient-4.8.3-4.el7.x86_64                             35/55[0m
+2019/08/17 13:45:32 ui: [0;32m    azure-arm:   Cleanup    : samba-client-libs-4.8.3-4.el7.x86_64                       36/55[0m
+2019/08/17 13:45:33 ui: [0;32m    azure-arm:   Cleanup    : samba-common-libs-4.8.3-4.el7.x86_64                       37/55[0m
+2019/08/17 13:45:33 ui: [0;32m    azure-arm:   Cleanup    : systemd-python-219-62.el7_6.7.x86_64                       38/55[0m
+2019/08/17 13:45:33 ui: [0;32m    azure-arm:   Cleanup    : sysstat-10.1.5-17.el7.x86_64                               39/55[0m
+2019/08/17 13:45:33 ui: [0;32m    azure-arm:   Cleanup    : systemd-sysv-219-62.el7_6.7.x86_64                         40/55[0m
+2019/08/17 13:45:33 ui: [0;32m    azure-arm:   Cleanup    : samba-common-4.8.3-4.el7.noarch                            41/55[0m
+2019/08/17 13:45:33 ui: [0;32m    azure-arm:   Cleanup    : curl-7.29.0-51.el7.x86_64                                  42/55[0m
+2019/08/17 13:45:33 ui: [0;32m    azure-arm:   Cleanup    : kexec-tools-2.0.15-21.el7_6.3.x86_64                       43/55[0m
+2019/08/17 13:45:34 ui: [0;32m    azure-arm:   Cleanup    : systemd-219-62.el7_6.7.x86_64                              44/55[0m
+2019/08/17 13:45:34 ui: [0;32m    azure-arm:   Cleanup    : libcurl-7.29.0-51.el7.x86_64                               45/55[0m
+2019/08/17 13:45:34 ui: [0;32m    azure-arm:   Cleanup    : 32:bind-libs-lite-9.9.4-74.el7_6.1.x86_64                  46/55[0m
+2019/08/17 13:45:34 ui: [0;32m    azure-arm:   Cleanup    : kernel-tools-3.10.0-957.21.3.el7.x86_64                    47/55[0m
+2019/08/17 13:45:34 ui: [0;32m    azure-arm:   Cleanup    : 32:bind-utils-9.9.4-74.el7_6.1.x86_64                      48/55[0m
+2019/08/17 13:45:34 ui: [0;32m    azure-arm:   Cleanup    : 32:bind-libs-9.9.4-74.el7_6.1.x86_64                       49/55[0m
+2019/08/17 13:45:34 ui: [0;32m    azure-arm:   Cleanup    : 32:bind-license-9.9.4-74.el7_6.1.noarch                    50/55[0m
+2019/08/17 13:45:35 ui: [0;32m    azure-arm:   Cleanup    : kernel-tools-libs-3.10.0-957.21.3.el7.x86_64               51/55[0m
+2019/08/17 13:45:35 ui: [0;32m    azure-arm:   Cleanup    : libssh2-1.4.3-12.el7_6.2.x86_64                            52/55[0m
+2019/08/17 13:45:35 ui: [0;32m    azure-arm:   Cleanup    : systemd-libs-219-62.el7_6.7.x86_64                         53/55[0m
+2019/08/17 13:45:35 ui: [0;32m    azure-arm:   Cleanup    : python-perf-3.10.0-957.21.3.el7.x86_64                     54/55[0m
+2019/08/17 13:46:20 ui: [0;32m    azure-arm:   Cleanup    : bpftool-3.10.0-957.21.3.el7.x86_64                         55/55[0m
+2019/08/17 13:46:20 ui: [0;32m    azure-arm:   Verifying  : tuned-2.10.0-6.el7_6.4.noarch                               1/55[0m
+2019/08/17 13:46:20 ui: [0;32m    azure-arm:   Verifying  : samba-common-libs-4.8.3-6.el7_6.x86_64                      2/55[0m
+2019/08/17 13:46:21 ui: [0;32m    azure-arm:   Verifying  : kernel-tools-libs-3.10.0-957.27.2.el7.x86_64                3/55[0m
+2019/08/17 13:46:21 ui: [0;32m    azure-arm:   Verifying  : python-perf-3.10.0-957.27.2.el7.x86_64                      4/55[0m
+2019/08/17 13:46:21 ui: [0;32m    azure-arm:   Verifying  : libwbclient-4.8.3-6.el7_6.x86_64                            5/55[0m
+2019/08/17 13:46:21 ui: [0;32m    azure-arm:   Verifying  : sos-3.6-19.el7.centos.noarch                                6/55[0m
+2019/08/17 13:46:21 ui: [0;32m    azure-arm:   Verifying  : selinux-policy-targeted-3.13.1-229.el7_6.15.noarch          7/55[0m
+2019/08/17 13:46:21 ui: [0;32m    azure-arm:   Verifying  : selinux-policy-3.13.1-229.el7_6.15.noarch                   8/55[0m
+2019/08/17 13:46:21 ui: [0;32m    azure-arm:   Verifying  : bpftool-3.10.0-957.27.2.el7.x86_64                          9/55[0m
+2019/08/17 13:46:21 ui: [0;32m    azure-arm:   Verifying  : samba-client-libs-4.8.3-6.el7_6.x86_64                     10/55[0m
+2019/08/17 13:46:21 ui: [0;32m    azure-arm:   Verifying  : systemd-sysv-219-62.el7_6.9.x86_64                         11/55[0m
+2019/08/17 13:46:21 ui: [0;32m    azure-arm:   Verifying  : 32:bind-license-9.9.4-74.el7_6.2.noarch                    12/55[0m
+2019/08/17 13:46:21 ui: [0;32m    azure-arm:   Verifying  : systemd-219-62.el7_6.9.x86_64                              13/55[0m
+2019/08/17 13:46:21 ui: [0;32m    azure-arm:   Verifying  : 32:bind-utils-9.9.4-74.el7_6.2.x86_64                      14/55[0m
+2019/08/17 13:46:21 ui: [0;32m    azure-arm:   Verifying  : kernel-tools-3.10.0-957.27.2.el7.x86_64                    15/55[0m
+2019/08/17 13:46:21 ui: [0;32m    azure-arm:   Verifying  : sysstat-10.1.5-17.el7_6.1.x86_64                           16/55[0m
+2019/08/17 13:46:21 ui: [0;32m    azure-arm:   Verifying  : 32:bind-libs-lite-9.9.4-74.el7_6.2.x86_64                  17/55[0m
+2019/08/17 13:46:21 ui: [0;32m    azure-arm:   Verifying  : systemd-libs-219-62.el7_6.9.x86_64                         18/55[0m
+2019/08/17 13:46:21 ui: [0;32m    azure-arm:   Verifying  : 32:bind-libs-9.9.4-74.el7_6.2.x86_64                       19/55[0m
+2019/08/17 13:46:21 ui: [0;32m    azure-arm:   Verifying  : kexec-tools-2.0.15-21.el7_6.4.x86_64                       20/55[0m
+2019/08/17 13:46:21 ui: [0;32m    azure-arm:   Verifying  : libssh2-1.4.3-12.el7_6.3.x86_64                            21/55[0m
+2019/08/17 13:46:21 ui: [0;32m    azure-arm:   Verifying  : samba-common-4.8.3-6.el7_6.noarch                          22/55[0m
+2019/08/17 13:46:21 ui: [0;32m    azure-arm:   Verifying  : systemd-python-219-62.el7_6.9.x86_64                       23/55[0m
+2019/08/17 13:46:21 ui: [0;32m    azure-arm:   Verifying  : WALinuxAgent-2.2.42-1.el7.noarch                           24/55[0m
+2019/08/17 13:46:21 ui: [0;32m    azure-arm:   Verifying  : libcurl-7.29.0-51.el7_6.3.x86_64                           25/55[0m
+2019/08/17 13:46:22 ui: [0;32m    azure-arm:   Verifying  : tzdata-2019b-1.el7.noarch                                  26/55[0m
+2019/08/17 13:46:22 ui: [0;32m    azure-arm:   Verifying  : kernel-3.10.0-957.27.2.el7.x86_64                          27/55[0m
+2019/08/17 13:46:22 ui: [0;32m    azure-arm:   Verifying  : curl-7.29.0-51.el7_6.3.x86_64                              28/55[0m
+2019/08/17 13:46:22 ui: [0;32m    azure-arm:   Verifying  : samba-common-4.8.3-4.el7.noarch                            29/55[0m
+2019/08/17 13:46:22 ui: [0;32m    azure-arm:   Verifying  : kexec-tools-2.0.15-21.el7_6.3.x86_64                       30/55[0m
+2019/08/17 13:46:22 ui: [0;32m    azure-arm:   Verifying  : libssh2-1.4.3-12.el7_6.2.x86_64                            31/55[0m
+2019/08/17 13:46:22 ui: [0;32m    azure-arm:   Verifying  : kernel-tools-libs-3.10.0-957.21.3.el7.x86_64               32/55[0m
+2019/08/17 13:46:22 ui: [0;32m    azure-arm:   Verifying  : curl-7.29.0-51.el7.x86_64                                  33/55[0m
+2019/08/17 13:46:22 ui: [0;32m    azure-arm:   Verifying  : 32:bind-license-9.9.4-74.el7_6.1.noarch                    34/55[0m
+2019/08/17 13:46:22 ui: [0;32m    azure-arm:   Verifying  : bpftool-3.10.0-957.21.3.el7.x86_64                         35/55[0m
+2019/08/17 13:46:22 ui: [0;32m    azure-arm:   Verifying  : sysstat-10.1.5-17.el7.x86_64                               36/55[0m
+2019/08/17 13:46:22 ui: [0;32m    azure-arm:   Verifying  : tzdata-2019a-1.el7.noarch                                  37/55[0m
+2019/08/17 13:46:22 ui: [0;32m    azure-arm:   Verifying  : systemd-219-62.el7_6.7.x86_64                              38/55[0m
+2019/08/17 13:46:22 ui: [0;32m    azure-arm:   Verifying  : tuned-2.10.0-6.el7_6.3.noarch                              39/55[0m
+2019/08/17 13:46:22 ui: [0;32m    azure-arm:   Verifying  : systemd-libs-219-62.el7_6.7.x86_64                         40/55[0m
+2019/08/17 13:46:22 ui: [0;32m    azure-arm:   Verifying  : sos-3.6-17.el7.centos.noarch                               41/55[0m
+2019/08/17 13:46:22 ui: [0;32m    azure-arm:   Verifying  : systemd-sysv-219-62.el7_6.7.x86_64                         42/55[0m
+2019/08/17 13:46:22 ui: [0;32m    azure-arm:   Verifying  : selinux-policy-targeted-3.13.1-229.el7_6.12.noarch         43/55[0m
+2019/08/17 13:46:22 ui: [0;32m    azure-arm:   Verifying  : selinux-policy-3.13.1-229.el7_6.12.noarch                  44/55[0m
+2019/08/17 13:46:22 ui: [0;32m    azure-arm:   Verifying  : WALinuxAgent-2.2.38-1.el7.noarch                           45/55[0m
+2019/08/17 13:46:22 ui: [0;32m    azure-arm:   Verifying  : python-perf-3.10.0-957.21.3.el7.x86_64                     46/55[0m
+2019/08/17 13:46:22 ui: [0;32m    azure-arm:   Verifying  : samba-client-libs-4.8.3-4.el7.x86_64                       47/55[0m
+2019/08/17 13:46:22 ui: [0;32m    azure-arm:   Verifying  : libwbclient-4.8.3-4.el7.x86_64                             48/55[0m
+2019/08/17 13:46:22 ui: [0;32m    azure-arm:   Verifying  : libcurl-7.29.0-51.el7.x86_64                               49/55[0m
+2019/08/17 13:46:22 ui: [0;32m    azure-arm:   Verifying  : 32:bind-libs-9.9.4-74.el7_6.1.x86_64                       50/55[0m
+2019/08/17 13:46:22 ui: [0;32m    azure-arm:   Verifying  : 32:bind-utils-9.9.4-74.el7_6.1.x86_64                      51/55[0m
+2019/08/17 13:46:22 ui: [0;32m    azure-arm:   Verifying  : samba-common-libs-4.8.3-4.el7.x86_64                       52/55[0m
+2019/08/17 13:46:22 ui: [0;32m    azure-arm:   Verifying  : kernel-tools-3.10.0-957.21.3.el7.x86_64                    53/55[0m
+2019/08/17 13:46:22 ui: [0;32m    azure-arm:   Verifying  : systemd-python-219-62.el7_6.7.x86_64                       54/55[0m
+2019/08/17 13:46:22 ui: [0;32m    azure-arm:   Verifying  : 32:bind-libs-lite-9.9.4-74.el7_6.1.x86_64                  55/55[0m
+2019/08/17 13:46:22 ui: [0;32m    azure-arm:[0m
+2019/08/17 13:46:22 ui: [0;32m    azure-arm: Installed:[0m
+2019/08/17 13:46:22 ui: [0;32m    azure-arm:   kernel.x86_64 0:3.10.0-957.27.2.el7[0m
+2019/08/17 13:46:22 ui: [0;32m    azure-arm:[0m
+2019/08/17 13:46:22 ui: [0;32m    azure-arm: Updated:[0m
+2019/08/17 13:46:22 ui: [0;32m    azure-arm:   WALinuxAgent.noarch 0:2.2.42-1.el7[0m
+2019/08/17 13:46:22 ui: [0;32m    azure-arm:   bind-libs.x86_64 32:9.9.4-74.el7_6.2[0m
+2019/08/17 13:46:22 ui: [0;32m    azure-arm:   bind-libs-lite.x86_64 32:9.9.4-74.el7_6.2[0m
+2019/08/17 13:46:22 ui: [0;32m    azure-arm:   bind-license.noarch 32:9.9.4-74.el7_6.2[0m
+2019/08/17 13:46:22 ui: [0;32m    azure-arm:   bind-utils.x86_64 32:9.9.4-74.el7_6.2[0m
+2019/08/17 13:46:22 ui: [0;32m    azure-arm:   bpftool.x86_64 0:3.10.0-957.27.2.el7[0m
+2019/08/17 13:46:22 ui: [0;32m    azure-arm:   curl.x86_64 0:7.29.0-51.el7_6.3[0m
+2019/08/17 13:46:22 ui: [0;32m    azure-arm:   kernel-tools.x86_64 0:3.10.0-957.27.2.el7[0m
+2019/08/17 13:46:22 ui: [0;32m    azure-arm:   kernel-tools-libs.x86_64 0:3.10.0-957.27.2.el7[0m
+2019/08/17 13:46:22 ui: [0;32m    azure-arm:   kexec-tools.x86_64 0:2.0.15-21.el7_6.4[0m
+2019/08/17 13:46:22 ui: [0;32m    azure-arm:   libcurl.x86_64 0:7.29.0-51.el7_6.3[0m
+2019/08/17 13:46:22 ui: [0;32m    azure-arm:   libssh2.x86_64 0:1.4.3-12.el7_6.3[0m
+2019/08/17 13:46:22 ui: [0;32m    azure-arm:   libwbclient.x86_64 0:4.8.3-6.el7_6[0m
+2019/08/17 13:46:22 ui: [0;32m    azure-arm:   python-perf.x86_64 0:3.10.0-957.27.2.el7[0m
+2019/08/17 13:46:22 ui: [0;32m    azure-arm:   samba-client-libs.x86_64 0:4.8.3-6.el7_6[0m
+2019/08/17 13:46:22 ui: [0;32m    azure-arm:   samba-common.noarch 0:4.8.3-6.el7_6[0m
+2019/08/17 13:46:22 ui: [0;32m    azure-arm:   samba-common-libs.x86_64 0:4.8.3-6.el7_6[0m
+2019/08/17 13:46:22 ui: [0;32m    azure-arm:   selinux-policy.noarch 0:3.13.1-229.el7_6.15[0m
+2019/08/17 13:46:22 ui: [0;32m    azure-arm:   selinux-policy-targeted.noarch 0:3.13.1-229.el7_6.15[0m
+2019/08/17 13:46:22 ui: [0;32m    azure-arm:   sos.noarch 0:3.6-19.el7.centos[0m
+2019/08/17 13:46:22 ui: [0;32m    azure-arm:   sysstat.x86_64 0:10.1.5-17.el7_6.1[0m
+2019/08/17 13:46:22 ui: [0;32m    azure-arm:   systemd.x86_64 0:219-62.el7_6.9[0m
+2019/08/17 13:46:22 ui: [0;32m    azure-arm:   systemd-libs.x86_64 0:219-62.el7_6.9[0m
+2019/08/17 13:46:22 ui: [0;32m    azure-arm:   systemd-python.x86_64 0:219-62.el7_6.9[0m
+2019/08/17 13:46:22 ui: [0;32m    azure-arm:   systemd-sysv.x86_64 0:219-62.el7_6.9[0m
+2019/08/17 13:46:22 ui: [0;32m    azure-arm:   tuned.noarch 0:2.10.0-6.el7_6.4[0m
+2019/08/17 13:46:22 ui: [0;32m    azure-arm:   tzdata.noarch 0:2019b-1.el7[0m
+2019/08/17 13:46:22 ui: [0;32m    azure-arm:[0m
+2019/08/17 13:46:22 ui: [0;32m    azure-arm: Complete![0m
+2019/08/17 13:46:22 ui: [0;32m    azure-arm: Loaded plugins: fastestmirror, langpacks[0m
+2019/08/17 13:46:22 ui: [0;32m    azure-arm: Loading mirror speeds from cached hostfile[0m
+2019/08/17 13:46:22 ui: [0;32m    azure-arm: Resolving Dependencies[0m
+2019/08/17 13:46:22 ui: [0;32m    azure-arm: --> Running transaction check[0m
+2019/08/17 13:46:22 ui: [0;32m    azure-arm: ---> Package epel-release.noarch 0:7-11 will be installed[0m
+2019/08/17 13:46:23 ui: [0;32m    azure-arm: --> Finished Dependency Resolution[0m
+2019/08/17 13:46:23 ui: [0;32m    azure-arm:[0m
+2019/08/17 13:46:23 ui: [0;32m    azure-arm: Dependencies Resolved[0m
+2019/08/17 13:46:23 ui: [0;32m    azure-arm:[0m
+2019/08/17 13:46:23 ui: [0;32m    azure-arm: ================================================================================[0m
+2019/08/17 13:46:23 ui: [0;32m    azure-arm:  Package                Arch             Version         Repository        Size[0m
+2019/08/17 13:46:23 ui: [0;32m    azure-arm: ================================================================================[0m
+2019/08/17 13:46:23 ui: [0;32m    azure-arm: Installing:[0m
+2019/08/17 13:46:23 ui: [0;32m    azure-arm:  epel-release           noarch           7-11            extras            15 k[0m
+2019/08/17 13:46:23 ui: [0;32m    azure-arm:[0m
+2019/08/17 13:46:23 ui: [0;32m    azure-arm: Transaction Summary[0m
+2019/08/17 13:46:23 ui: [0;32m    azure-arm: ================================================================================[0m
+2019/08/17 13:46:23 ui: [0;32m    azure-arm: Install  1 Package[0m
+2019/08/17 13:46:23 ui: [0;32m    azure-arm:[0m
+2019/08/17 13:46:23 ui: [0;32m    azure-arm: Total download size: 15 k[0m
+2019/08/17 13:46:23 ui: [0;32m    azure-arm: Installed size: 24 k[0m
+2019/08/17 13:46:23 ui: [0;32m    azure-arm: Downloading packages:[0m
+2019/08/17 13:46:24 ui: [0;32m    azure-arm: Running transaction check[0m
+2019/08/17 13:46:24 ui: [0;32m    azure-arm: Running transaction test[0m
+2019/08/17 13:46:24 ui: [0;32m    azure-arm: Transaction test succeeded[0m
+2019/08/17 13:46:24 ui: [0;32m    azure-arm: Running transaction[0m
+2019/08/17 13:46:24 ui: [0;32m    azure-arm:   Installing : epel-release-7-11.noarch                                     1/1[0m
+2019/08/17 13:46:24 ui: [0;32m    azure-arm:   Verifying  : epel-release-7-11.noarch                                     1/1[0m
+2019/08/17 13:46:24 ui: [0;32m    azure-arm:[0m
+2019/08/17 13:46:24 ui: [0;32m    azure-arm: Installed:[0m
+2019/08/17 13:46:24 ui: [0;32m    azure-arm:   epel-release.noarch 0:7-11[0m
+2019/08/17 13:46:24 ui: [0;32m    azure-arm:[0m
+2019/08/17 13:46:24 ui: [0;32m    azure-arm: Complete![0m
+2019/08/17 13:46:24 ui: [0;32m    azure-arm: Loaded plugins: fastestmirror, langpacks[0m
+2019/08/17 13:46:24 ui: [0;32m    azure-arm: Loading mirror speeds from cached hostfile[0m
+2019/08/17 13:46:26 ui: [0;32m    azure-arm:  * epel: repos.del.extreme-ix.org[0m
+2019/08/17 13:46:27 ui error: [1;31m==> azure-arm: http://fedora.cs.nctu.edu.tw/epel/7/x86_64/repodata/063216a6e14adadee8c1055711cd0edda3757d0479fa132087b7bdd49a7be9a2-primary.sqlite.bz2: [Errno 14] HTTP Error 404 - Not Found[0m
+2019/08/17 13:46:27 ui error: [1;31m==> azure-arm: Trying other mirror.[0m
+2019/08/17 13:46:27 ui error: [1;31m==> azure-arm: To address this issue please refer to the below wiki article[0m
+2019/08/17 13:46:27 ui error: [1;31m==> azure-arm:[0m
+2019/08/17 13:46:27 ui error: [1;31m==> azure-arm: https://wiki.centos.org/yum-errors[0m
+2019/08/17 13:46:27 ui error: [1;31m==> azure-arm:[0m
+2019/08/17 13:46:27 ui error: [1;31m==> azure-arm: If above article doesn't help to resolve this issue please use https://bugs.centos.org/.[0m
+2019/08/17 13:46:27 ui error: [1;31m==> azure-arm:[0m
+2019/08/17 13:46:29 ui: [0;32m    azure-arm: No package jenkins available.[0m
+2019/08/17 13:46:30 ui: [0;32m    azure-arm: Resolving Dependencies[0m
+2019/08/17 13:46:30 ui: [0;32m    azure-arm: --> Running transaction check[0m
+2019/08/17 13:46:30 ui: [0;32m    azure-arm: ---> Package nginx.x86_64 1:1.12.2-3.el7 will be installed[0m
+2019/08/17 13:46:30 ui: [0;32m    azure-arm: --> Processing Dependency: nginx-all-modules = 1:1.12.2-3.el7 for package: 1:nginx-1.12.2-3.el7.x86_64[0m
+2019/08/17 13:46:30 ui: [0;32m    azure-arm: --> Processing Dependency: nginx-filesystem = 1:1.12.2-3.el7 for package: 1:nginx-1.12.2-3.el7.x86_64[0m
+2019/08/17 13:46:30 ui: [0;32m    azure-arm: --> Processing Dependency: nginx-filesystem for package: 1:nginx-1.12.2-3.el7.x86_64[0m
+2019/08/17 13:46:30 ui: [0;32m    azure-arm: --> Processing Dependency: libprofiler.so.0()(64bit) for package: 1:nginx-1.12.2-3.el7.x86_64[0m
+2019/08/17 13:46:30 ui: [0;32m    azure-arm: --> Running transaction check[0m
+2019/08/17 13:46:30 ui: [0;32m    azure-arm: ---> Package gperftools-libs.x86_64 0:2.6.1-1.el7 will be installed[0m
+2019/08/17 13:46:30 ui: [0;32m    azure-arm: ---> Package nginx-all-modules.noarch 1:1.12.2-3.el7 will be installed[0m
+2019/08/17 13:46:30 ui: [0;32m    azure-arm: --> Processing Dependency: nginx-mod-http-geoip = 1:1.12.2-3.el7 for package: 1:nginx-all-modules-1.12.2-3.el7.noarch[0m
+2019/08/17 13:46:30 ui: [0;32m    azure-arm: --> Processing Dependency: nginx-mod-http-image-filter = 1:1.12.2-3.el7 for package: 1:nginx-all-modules-1.12.2-3.el7.noarch[0m
+2019/08/17 13:46:30 ui: [0;32m    azure-arm: --> Processing Dependency: nginx-mod-http-perl = 1:1.12.2-3.el7 for package: 1:nginx-all-modules-1.12.2-3.el7.noarch[0m
+2019/08/17 13:46:30 ui: [0;32m    azure-arm: --> Processing Dependency: nginx-mod-http-xslt-filter = 1:1.12.2-3.el7 for package: 1:nginx-all-modules-1.12.2-3.el7.noarch[0m
+2019/08/17 13:46:30 ui: [0;32m    azure-arm: --> Processing Dependency: nginx-mod-mail = 1:1.12.2-3.el7 for package: 1:nginx-all-modules-1.12.2-3.el7.noarch[0m
+2019/08/17 13:46:30 ui: [0;32m    azure-arm: --> Processing Dependency: nginx-mod-stream = 1:1.12.2-3.el7 for package: 1:nginx-all-modules-1.12.2-3.el7.noarch[0m
+2019/08/17 13:46:30 ui: [0;32m    azure-arm: ---> Package nginx-filesystem.noarch 1:1.12.2-3.el7 will be installed[0m
+2019/08/17 13:46:30 ui: [0;32m    azure-arm: --> Running transaction check[0m
+2019/08/17 13:46:30 ui: [0;32m    azure-arm: ---> Package nginx-mod-http-geoip.x86_64 1:1.12.2-3.el7 will be installed[0m
+2019/08/17 13:46:30 ui: [0;32m    azure-arm: ---> Package nginx-mod-http-image-filter.x86_64 1:1.12.2-3.el7 will be installed[0m
+2019/08/17 13:46:30 ui: [0;32m    azure-arm: --> Processing Dependency: gd for package: 1:nginx-mod-http-image-filter-1.12.2-3.el7.x86_64[0m
+2019/08/17 13:46:30 ui: [0;32m    azure-arm: --> Processing Dependency: libgd.so.2()(64bit) for package: 1:nginx-mod-http-image-filter-1.12.2-3.el7.x86_64[0m
+2019/08/17 13:46:30 ui: [0;32m    azure-arm: ---> Package nginx-mod-http-perl.x86_64 1:1.12.2-3.el7 will be installed[0m
+2019/08/17 13:46:30 ui: [0;32m    azure-arm: ---> Package nginx-mod-http-xslt-filter.x86_64 1:1.12.2-3.el7 will be installed[0m
+2019/08/17 13:46:30 ui: [0;32m    azure-arm: --> Processing Dependency: libxslt.so.1(LIBXML2_1.0.11)(64bit) for package: 1:nginx-mod-http-xslt-filter-1.12.2-3.el7.x86_64[0m
+2019/08/17 13:46:30 ui: [0;32m    azure-arm: --> Processing Dependency: libxslt.so.1(LIBXML2_1.0.18)(64bit) for package: 1:nginx-mod-http-xslt-filter-1.12.2-3.el7.x86_64[0m
+2019/08/17 13:46:30 ui: [0;32m    azure-arm: --> Processing Dependency: libexslt.so.0()(64bit) for package: 1:nginx-mod-http-xslt-filter-1.12.2-3.el7.x86_64[0m
+2019/08/17 13:46:30 ui: [0;32m    azure-arm: --> Processing Dependency: libxslt.so.1()(64bit) for package: 1:nginx-mod-http-xslt-filter-1.12.2-3.el7.x86_64[0m
+2019/08/17 13:46:30 ui: [0;32m    azure-arm: ---> Package nginx-mod-mail.x86_64 1:1.12.2-3.el7 will be installed[0m
+2019/08/17 13:46:30 ui: [0;32m    azure-arm: ---> Package nginx-mod-stream.x86_64 1:1.12.2-3.el7 will be installed[0m
+2019/08/17 13:46:30 ui: [0;32m    azure-arm: --> Running transaction check[0m
+2019/08/17 13:46:30 ui: [0;32m    azure-arm: ---> Package gd.x86_64 0:2.0.35-26.el7 will be installed[0m
+2019/08/17 13:46:30 ui: [0;32m    azure-arm: --> Processing Dependency: libjpeg.so.62(LIBJPEG_6.2)(64bit) for package: gd-2.0.35-26.el7.x86_64[0m
+2019/08/17 13:46:30 ui: [0;32m    azure-arm: --> Processing Dependency: libjpeg.so.62()(64bit) for package: gd-2.0.35-26.el7.x86_64[0m
+2019/08/17 13:46:30 ui: [0;32m    azure-arm: --> Processing Dependency: libfontconfig.so.1()(64bit) for package: gd-2.0.35-26.el7.x86_64[0m
+2019/08/17 13:46:30 ui: [0;32m    azure-arm: --> Processing Dependency: libXpm.so.4()(64bit) for package: gd-2.0.35-26.el7.x86_64[0m
+2019/08/17 13:46:30 ui: [0;32m    azure-arm: --> Processing Dependency: libX11.so.6()(64bit) for package: gd-2.0.35-26.el7.x86_64[0m
+2019/08/17 13:46:30 ui: [0;32m    azure-arm: ---> Package libxslt.x86_64 0:1.1.28-5.el7 will be installed[0m
+2019/08/17 13:46:30 ui: [0;32m    azure-arm: --> Running transaction check[0m
+2019/08/17 13:46:30 ui: [0;32m    azure-arm: ---> Package fontconfig.x86_64 0:2.13.0-4.3.el7 will be installed[0m
+2019/08/17 13:46:30 ui: [0;32m    azure-arm: --> Processing Dependency: fontpackages-filesystem for package: fontconfig-2.13.0-4.3.el7.x86_64[0m
+2019/08/17 13:46:30 ui: [0;32m    azure-arm: --> Processing Dependency: dejavu-sans-fonts for package: fontconfig-2.13.0-4.3.el7.x86_64[0m
+2019/08/17 13:46:30 ui: [0;32m    azure-arm: ---> Package libX11.x86_64 0:1.6.5-2.el7 will be installed[0m
+2019/08/17 13:46:30 ui: [0;32m    azure-arm: --> Processing Dependency: libX11-common >= 1.6.5-2.el7 for package: libX11-1.6.5-2.el7.x86_64[0m
+2019/08/17 13:46:30 ui: [0;32m    azure-arm: --> Processing Dependency: libxcb.so.1()(64bit) for package: libX11-1.6.5-2.el7.x86_64[0m
+2019/08/17 13:46:30 ui: [0;32m    azure-arm: ---> Package libXpm.x86_64 0:3.5.12-1.el7 will be installed[0m
+2019/08/17 13:46:30 ui: [0;32m    azure-arm: ---> Package libjpeg-turbo.x86_64 0:1.2.90-6.el7 will be installed[0m
+2019/08/17 13:46:30 ui: [0;32m    azure-arm: --> Running transaction check[0m
+2019/08/17 13:46:30 ui: [0;32m    azure-arm: ---> Package dejavu-sans-fonts.noarch 0:2.33-6.el7 will be installed[0m
+2019/08/17 13:46:30 ui: [0;32m    azure-arm: --> Processing Dependency: dejavu-fonts-common = 2.33-6.el7 for package: dejavu-sans-fonts-2.33-6.el7.noarch[0m
+2019/08/17 13:46:30 ui: [0;32m    azure-arm: ---> Package fontpackages-filesystem.noarch 0:1.44-8.el7 will be installed[0m
+2019/08/17 13:46:30 ui: [0;32m    azure-arm: ---> Package libX11-common.noarch 0:1.6.5-2.el7 will be installed[0m
+2019/08/17 13:46:30 ui: [0;32m    azure-arm: ---> Package libxcb.x86_64 0:1.13-1.el7 will be installed[0m
+2019/08/17 13:46:30 ui: [0;32m    azure-arm: --> Processing Dependency: libXau.so.6()(64bit) for package: libxcb-1.13-1.el7.x86_64[0m
+2019/08/17 13:46:30 ui: [0;32m    azure-arm: --> Running transaction check[0m
+2019/08/17 13:46:30 ui: [0;32m    azure-arm: ---> Package dejavu-fonts-common.noarch 0:2.33-6.el7 will be installed[0m
+2019/08/17 13:46:30 ui: [0;32m    azure-arm: ---> Package libXau.x86_64 0:1.0.8-2.1.el7 will be installed[0m
+2019/08/17 13:46:30 ui: [0;32m    azure-arm: --> Finished Dependency Resolution[0m
+2019/08/17 13:46:31 ui: [0;32m    azure-arm:[0m
+2019/08/17 13:46:31 ui: [0;32m    azure-arm: Dependencies Resolved[0m
+2019/08/17 13:46:31 ui: [0;32m    azure-arm:[0m
+2019/08/17 13:46:31 ui: [0;32m    azure-arm: ================================================================================[0m
+2019/08/17 13:46:31 ui: [0;32m    azure-arm:  Package                         Arch       Version              Repository[0m
+2019/08/17 13:46:31 ui: [0;32m    azure-arm:                                                                            Size[0m
+2019/08/17 13:46:31 ui: [0;32m    azure-arm: ================================================================================[0m
+2019/08/17 13:46:31 ui: [0;32m    azure-arm: Installing:[0m
+2019/08/17 13:46:31 ui: [0;32m    azure-arm:  nginx                           x86_64     1:1.12.2-3.el7       epel     531 k[0m
+2019/08/17 13:46:31 ui: [0;32m    azure-arm: Installing for dependencies:[0m
+2019/08/17 13:46:31 ui: [0;32m    azure-arm:  dejavu-fonts-common             noarch     2.33-6.el7           base      64 k[0m
+2019/08/17 13:46:31 ui: [0;32m    azure-arm:  dejavu-sans-fonts               noarch     2.33-6.el7           base     1.4 M[0m
+2019/08/17 13:46:31 ui: [0;32m    azure-arm:  fontconfig                      x86_64     2.13.0-4.3.el7       base     254 k[0m
+2019/08/17 13:46:31 ui: [0;32m    azure-arm:  fontpackages-filesystem         noarch     1.44-8.el7           base     9.9 k[0m
+2019/08/17 13:46:31 ui: [0;32m    azure-arm:  gd                              x86_64     2.0.35-26.el7        base     146 k[0m
+2019/08/17 13:46:31 ui: [0;32m    azure-arm:  gperftools-libs                 x86_64     2.6.1-1.el7          base     272 k[0m
+2019/08/17 13:46:31 ui: [0;32m    azure-arm:  libX11                          x86_64     1.6.5-2.el7          base     606 k[0m
+2019/08/17 13:46:31 ui: [0;32m    azure-arm:  libX11-common                   noarch     1.6.5-2.el7          base     164 k[0m
+2019/08/17 13:46:31 ui: [0;32m    azure-arm:  libXau                          x86_64     1.0.8-2.1.el7        base      29 k[0m
+2019/08/17 13:46:31 ui: [0;32m    azure-arm:  libXpm                          x86_64     3.5.12-1.el7         base      55 k[0m
+2019/08/17 13:46:31 ui: [0;32m    azure-arm:  libjpeg-turbo                   x86_64     1.2.90-6.el7         base     134 k[0m
+2019/08/17 13:46:31 ui: [0;32m    azure-arm:  libxcb                          x86_64     1.13-1.el7           base     214 k[0m
+2019/08/17 13:46:31 ui: [0;32m    azure-arm:  libxslt                         x86_64     1.1.28-5.el7         base     242 k[0m
+2019/08/17 13:46:31 ui: [0;32m    azure-arm:  nginx-all-modules               noarch     1:1.12.2-3.el7       epel      16 k[0m
+2019/08/17 13:46:31 ui: [0;32m    azure-arm:  nginx-filesystem                noarch     1:1.12.2-3.el7       epel      17 k[0m
+2019/08/17 13:46:31 ui: [0;32m    azure-arm:  nginx-mod-http-geoip            x86_64     1:1.12.2-3.el7       epel      23 k[0m
+2019/08/17 13:46:31 ui: [0;32m    azure-arm:  nginx-mod-http-image-filter     x86_64     1:1.12.2-3.el7       epel      27 k[0m
+2019/08/17 13:46:31 ui: [0;32m    azure-arm:  nginx-mod-http-perl             x86_64     1:1.12.2-3.el7       epel      36 k[0m
+2019/08/17 13:46:31 ui: [0;32m    azure-arm:  nginx-mod-http-xslt-filter      x86_64     1:1.12.2-3.el7       epel      26 k[0m
+2019/08/17 13:46:31 ui: [0;32m    azure-arm:  nginx-mod-mail                  x86_64     1:1.12.2-3.el7       epel      54 k[0m
+2019/08/17 13:46:31 ui: [0;32m    azure-arm:  nginx-mod-stream                x86_64     1:1.12.2-3.el7       epel      76 k[0m
+2019/08/17 13:46:31 ui: [0;32m    azure-arm:[0m
+2019/08/17 13:46:31 ui: [0;32m    azure-arm: Transaction Summary[0m
+2019/08/17 13:46:31 ui: [0;32m    azure-arm: ================================================================================[0m
+2019/08/17 13:46:31 ui: [0;32m    azure-arm: Install  1 Package (+21 Dependent packages)[0m
+2019/08/17 13:46:31 ui: [0;32m    azure-arm:[0m
+2019/08/17 13:46:31 ui: [0;32m    azure-arm: Total download size: 4.3 M[0m
+2019/08/17 13:46:31 ui: [0;32m    azure-arm: Installed size: 14 M[0m
+2019/08/17 13:46:31 ui: [0;32m    azure-arm: Downloading packages:[0m
+2019/08/17 13:46:32 ui: [0;32m    azure-arm: Public key for nginx-1.12.2-3.el7.x86_64.rpm is not installed[0m
+2019/08/17 13:46:32 ui error: [1;31m==> azure-arm: warning: /var/cache/yum/x86_64/7/epel/packages/nginx-1.12.2-3.el7.x86_64.rpm: Header V3 RSA/SHA256 Signature, key ID 352c64e5: NOKEY[0m
+2019/08/17 13:46:33 ui: [0;32m    azure-arm: --------------------------------------------------------------------------------[0m
+2019/08/17 13:46:33 ui: [0;32m    azure-arm: Total                                              1.7 MB/s | 4.3 MB  00:02[0m
+2019/08/17 13:46:33 ui: [0;32m    azure-arm: Retrieving key from file:///etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-7[0m
+2019/08/17 13:46:33 ui error: [1;31m==> azure-arm: Importing GPG key 0x352C64E5:[0m
+2019/08/17 13:46:33 ui error: [1;31m==> azure-arm:  Userid     : "Fedora EPEL (7) <epel@fedoraproject.org>"[0m
+2019/08/17 13:46:33 ui error: [1;31m==> azure-arm:  Fingerprint: 91e9 7d7c 4a5e 96f1 7f3e 888f 6a2f aea2 352c 64e5[0m
+2019/08/17 13:46:33 ui error: [1;31m==> azure-arm:  Package    : epel-release-7-11.noarch (@extras)[0m
+2019/08/17 13:46:33 ui error: [1;31m==> azure-arm:  From       : /etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-7[0m
+2019/08/17 13:46:33 ui: [0;32m    azure-arm: Running transaction check[0m
+2019/08/17 13:46:33 ui: [0;32m    azure-arm: Running transaction test[0m
+2019/08/17 13:46:33 ui: [0;32m    azure-arm: Transaction test succeeded[0m
+2019/08/17 13:46:33 ui: [0;32m    azure-arm: Running transaction[0m
+2019/08/17 13:46:34 ui: [0;32m    azure-arm:   Installing : fontpackages-filesystem-1.44-8.el7.noarch                   1/22[0m
+2019/08/17 13:46:34 ui: [0;32m    azure-arm:   Installing : dejavu-fonts-common-2.33-6.el7.noarch                       2/22[0m
+2019/08/17 13:46:34 ui: [0;32m    azure-arm:   Installing : dejavu-sans-fonts-2.33-6.el7.noarch                         3/22[0m
+2019/08/17 13:46:36 ui: [0;32m    azure-arm:   Installing : fontconfig-2.13.0-4.3.el7.x86_64                            4/22[0m
+2019/08/17 13:46:36 ui: [0;32m    azure-arm:   Installing : 1:nginx-filesystem-1.12.2-3.el7.noarch                      5/22[0m
+2019/08/17 13:46:36 ui: [0;32m    azure-arm:   Installing : libX11-common-1.6.5-2.el7.noarch                            6/22[0m
+2019/08/17 13:46:36 ui: [0;32m    azure-arm:   Installing : gperftools-libs-2.6.1-1.el7.x86_64                          7/22[0m
+2019/08/17 13:46:36 ui: [0;32m    azure-arm:   Installing : libXau-1.0.8-2.1.el7.x86_64                                 8/22[0m
+2019/08/17 13:46:37 ui: [0;32m    azure-arm:   Installing : libxcb-1.13-1.el7.x86_64                                    9/22[0m
+2019/08/17 13:46:37 ui: [0;32m    azure-arm:   Installing : libX11-1.6.5-2.el7.x86_64                                  10/22[0m
+2019/08/17 13:46:37 ui: [0;32m    azure-arm:   Installing : libXpm-3.5.12-1.el7.x86_64                                 11/22[0m
+2019/08/17 13:46:37 ui: [0;32m    azure-arm:   Installing : libxslt-1.1.28-5.el7.x86_64                                12/22[0m
+2019/08/17 13:46:37 ui: [0;32m    azure-arm:   Installing : libjpeg-turbo-1.2.90-6.el7.x86_64                          13/22[0m
+2019/08/17 13:46:37 ui: [0;32m    azure-arm:   Installing : gd-2.0.35-26.el7.x86_64                                    14/22[0m
+2019/08/17 13:46:37 ui: [0;32m    azure-arm:   Installing : 1:nginx-mod-mail-1.12.2-3.el7.x86_64                       15/22[0m
+2019/08/17 13:46:37 ui: [0;32m    azure-arm:   Installing : 1:nginx-mod-stream-1.12.2-3.el7.x86_64                     16/22[0m
+2019/08/17 13:46:37 ui: [0;32m    azure-arm:   Installing : 1:nginx-mod-http-xslt-filter-1.12.2-3.el7.x86_64           17/22[0m
+2019/08/17 13:46:38 ui: [0;32m    azure-arm:   Installing : 1:nginx-mod-http-image-filter-1.12.2-3.el7.x86_64          18/22[0m
+2019/08/17 13:46:38 ui: [0;32m    azure-arm:   Installing : 1:nginx-mod-http-perl-1.12.2-3.el7.x86_64                  19/22[0m
+2019/08/17 13:46:38 ui: [0;32m    azure-arm:   Installing : 1:nginx-mod-http-geoip-1.12.2-3.el7.x86_64                 20/22[0m
+2019/08/17 13:46:38 ui: [0;32m    azure-arm:   Installing : 1:nginx-all-modules-1.12.2-3.el7.noarch                    21/22[0m
+2019/08/17 13:46:38 ui: [0;32m    azure-arm:   Installing : 1:nginx-1.12.2-3.el7.x86_64                                22/22[0m
+2019/08/17 13:46:38 ui: [0;32m    azure-arm:   Verifying  : 1:nginx-all-modules-1.12.2-3.el7.noarch                     1/22[0m
+2019/08/17 13:46:38 ui: [0;32m    azure-arm:   Verifying  : fontconfig-2.13.0-4.3.el7.x86_64                            2/22[0m
+2019/08/17 13:46:38 ui: [0;32m    azure-arm:   Verifying  : 1:nginx-1.12.2-3.el7.x86_64                                 3/22[0m
+2019/08/17 13:46:38 ui: [0;32m    azure-arm:   Verifying  : 1:nginx-mod-mail-1.12.2-3.el7.x86_64                        4/22[0m
+2019/08/17 13:46:38 ui: [0;32m    azure-arm:   Verifying  : 1:nginx-mod-stream-1.12.2-3.el7.x86_64                      5/22[0m
+2019/08/17 13:46:38 ui: [0;32m    azure-arm:   Verifying  : fontpackages-filesystem-1.44-8.el7.noarch                   6/22[0m
+2019/08/17 13:46:38 ui: [0;32m    azure-arm:   Verifying  : libjpeg-turbo-1.2.90-6.el7.x86_64                           7/22[0m
+2019/08/17 13:46:39 ui: [0;32m    azure-arm:   Verifying  : 1:nginx-mod-http-xslt-filter-1.12.2-3.el7.x86_64            8/22[0m
+2019/08/17 13:46:39 ui: [0;32m    azure-arm:   Verifying  : 1:nginx-mod-http-image-filter-1.12.2-3.el7.x86_64           9/22[0m
+2019/08/17 13:46:39 ui: [0;32m    azure-arm:   Verifying  : dejavu-fonts-common-2.33-6.el7.noarch                      10/22[0m
+2019/08/17 13:46:39 ui: [0;32m    azure-arm:   Verifying  : libxcb-1.13-1.el7.x86_64                                   11/22[0m
+2019/08/17 13:46:39 ui: [0;32m    azure-arm:   Verifying  : libXpm-3.5.12-1.el7.x86_64                                 12/22[0m
+2019/08/17 13:46:39 ui: [0;32m    azure-arm:   Verifying  : 1:nginx-mod-http-perl-1.12.2-3.el7.x86_64                  13/22[0m
+2019/08/17 13:46:39 ui: [0;32m    azure-arm:   Verifying  : libxslt-1.1.28-5.el7.x86_64                                14/22[0m
+2019/08/17 13:46:39 ui: [0;32m    azure-arm:   Verifying  : libX11-1.6.5-2.el7.x86_64                                  15/22[0m
+2019/08/17 13:46:39 ui: [0;32m    azure-arm:   Verifying  : dejavu-sans-fonts-2.33-6.el7.noarch                        16/22[0m
+2019/08/17 13:46:39 ui: [0;32m    azure-arm:   Verifying  : gd-2.0.35-26.el7.x86_64                                    17/22[0m
+2019/08/17 13:46:39 ui: [0;32m    azure-arm:   Verifying  : 1:nginx-mod-http-geoip-1.12.2-3.el7.x86_64                 18/22[0m
+2019/08/17 13:46:39 ui: [0;32m    azure-arm:   Verifying  : libXau-1.0.8-2.1.el7.x86_64                                19/22[0m
+2019/08/17 13:46:39 ui: [0;32m    azure-arm:   Verifying  : gperftools-libs-2.6.1-1.el7.x86_64                         20/22[0m
+2019/08/17 13:46:39 ui: [0;32m    azure-arm:   Verifying  : libX11-common-1.6.5-2.el7.noarch                           21/22[0m
+2019/08/17 13:46:39 ui: [0;32m    azure-arm:   Verifying  : 1:nginx-filesystem-1.12.2-3.el7.noarch                     22/22[0m
+2019/08/17 13:46:39 ui: [0;32m    azure-arm:[0m
+2019/08/17 13:46:39 ui: [0;32m    azure-arm: Installed:[0m
+2019/08/17 13:46:39 ui: [0;32m    azure-arm:   nginx.x86_64 1:1.12.2-3.el7[0m
+2019/08/17 13:46:39 ui: [0;32m    azure-arm:[0m
+2019/08/17 13:46:39 ui: [0;32m    azure-arm: Dependency Installed:[0m
+2019/08/17 13:46:39 ui: [0;32m    azure-arm:   dejavu-fonts-common.noarch 0:2.33-6.el7[0m
+2019/08/17 13:46:39 ui: [0;32m    azure-arm:   dejavu-sans-fonts.noarch 0:2.33-6.el7[0m
+2019/08/17 13:46:39 ui: [0;32m    azure-arm:   fontconfig.x86_64 0:2.13.0-4.3.el7[0m
+2019/08/17 13:46:39 ui: [0;32m    azure-arm:   fontpackages-filesystem.noarch 0:1.44-8.el7[0m
+2019/08/17 13:46:39 ui: [0;32m    azure-arm:   gd.x86_64 0:2.0.35-26.el7[0m
+2019/08/17 13:46:39 ui: [0;32m    azure-arm:   gperftools-libs.x86_64 0:2.6.1-1.el7[0m
+2019/08/17 13:46:39 ui: [0;32m    azure-arm:   libX11.x86_64 0:1.6.5-2.el7[0m
+2019/08/17 13:46:39 ui: [0;32m    azure-arm:   libX11-common.noarch 0:1.6.5-2.el7[0m
+2019/08/17 13:46:39 ui: [0;32m    azure-arm:   libXau.x86_64 0:1.0.8-2.1.el7[0m
+2019/08/17 13:46:39 ui: [0;32m    azure-arm:   libXpm.x86_64 0:3.5.12-1.el7[0m
+2019/08/17 13:46:39 ui: [0;32m    azure-arm:   libjpeg-turbo.x86_64 0:1.2.90-6.el7[0m
+2019/08/17 13:46:39 ui: [0;32m    azure-arm:   libxcb.x86_64 0:1.13-1.el7[0m
+2019/08/17 13:46:39 ui: [0;32m    azure-arm:   libxslt.x86_64 0:1.1.28-5.el7[0m
+2019/08/17 13:46:39 ui: [0;32m    azure-arm:   nginx-all-modules.noarch 1:1.12.2-3.el7[0m
+2019/08/17 13:46:39 ui: [0;32m    azure-arm:   nginx-filesystem.noarch 1:1.12.2-3.el7[0m
+2019/08/17 13:46:39 ui: [0;32m    azure-arm:   nginx-mod-http-geoip.x86_64 1:1.12.2-3.el7[0m
+2019/08/17 13:46:39 ui: [0;32m    azure-arm:   nginx-mod-http-image-filter.x86_64 1:1.12.2-3.el7[0m
+2019/08/17 13:46:39 ui: [0;32m    azure-arm:   nginx-mod-http-perl.x86_64 1:1.12.2-3.el7[0m
+2019/08/17 13:46:39 ui: [0;32m    azure-arm:   nginx-mod-http-xslt-filter.x86_64 1:1.12.2-3.el7[0m
+2019/08/17 13:46:39 ui: [0;32m    azure-arm:   nginx-mod-mail.x86_64 1:1.12.2-3.el7[0m
+2019/08/17 13:46:39 ui: [0;32m    azure-arm:   nginx-mod-stream.x86_64 1:1.12.2-3.el7[0m
+2019/08/17 13:46:39 ui: [0;32m    azure-arm:[0m
+2019/08/17 13:46:39 ui: [0;32m    azure-arm: Complete![0m
+2019/08/17 13:46:40 ui: [0;32m    azure-arm: WARNING! The waagent service will be stopped.[0m
+2019/08/17 13:46:40 ui: [0;32m    azure-arm: WARNING! All SSH host key pairs will be deleted.[0m
+2019/08/17 13:46:40 ui: [0;32m    azure-arm: WARNING! Cached DHCP leases will be deleted.[0m
+2019/08/17 13:46:40 ui: [0;32m    azure-arm: WARNING! root password will be disabled. You will not be able to login as root.[0m
+2019/08/17 13:46:40 ui: [0;32m    azure-arm: WARNING! /etc/resolv.conf will be deleted.[0m
+2019/08/17 13:46:40 ui: [0;32m    azure-arm: WARNING! centos account and entire home directory will be deleted.[0m
+2019/08/17 13:46:40 ui: [0;32m    azure-arm: 2019/08/17 08:16:39.996204 INFO Examine /proc/net/route for primary interface[0m
+2019/08/17 13:46:40 ui: [0;32m    azure-arm: 2019/08/17 08:16:39.997209 INFO Primary interface is [eth0][0m
+2019/08/17 13:46:42 packer: 2019/08/17 13:46:42 [INFO] RPC endpoint: Communicator ended with: 0
+2019/08/17 13:46:42 [INFO] 768 bytes written for 'stderr'
+2019/08/17 13:46:42 [INFO] 39286 bytes written for 'stdout'
+2019/08/17 13:46:42 [INFO] RPC client: Communicator ended with: 0
+2019/08/17 13:46:42 [INFO] RPC endpoint: Communicator ended with: 0
+2019/08/17 13:46:42 packer: 2019/08/17 13:46:42 [INFO] 768 bytes written for 'stderr'
+2019/08/17 13:46:42 packer: 2019/08/17 13:46:42 [INFO] 39286 bytes written for 'stdout'
+2019/08/17 13:46:42 packer: 2019/08/17 13:46:42 [INFO] RPC client: Communicator ended with: 0
+2019/08/17 13:46:42 packer: 2019/08/17 13:46:42 [DEBUG] Opening new ssh session
+2019/08/17 13:46:43 packer: 2019/08/17 13:46:43 [DEBUG] starting remote command: rm -f /tmp/script_1648.sh
+2019/08/17 13:46:45 packer: 2019/08/17 13:46:45 [INFO] RPC endpoint: Communicator ended with: 0
+2019/08/17 13:46:45 [INFO] RPC client: Communicator ended with: 0
+2019/08/17 13:46:45 [INFO] RPC endpoint: Communicator ended with: 0
+2019/08/17 13:46:45 packer: 2019/08/17 13:46:45 [INFO] RPC client: Communicator ended with: 0
+2019/08/17 13:46:45 packer: 2019/08/17 13:46:45 [DEBUG] Opening new ssh session
+2019/08/17 13:46:45 packer: 2019/08/17 13:46:45 [DEBUG] starting remote command: rm -f
+2019/08/17 13:46:45 packer: 2019/08/17 13:46:45 [INFO] RPC endpoint: Communicator ended with: 0
+2019/08/17 13:46:45 [INFO] RPC client: Communicator ended with: 0
+2019/08/17 13:46:45 [INFO] RPC endpoint: Communicator ended with: 0
+2019/08/17 13:46:45 packer: 2019/08/17 13:46:45 [INFO] RPC client: Communicator ended with: 0
+2019/08/17 13:46:45 [INFO] (telemetry) ending shell
+2019/08/17 13:46:45 ui: [1;32m==> azure-arm: Querying the machine's properties ...[0m
+2019/08/17 13:46:45 ui: [1;32m==> azure-arm:  -> ResourceGroupName : 'packer-Resource-Group-tch49kgyu3'[0m
+2019/08/17 13:46:45 ui: [1;32m==> azure-arm:  -> ComputeName       : 'pkrvmtch49kgyu3'[0m
+2019/08/17 13:46:45 packer: 2019/08/17 13:46:45 Azure request method="GET" request="https://management.azure.com/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/resourceGroups/packer-Resource-Group-tch49kgyu3/providers/Microsoft.Compute/virtualMachines/pkrvmtch49kgyu3?api-version=2018-04-01" body=""
+2019/08/17 13:46:45 packer: 2019/08/17 13:46:45 Azure response status="200 OK" method="GET" request="https://management.azure.com/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/resourceGroups/packer-Resource-Group-tch49kgyu3/providers/Microsoft.Compute/virtualMachines/pkrvmtch49kgyu3?api-version=2018-04-01" x-ms-request-id="8ff717e7-40c6-4ecf-91de-2b5477f9b449" body="{\r\n  \"name\": \"pkrvmtch49kgyu3\",\r\n  \"id\": \"/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/resourceGroups/packer-Resource-Group-tch49kgyu3/providers/Microsoft.Compute/virtualMachines/pkrvmtch49kgyu3\",\r\n  \"type\": \"Microsoft.Compute/virtualMachines\",\r\n  \"location\": \"southindia\",\r\n  \"tags\": {\r\n    \"dept\": \"SysOps\",\r\n    \"task\": \"Image deployment\"\r\n  },\r\n  \"properties\": {\r\n    \"vmId\": \"6f49493e-45d2-456e-8b5d-1176e6af38ea\",\r\n    \"hardwareProfile\": {\r\n      \"vmSize\": \"Standard_DS2_v2\"\r\n    },\r\n    \"storageProfile\": {\r\n      \"imageReference\": {\r\n        \"publisher\": \"OpenLogic\",\r\n        \"offer\": \"CentOS\",\r\n        \"sku\": \"7.6\",\r\n        \"version\": \"latest\"\r\n      },\r\n      \"osDisk\": {\r\n        \"osType\": \"Linux\",\r\n        \"name\": \"pkrostch49kgyu3\",\r\n        \"createOption\": \"FromImage\",\r\n        \"caching\": \"ReadWrite\",\r\n        \"managedDisk\": {\r\n          \"storageAccountType\": \"Standard_LRS\",\r\n          \"id\": \"/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/resourceGroups/packer-Resource-Group-tch49kgyu3/providers/Microsoft.Compute/disks/pkrostch49kgyu3\"\r\n        },\r\n        \"diskSizeGB\": 30\r\n      },\r\n      \"dataDisks\": []\r\n    },\r\n    \"osProfile\": {\r\n      \"computerName\": \"pkrvmtch49kgyu3\",\r\n      \"adminUsername\": \"centos\",\r\n      \"linuxConfiguration\": {\r\n        \"disablePasswordAuthentication\": true,\r\n        \"ssh\": {\r\n          \"publicKeys\": [\r\n            {\r\n              \"path\": \"/home/centos/.ssh/authorized_keys\",\r\n              \"keyData\": \"ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDg6lBR2R0wYYkOkkI9bnEb7ZjiG6YyHXMMpvWpcIRvUwgQ8OK5JLCAhbJcYvlBoEFbLn4XnPibsGqmZ2Orhnc6gaB2gb8l6mqUiwS3ovpzKhhK6Qfg2OjsS6k7VqLCW/7bpOkjNix2Ug3vJy0MgAdr0+fgttWoIJjk5Daozel0Bd1qAyVim9FXCs+EpCMDWW0mEGZ7ioGg+8iJALHe9hrBkZkyq1ay2VbViyhZtsyQBJEVb2SrEqH2/d9np6uE+95Xm58+BKrgh3C1yKu1oKY6Hasg03dOX+Tnmite+6n3PpVZ5VbXsC8p66jto0EEtaP0ThcE6He7CJKYkSsxXwCt packer Azure Deployment2019-08-17T13:41:06+05:30\"\r\n            }\r\n          ]\r\n        }\r\n      },\r\n      \"secrets\": []\r\n    },\r\n    \"networkProfile\": {\"networkInterfaces\":[{\"id\":\"/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/resourceGroups/packer-Resource-Group-tch49kgyu3/providers/Microsoft.Network/networkInterfaces/pkrnitch49kgyu3\"}]},\r\n    \"diagnosticsProfile\": {\r\n      \"bootDiagnostics\": {\r\n        \"enabled\": false\r\n      }\r\n    },\r\n    \"provisioningState\": \"Succeeded\"\r\n  }\r\n}"
+2019/08/17 13:46:45 packer: 2019/08/17 13:46:45 Azure response status="200 OK" method="GET" request="https://management.azure.com/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/resourceGroups/packer-Resource-Group-tch49kgyu3/providers/Microsoft.Compute/virtualMachines/pkrvmtch49kgyu3?api-version=2018-04-01" x-ms-request-id="8ff717e7-40c6-4ecf-91de-2b5477f9b449" body="{\r\n  \"name\": \"pkrvmtch49kgyu3\",\r\n  \"id\": \"/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/resourceGroups/packer-Resource-Group-tch49kgyu3/providers/Microsoft.Compute/virtualMachines/pkrvmtch49kgyu3\",\r\n  \"type\": \"Microsoft.Compute/virtualMachines\",\r\n  \"location\": \"southindia\",\r\n  \"tags\": {\r\n    \"dept\": \"SysOps\",\r\n    \"task\": \"Image deployment\"\r\n  },\r\n  \"properties\": {\r\n    \"vmId\": \"6f49493e-45d2-456e-8b5d-1176e6af38ea\",\r\n    \"hardwareProfile\": {\r\n      \"vmSize\": \"Standard_DS2_v2\"\r\n    },\r\n    \"storageProfile\": {\r\n      \"imageReference\": {\r\n        \"publisher\": \"OpenLogic\",\r\n        \"offer\": \"CentOS\",\r\n        \"sku\": \"7.6\",\r\n        \"version\": \"latest\"\r\n      },\r\n      \"osDisk\": {\r\n        \"osType\": \"Linux\",\r\n        \"name\": \"pkrostch49kgyu3\",\r\n        \"createOption\": \"FromImage\",\r\n        \"caching\": \"ReadWrite\",\r\n        \"managedDisk\": {\r\n          \"storageAccountType\": \"Standard_LRS\",\r\n          \"id\": \"/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/resourceGroups/packer-Resource-Group-tch49kgyu3/providers/Microsoft.Compute/disks/pkrostch49kgyu3\"\r\n        },\r\n        \"diskSizeGB\": 30\r\n      },\r\n      \"dataDisks\": []\r\n    },\r\n    \"osProfile\": {\r\n      \"computerName\": \"pkrvmtch49kgyu3\",\r\n      \"adminUsername\": \"centos\",\r\n      \"linuxConfiguration\": {\r\n        \"disablePasswordAuthentication\": true,\r\n        \"ssh\": {\r\n          \"publicKeys\": [\r\n            {\r\n              \"path\": \"/home/centos/.ssh/authorized_keys\",\r\n              \"keyData\": \"ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDg6lBR2R0wYYkOkkI9bnEb7ZjiG6YyHXMMpvWpcIRvUwgQ8OK5JLCAhbJcYvlBoEFbLn4XnPibsGqmZ2Orhnc6gaB2gb8l6mqUiwS3ovpzKhhK6Qfg2OjsS6k7VqLCW/7bpOkjNix2Ug3vJy0MgAdr0+fgttWoIJjk5Daozel0Bd1qAyVim9FXCs+EpCMDWW0mEGZ7ioGg+8iJALHe9hrBkZkyq1ay2VbViyhZtsyQBJEVb2SrEqH2/d9np6uE+95Xm58+BKrgh3C1yKu1oKY6Hasg03dOX+Tnmite+6n3PpVZ5VbXsC8p66jto0EEtaP0ThcE6He7CJKYkSsxXwCt packer Azure Deployment2019-08-17T13:41:06+05:30\"\r\n            }\r\n          ]\r\n        }\r\n      },\r\n      \"secrets\": []\r\n    },\r\n    \"networkProfile\": {\"networkInterfaces\":[{\"id\":\"/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/resourceGroups/packer-Resource-Group-tch49kgyu3/providers/Microsoft.Network/networkInterfaces/pkrnitch49kgyu3\"}]},\r\n    \"diagnosticsProfile\": {\r\n      \"bootDiagnostics\": {\r\n        \"enabled\": false\r\n      }\r\n    },\r\n    \"provisioningState\": \"Succeeded\"\r\n  }\r\n}"
+2019/08/17 13:46:45 ui: [1;32m==> azure-arm:  -> Managed OS Disk   : '/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/resourceGroups/packer-Resource-Group-tch49kgyu3/providers/Microsoft.Compute/disks/pkrostch49kgyu3'[0m
+2019/08/17 13:46:45 ui: [1;32m==> azure-arm: Querying the machine's additional disks properties ...[0m
+2019/08/17 13:46:45 ui: [1;32m==> azure-arm:  -> ResourceGroupName : 'packer-Resource-Group-tch49kgyu3'[0m
+2019/08/17 13:46:45 ui: [1;32m==> azure-arm:  -> ComputeName       : 'pkrvmtch49kgyu3'[0m
+2019/08/17 13:46:45 packer: 2019/08/17 13:46:45 Azure request method="GET" request="https://management.azure.com/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/resourceGroups/packer-Resource-Group-tch49kgyu3/providers/Microsoft.Compute/virtualMachines/pkrvmtch49kgyu3?api-version=2018-04-01" body=""
+2019/08/17 13:46:46 packer: 2019/08/17 13:46:46 Azure response status="200 OK" method="GET" request="https://management.azure.com/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/resourceGroups/packer-Resource-Group-tch49kgyu3/providers/Microsoft.Compute/virtualMachines/pkrvmtch49kgyu3?api-version=2018-04-01" x-ms-request-id="6ba67922-6db0-4829-ace0-89271a73a75a" body="{\r\n  \"name\": \"pkrvmtch49kgyu3\",\r\n  \"id\": \"/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/resourceGroups/packer-Resource-Group-tch49kgyu3/providers/Microsoft.Compute/virtualMachines/pkrvmtch49kgyu3\",\r\n  \"type\": \"Microsoft.Compute/virtualMachines\",\r\n  \"location\": \"southindia\",\r\n  \"tags\": {\r\n    \"dept\": \"SysOps\",\r\n    \"task\": \"Image deployment\"\r\n  },\r\n  \"properties\": {\r\n    \"vmId\": \"6f49493e-45d2-456e-8b5d-1176e6af38ea\",\r\n    \"hardwareProfile\": {\r\n      \"vmSize\": \"Standard_DS2_v2\"\r\n    },\r\n    \"storageProfile\": {\r\n      \"imageReference\": {\r\n        \"publisher\": \"OpenLogic\",\r\n        \"offer\": \"CentOS\",\r\n        \"sku\": \"7.6\",\r\n        \"version\": \"latest\"\r\n      },\r\n      \"osDisk\": {\r\n        \"osType\": \"Linux\",\r\n        \"name\": \"pkrostch49kgyu3\",\r\n        \"createOption\": \"FromImage\",\r\n        \"caching\": \"ReadWrite\",\r\n        \"managedDisk\": {\r\n          \"storageAccountType\": \"Standard_LRS\",\r\n          \"id\": \"/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/resourceGroups/packer-Resource-Group-tch49kgyu3/providers/Microsoft.Compute/disks/pkrostch49kgyu3\"\r\n        },\r\n        \"diskSizeGB\": 30\r\n      },\r\n      \"dataDisks\": []\r\n    },\r\n    \"osProfile\": {\r\n      \"computerName\": \"pkrvmtch49kgyu3\",\r\n      \"adminUsername\": \"centos\",\r\n      \"linuxConfiguration\": {\r\n        \"disablePasswordAuthentication\": true,\r\n        \"ssh\": {\r\n          \"publicKeys\": [\r\n            {\r\n              \"path\": \"/home/centos/.ssh/authorized_keys\",\r\n              \"keyData\": \"ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDg6lBR2R0wYYkOkkI9bnEb7ZjiG6YyHXMMpvWpcIRvUwgQ8OK5JLCAhbJcYvlBoEFbLn4XnPibsGqmZ2Orhnc6gaB2gb8l6mqUiwS3ovpzKhhK6Qfg2OjsS6k7VqLCW/7bpOkjNix2Ug3vJy0MgAdr0+fgttWoIJjk5Daozel0Bd1qAyVim9FXCs+EpCMDWW0mEGZ7ioGg+8iJALHe9hrBkZkyq1ay2VbViyhZtsyQBJEVb2SrEqH2/d9np6uE+95Xm58+BKrgh3C1yKu1oKY6Hasg03dOX+Tnmite+6n3PpVZ5VbXsC8p66jto0EEtaP0ThcE6He7CJKYkSsxXwCt packer Azure Deployment2019-08-17T13:41:06+05:30\"\r\n            }\r\n          ]\r\n        }\r\n      },\r\n      \"secrets\": []\r\n    },\r\n    \"networkProfile\": {\"networkInterfaces\":[{\"id\":\"/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/resourceGroups/packer-Resource-Group-tch49kgyu3/providers/Microsoft.Network/networkInterfaces/pkrnitch49kgyu3\"}]},\r\n    \"diagnosticsProfile\": {\r\n      \"bootDiagnostics\": {\r\n        \"enabled\": false\r\n      }\r\n    },\r\n    \"provisioningState\": \"Succeeded\"\r\n  }\r\n}"
+2019/08/17 13:46:46 packer: 2019/08/17 13:46:46 Azure response body="{\r\n  \"name\": \"pkrvmtch49kgyu3\",\r\n  \"id\": \"/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/resourceGroups/packer-Resource-Group-tch49kgyu3/providers/Microsoft.Compute/virtualMachines/pkrvmtch49kgyu3\",\r\n  \"type\": \"Microsoft.Compute/virtualMachines\",\r\n  \"location\": \"southindia\",\r\n  \"tags\": {\r\n    \"dept\": \"SysOps\",\r\n    \"task\": \"Image deployment\"\r\n  },\r\n  \"properties\": {\r\n    \"vmId\": \"6f49493e-45d2-456e-8b5d-1176e6af38ea\",\r\n    \"hardwareProfile\": {\r\n      \"vmSize\": \"Standard_DS2_v2\"\r\n    },\r\n    \"storageProfile\": {\r\n      \"imageReference\": {\r\n        \"publisher\": \"OpenLogic\",\r\n        \"offer\": \"CentOS\",\r\n        \"sku\": \"7.6\",\r\n        \"version\": \"latest\"\r\n      },\r\n      \"osDisk\": {\r\n        \"osType\": \"Linux\",\r\n        \"name\": \"pkrostch49kgyu3\",\r\n        \"createOption\": \"FromImage\",\r\n        \"caching\": \"ReadWrite\",\r\n        \"managedDisk\": {\r\n          \"storageAccountType\": \"Standard_LRS\",\r\n          \"id\": \"/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/resourceGroups/packer-Resource-Group-tch49kgyu3/providers/Microsoft.Compute/disks/pkrostch49kgyu3\"\r\n        },\r\n        \"diskSizeGB\": 30\r\n      },\r\n      \"dataDisks\": []\r\n    },\r\n    \"osProfile\": {\r\n      \"computerName\": \"pkrvmtch49kgyu3\",\r\n      \"adminUsername\": \"centos\",\r\n      \"linuxConfiguration\": {\r\n        \"disablePasswordAuthentication\": true,\r\n        \"ssh\": {\r\n          \"publicKeys\": [\r\n            {\r\n              \"path\": \"/home/centos/.ssh/authorized_keys\",\r\n              \"keyData\": \"ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDg6lBR2R0wYYkOkkI9bnEb7ZjiG6YyHXMMpvWpcIRvUwgQ8OK5JLCAhbJcYvlBoEFbLn4XnPibsGqmZ2Orhnc6gaB2gb8l6mqUiwS3ovpzKhhK6Qfg2OjsS6k7VqLCW/7bpOkjNix2Ug3vJy0MgAdr0+fgttWoIJjk5Daozel0Bd1qAyVim9FXCs+EpCMDWW0mEGZ7ioGg+8iJALHe9hrBkZkyq1ay2VbViyhZtsyQBJEVb2SrEqH2/d9np6uE+95Xm58+BKrgh3C1yKu1oKY6Hasg03dOX+Tnmite+6n3PpVZ5VbXsC8p66jto0EEtaP0ThcE6He7CJKYkSsxXwCt packer Azure Deployment2019-08-17T13:41:06+05:30\"\r\n            }\r\n          ]\r\n        }\r\n      },\r\n      \"secrets\": []\r\n    },\r\n    \"networkProfile\": {\"networkInterfaces\":[{\"id\":\"/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/resourceGroups/packer-Resource-Group-tch49kgyu3/providers/Microsoft.Network/networkInterfaces/pkrnitch49kgyu3\"}]},\r\n    \"diagnosticsProfile\": {\r\n      \"bootDiagnostics\": {\r\n        \"enabled\": false\r\n      }\r\n    },\r\n    \"provisioningState\": \"Succeeded\"\r\n  }\r\n}" status="200 OK" method="GET" request="https://management.azure.com/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/resourceGroups/packer-Resource-Group-tch49kgyu3/providers/Microsoft.Compute/virtualMachines/pkrvmtch49kgyu3?api-version=2018-04-01" x-ms-request-id="6ba67922-6db0-4829-ace0-89271a73a75a"
+2019/08/17 13:46:46 ui: [1;32m==> azure-arm: Powering off machine ...[0m
+2019/08/17 13:46:46 ui: [1;32m==> azure-arm:  -> ResourceGroupName : 'packer-Resource-Group-tch49kgyu3'[0m
+2019/08/17 13:46:46 ui: [1;32m==> azure-arm:  -> ComputeName       : 'pkrvmtch49kgyu3'[0m
+2019/08/17 13:46:46 packer: 2019/08/17 13:46:46 Azure request method="POST" request="https://management.azure.com/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/resourceGroups/packer-Resource-Group-tch49kgyu3/providers/Microsoft.Compute/virtualMachines/pkrvmtch49kgyu3/deallocate?api-version=2018-04-01" body=""
+2019/08/17 13:46:46 packer: 2019/08/17 13:46:46 Azure response status="202 Accepted" method="POST" request="https://management.azure.com/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/resourceGroups/packer-Resource-Group-tch49kgyu3/providers/Microsoft.Compute/virtualMachines/pkrvmtch49kgyu3/deallocate?api-version=2018-04-01" x-ms-request-id="626231ba-fba1-494e-a21a-b2bcf2112bcb" body=""
+2019/08/17 13:46:46 packer: 2019/08/17 13:46:46 Azure request method="GET" request="https://management.azure.com/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/providers/Microsoft.Compute/locations/SouthIndia/operations/626231ba-fba1-494e-a21a-b2bcf2112bcb?api-version=2018-04-01" body=""
+2019/08/17 13:46:46 packer: 2019/08/17 13:46:46 Azure response request="https://management.azure.com/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/providers/Microsoft.Compute/locations/SouthIndia/operations/626231ba-fba1-494e-a21a-b2bcf2112bcb?api-version=2018-04-01" x-ms-request-id="26838727-4dcd-4733-8bbe-46dbf348daf3" body="{\r\n  \"startTime\": \"2019-08-17T08:16:46.1066247+00:00\",\r\n  \"status\": \"InProgress\",\r\n  \"name\": \"626231ba-fba1-494e-a21a-b2bcf2112bcb\"\r\n}" status="200 OK" method="GET"
+2019/08/17 13:47:22 packer: 2019/08/17 13:47:22 Azure request method="GET" request="https://management.azure.com/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/providers/Microsoft.Compute/locations/SouthIndia/operations/626231ba-fba1-494e-a21a-b2bcf2112bcb?api-version=2018-04-01" body=""
+2019/08/17 13:47:22 packer: 2019/08/17 13:47:22 Azure response method="GET" request="https://management.azure.com/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/providers/Microsoft.Compute/locations/SouthIndia/operations/626231ba-fba1-494e-a21a-b2bcf2112bcb?api-version=2018-04-01" x-ms-request-id="253f6c28-e301-46bc-b79e-78a0506856ab" body="{\r\n  \"startTime\": \"2019-08-17T08:16:46.1066247+00:00\",\r\n  \"endTime\": \"2019-08-17T08:17:20.076734+00:00\",\r\n  \"status\": \"Succeeded\",\r\n  \"name\": \"626231ba-fba1-494e-a21a-b2bcf2112bcb\"\r\n}" status="200 OK"
+2019/08/17 13:47:22 ui: [1;32m==> azure-arm: Capturing image ...[0m
+2019/08/17 13:47:22 ui: [1;32m==> azure-arm:  -> Compute ResourceGroupName : 'packer-Resource-Group-tch49kgyu3'[0m
+2019/08/17 13:47:22 ui: [1;32m==> azure-arm:  -> Compute Name              : 'pkrvmtch49kgyu3'[0m
+2019/08/17 13:47:22 ui: [1;32m==> azure-arm:  -> Compute Location          : 'southindia'[0m
+2019/08/17 13:47:22 packer: 2019/08/17 13:47:22 Azure request method="POST" request="https://management.azure.com/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/resourceGroups/packer-Resource-Group-tch49kgyu3/providers/Microsoft.Compute/virtualMachines/pkrvmtch49kgyu3/generalize?api-version=2018-04-01" body=""
+2019/08/17 13:47:22 packer: 2019/08/17 13:47:22 Azure response body="" status="200 OK" method="POST" request="https://management.azure.com/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/resourceGroups/packer-Resource-Group-tch49kgyu3/providers/Microsoft.Compute/virtualMachines/pkrvmtch49kgyu3/generalize?api-version=2018-04-01" x-ms-request-id="0b4e06e4-637f-4f65-a47b-39ec13bf1083"
+2019/08/17 13:47:22 packer: 2019/08/17 13:47:22 Azure response status="200 OK" method="POST" request="https://management.azure.com/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/resourceGroups/packer-Resource-Group-tch49kgyu3/providers/Microsoft.Compute/virtualMachines/pkrvmtch49kgyu3/generalize?api-version=2018-04-01" x-ms-request-id="0b4e06e4-637f-4f65-a47b-39ec13bf1083" body=""
+2019/08/17 13:47:22 ui: [1;32m==> azure-arm:  -> Image ResourceGroupName   : 'LMG-terraform'[0m
+2019/08/17 13:47:22 ui: [1;32m==> azure-arm:  -> Image Name                : 'MyNginx'[0m
+2019/08/17 13:47:22 ui: [1;32m==> azure-arm:  -> Image Location            : 'southindia'[0m
+2019/08/17 13:47:22 packer: 2019/08/17 13:47:22 Azure request method="PUT" request="https://management.azure.com/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/resourceGroups/LMG-terraform/providers/Microsoft.Compute/images/MyNginx?api-version=2018-04-01" body="{\"location\":\"southindia\",\"properties\":{\"sourceVirtualMachine\":{\"id\":\"/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/resourceGroups/packer-Resource-Group-tch49kgyu3/providers/Microsoft.Compute/virtualMachines/pkrvmtch49kgyu3\"},\"storageProfile\":{\"zoneResilient\":false}},\"tags\":{\"dept\":\"SysOps\",\"task\":\"Image deployment\"}}"
+2019/08/17 13:47:22 packer: 2019/08/17 13:47:22 Azure response method="PUT" request="https://management.azure.com/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/resourceGroups/LMG-terraform/providers/Microsoft.Compute/images/MyNginx?api-version=2018-04-01" x-ms-request-id="656769ca-7547-4563-ab2b-c641ed13fb79" body="{\r\n  \"name\": \"MyNginx\",\r\n  \"id\": \"/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/resourceGroups/LMG-terraform/providers/Microsoft.Compute/images/MyNginx\",\r\n  \"type\": \"Microsoft.Compute/images\",\r\n  \"location\": \"southindia\",\r\n  \"tags\": {\r\n    \"dept\": \"SysOps\",\r\n    \"task\": \"Image deployment\"\r\n  },\r\n  \"properties\": {\r\n    \"sourceVirtualMachine\": {\r\n      \"id\": \"/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/resourceGroups/packer-Resource-Group-tch49kgyu3/providers/Microsoft.Compute/virtualMachines/pkrvmtch49kgyu3\"\r\n    },\r\n    \"storageProfile\": {\r\n      \"osDisk\": {\r\n        \"osType\": \"Linux\",\r\n        \"osState\": \"Generalized\",\r\n        \"managedDisk\": {\r\n          \"id\": \"/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/resourceGroups/packer-Resource-Group-tch49kgyu3/providers/Microsoft.Compute/disks/pkrostch49kgyu3\"\r\n        },\r\n        \"caching\": \"ReadWrite\",\r\n        \"storageAccountType\": \"Standard_LRS\"\r\n      },\r\n      \"dataDisks\": [],\r\n      \"zoneResilient\": false\r\n    },\r\n    \"provisioningState\": \"Creating\"\r\n  }\r\n}" status="201 Created"
+2019/08/17 13:47:22 packer: 2019/08/17 13:47:22 Azure request method="GET" request="https://management.azure.com/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/providers/Microsoft.Compute/locations/SouthIndia/operations/656769ca-7547-4563-ab2b-c641ed13fb79?api-version=2018-04-01" body=""
+2019/08/17 13:47:22 packer: 2019/08/17 13:47:22 Azure response status="200 OK" method="GET" request="https://management.azure.com/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/providers/Microsoft.Compute/locations/SouthIndia/operations/656769ca-7547-4563-ab2b-c641ed13fb79?api-version=2018-04-01" x-ms-request-id="ad032962-b22f-4451-a711-811900ddba7b" body="{\r\n  \"startTime\": \"2019-08-17T08:17:22.5455491+00:00\",\r\n  \"status\": \"InProgress\",\r\n  \"name\": \"656769ca-7547-4563-ab2b-c641ed13fb79\"\r\n}"
+2019/08/17 13:48:22 packer: 2019/08/17 13:48:22 Azure request method="GET" request="https://management.azure.com/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/providers/Microsoft.Compute/locations/SouthIndia/operations/656769ca-7547-4563-ab2b-c641ed13fb79?api-version=2018-04-01" body=""
+2019/08/17 13:48:22 packer: 2019/08/17 13:48:22 Azure response body="{\r\n  \"startTime\": \"2019-08-17T08:17:22.5455491+00:00\",\r\n  \"endTime\": \"2019-08-17T08:17:27.6707929+00:00\",\r\n  \"status\": \"Succeeded\",\r\n  \"name\": \"656769ca-7547-4563-ab2b-c641ed13fb79\"\r\n}" status="200 OK" method="GET" request="https://management.azure.com/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/providers/Microsoft.Compute/locations/SouthIndia/operations/656769ca-7547-4563-ab2b-c641ed13fb79?api-version=2018-04-01" x-ms-request-id="a3073ac6-ee74-4b0e-b7b0-65766c25ab09"
+2019/08/17 13:48:22 ui: [1;32m==> azure-arm: Deleting resource group ...[0m
+2019/08/17 13:48:22 ui: [1;32m==> azure-arm:  -> ResourceGroupName : 'packer-Resource-Group-tch49kgyu3'[0m
+2019/08/17 13:48:22 ui: [1;32m==> azure-arm: 
+==> azure-arm: The resource group was created by Packer, deleting ...[0m
+2019/08/17 13:48:22 packer: 2019/08/17 13:48:22 Azure request request="https://management.azure.com/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/resourcegroups/packer-Resource-Group-tch49kgyu3?api-version=2018-02-01" body="" method="DELETE"
+2019/08/17 13:48:24 packer: 2019/08/17 13:48:24 Azure response status="202 Accepted" method="DELETE" request="https://management.azure.com/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/resourcegroups/packer-Resource-Group-tch49kgyu3?api-version=2018-02-01" x-ms-request-id="913a5a6c-2599-45e6-9a5e-5b8e0a4c15c1" body=""
+2019/08/17 13:48:24 packer: 2019/08/17 13:48:24 Azure request method="GET" request="https://management.azure.com/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/operationresults/eyJqb2JJZCI6IlJFU09VUkNFR1JPVVBERUxFVElPTkpPQi1QQUNLRVI6MkRSRVNPVVJDRToyREdST1VQOjJEVENINDlLR1lVMy1TT1VUSElORElBIiwiam9iTG9jYXRpb24iOiJzb3V0aGluZGlhIn0?api-version=2018-02-01" body=""
+2019/08/17 13:48:24 packer: 2019/08/17 13:48:24 Azure response status="202 Accepted" method="GET" request="https://management.azure.com/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/operationresults/eyJqb2JJZCI6IlJFU09VUkNFR1JPVVBERUxFVElPTkpPQi1QQUNLRVI6MkRSRVNPVVJDRToyREdST1VQOjJEVENINDlLR1lVMy1TT1VUSElORElBIiwiam9iTG9jYXRpb24iOiJzb3V0aGluZGlhIn0?api-version=2018-02-01" x-ms-request-id="7118c139-be44-4018-bcad-bbff6ceda04e" body=""
+2019/08/17 13:48:39 packer: 2019/08/17 13:48:39 Azure request request="https://management.azure.com/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/operationresults/eyJqb2JJZCI6IlJFU09VUkNFR1JPVVBERUxFVElPTkpPQi1QQUNLRVI6MkRSRVNPVVJDRToyREdST1VQOjJEVENINDlLR1lVMy1TT1VUSElORElBIiwiam9iTG9jYXRpb24iOiJzb3V0aGluZGlhIn0?api-version=2018-02-01" body="" method="GET"
+2019/08/17 13:48:39 packer: 2019/08/17 13:48:39 Azure response status="202 Accepted" method="GET" request="https://management.azure.com/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/operationresults/eyJqb2JJZCI6IlJFU09VUkNFR1JPVVBERUxFVElPTkpPQi1QQUNLRVI6MkRSRVNPVVJDRToyREdST1VQOjJEVENINDlLR1lVMy1TT1VUSElORElBIiwiam9iTG9jYXRpb24iOiJzb3V0aGluZGlhIn0?api-version=2018-02-01" x-ms-request-id="c2296c62-47c9-471f-94cb-ab64a4dcc18c" body=""
+2019/08/17 13:48:54 packer: 2019/08/17 13:48:54 Azure request method="GET" request="https://management.azure.com/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/operationresults/eyJqb2JJZCI6IlJFU09VUkNFR1JPVVBERUxFVElPTkpPQi1QQUNLRVI6MkRSRVNPVVJDRToyREdST1VQOjJEVENINDlLR1lVMy1TT1VUSElORElBIiwiam9iTG9jYXRpb24iOiJzb3V0aGluZGlhIn0?api-version=2018-02-01" body=""
+2019/08/17 13:49:42 packer: 2019/08/17 13:49:42 Azure request method="GET" request="https://management.azure.com/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/operationresults/eyJqb2JJZCI6IlJFU09VUkNFR1JPVVBERUxFVElPTkpPQi1QQUNLRVI6MkRSRVNPVVJDRToyREdST1VQOjJEVENINDlLR1lVMy1TT1VUSElORElBIiwiam9iTG9jYXRpb24iOiJzb3V0aGluZGlhIn0?api-version=2018-02-01" body=""
+2019/08/17 13:50:42 packer: 2019/08/17 13:50:42 Azure request body="" method="GET" request="https://management.azure.com/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/operationresults/eyJqb2JJZCI6IlJFU09VUkNFR1JPVVBERUxFVElPTkpPQi1QQUNLRVI6MkRSRVNPVVJDRToyREdST1VQOjJEVENINDlLR1lVMy1TT1VUSElORElBIiwiam9iTG9jYXRpb24iOiJzb3V0aGluZGlhIn0?api-version=2018-02-01"
+2019/08/17 13:52:42 packer: 2019/08/17 13:52:42 Azure request method="GET" request="https://management.azure.com/subscriptions/34832334-7ac1-45fb-96a4-0b49a18cf417/operationresults/eyJqb2JJZCI6IlJFU09VUkNFR1JPVVBERUxFVElPTkpPQi1QQUNLRVI6MkRSRVNPVVJDRToyREdST1VQOjJEVENINDlLR1lVMy1TT1VUSElORElBIiwiam9iTG9jYXRpb24iOiJzb3V0aGluZGlhIn0?api-version=2018-02-01" body=""
+2019/08/17 13:52:42 ui: [1;32m==> azure-arm: Deleting the temporary OS disk ...[0m
+2019/08/17 13:52:42 ui: [1;32m==> azure-arm:  -> OS Disk : skipping, managed disk was used...[0m
+2019/08/17 13:52:42 ui: [1;32m==> azure-arm: Deleting the temporary Additional disk ...[0m
+2019/08/17 13:52:42 ui: [1;32m==> azure-arm:  -> Additional Disk : skipping, managed disk was used...[0m
+2019/08/17 13:52:42 packer: panic: interface conversion: interface {} is nil, not string
+2019/08/17 13:52:42 packer: 
+2019/08/17 13:52:42 packer: goroutine 27 [running]:
+2019/08/17 13:52:42 packer: github.com/hashicorp/packer/builder/azure/arm.(*Builder).Run(0xc0001e4960, 0x48619c0, 0xc0005bc300, 0x487a140, 0xc0000ff2a0, 0x48013a0, 0xc000314910, 0x0, 0x0, 0x0, ...)
+2019/08/17 13:52:42 packer: 	/Users/mmarsh/Projects/packer/builder/azure/arm/builder.go:305 +0x4384
+2019/08/17 13:52:42 packer: github.com/hashicorp/packer/packer/rpc.(*BuilderServer).Run(0xc0005c2060, 0x1, 0xc0003f8030, 0x0, 0x0)
+2019/08/17 13:52:42 packer: 	/Users/mmarsh/Projects/packer/packer/rpc/builder.go:109 +0x231
+2019/08/17 13:52:42 packer: reflect.Value.call(0xc00025a540, 0xc0000ee090, 0x13, 0x42afb37, 0x4, 0xc000092f18, 0x3, 0x3, 0xc000341240, 0x0, ...)
+2019/08/17 13:52:42 packer: 	/usr/local/go/src/reflect/value.go:447 +0x461
+2019/08/17 13:52:42 packer: reflect.Value.Call(0xc00025a540, 0xc0000ee090, 0x13, 0xc000253f18, 0x3, 0x3, 0x0, 0x0, 0x0)
+2019/08/17 13:52:42 packer: 	/usr/local/go/src/reflect/value.go:308 +0xa4
+2019/08/17 13:52:42 packer: net/rpc.(*service).call(0xc0005bc040, 0xc0001ae500, 0xc0001a00b0, 0xc0001a00c0, 0xc000310280, 0xc00000e3a0, 0x3887f20, 0xc0003f802c, 0x18a, 0x37e36e0, ...)
+2019/08/17 13:52:42 packer: 	/usr/local/go/src/net/rpc/server.go:384 +0x14e
+2019/08/17 13:52:42 packer: created by net/rpc.(*Server).ServeCodec
+2019/08/17 13:52:42 packer: 	/usr/local/go/src/net/rpc/server.go:481 +0x42b
+2019/08/17 13:52:42 [INFO] (telemetry) ending azure-arm
+2019/08/17 13:52:42 ui error: [1;31mBuild 'azure-arm' errored: unexpected EOF[0m
+2019/08/17 13:52:42 machine readable: error-count []string{"1"}
+2019/08/17 13:52:42 ui error: 
+==> Some builds didn't complete successfully and had errors:
+2019/08/17 13:52:42 machine readable: azure-arm,error []string{"unexpected EOF"}
+2019/08/17 13:52:42 ui error: --> azure-arm: unexpected EOF
+2019/08/17 13:52:42 ui: 
+==> Builds finished but no artifacts were created.
+2019/08/17 13:52:42 [INFO] (telemetry) Finalizing.
+2019/08/17 13:52:42 /usr/local/bin/packer: plugin process exited
+2019/08/17 13:52:42 [WARN] (telemetry) Error finalizing report. This is safe to ignore. Post https://checkpoint-api.hashicorp.com/v1/telemetry/packer: dial tcp: lookup checkpoint-api.hashicorp.com: no such host
+2019/08/17 13:52:42 waiting for all plugin processes to complete...
+2019/08/17 13:52:42 /usr/local/bin/packer: plugin process exited

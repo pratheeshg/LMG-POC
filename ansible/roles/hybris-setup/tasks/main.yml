@@ -1,0 +1,36 @@
+---
+
+- name: Creates Directory structure
+  file: path="{{ item }}" state=directory recurse=yes owner=lmsone group=lmsone mode=0755
+  with_items:
+   - /home/lmsone/packages
+   - /home/lmsone/buildPackages
+   - /home/lmsone/DeployBackup
+   - /home/lmsone/scripts
+
+- name: Install grunt-cli
+  shell: >
+    /bin/bash -c "source ~/.nvm/nvm.sh && npm install -g grunt-cli"
+
+#- name: Install sass
+#  gem:
+#    name: sass
+#    state: latest
+
+#- name: Install gem sass
+#  shell: >
+#    /usr/bin/gem install sass
+
+#- name: Install gem sass
+#  shell: >
+#    /usr/bin/gem install sass-blobbing
+
+#    - name: Download Hybris
+#      get_url: url=https://lmgsoftware.blob.core.windows.net/hybris/HYBRISCOMM6200P_1-80002118.ZIP
+#       dest=/home/lmsone/packages
+
+#    - name: unzip HYBRIS
+#      unarchive:
+#        src: /home/lmsone/packages/HYBRISCOMM6200P_1-80002118.ZIP
+#        dest: /home/lmsone/packages/
+#        remote_src: yes

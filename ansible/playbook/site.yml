@@ -1,0 +1,11 @@
+---
+
+- name: Network Getting Started First Playbook Extended
+  connection: local
+  gather_facts: false
+  hosts: localhost
+  become: true
+  roles:
+
+   - common
+   - hybris-setup

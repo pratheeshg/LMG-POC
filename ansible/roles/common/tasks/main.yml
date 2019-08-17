@@ -1,0 +1,70 @@
+---
+
+- name: Install Java 1.8
+  yum: name=java-1.8.0-openjdk state=present
+
+- name: Install epel-release repo
+  yum: name=epel-release state=present
+
+- name: Install filebeat rpm from remote repo
+  yum:
+    name: https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-7.3.0-x86_64.rpm
+    state: present
+
+- name: add user "lmsone"
+  user: name=lmsone
+
+- name: Creates Directory structure
+  file: path="{{ item }}" state=directory recurse=yes owner=lmsone group=lmsone mode=0755
+  with_items:
+   - /home/lmsone/packages
+   - /home/lmsone/buildPackages
+   - /home/lmsone/DeployBackup
+   - /home/lmsone/.nvm
+
+- name: Get newrelic-5.3.0
+  get_url:
+    url=http://apt.newrelic.com/newrelic/java-agent/newrelic-agent/5.3.0/newrelic-java-5.3.0.zip
+    dest=/opt
+
+- name: Extract newrelic-5.3.0
+  unarchive:
+   src: /opt/newrelic-java-5.3.0.zip
+   dest: /home/lmsone/
+   remote_src: yes
+
+
+- name: Installing a list of packages
+  yum:
+    name:
+      - git
+      - telnet
+      - gcc
+      - ruby
+      - gem
+      - make
+      - autogen
+      - automake
+      - autoconf
+      - libtool
+      - curl-devel
+      - openssl-devel
+      - httpd-devel
+      - apr-devel
+      - apr-util-devel
+      - sqlite-devel
+      - ruby-devel
+      - rubygems
+      - zabbix
+      - filebeat
+    state: present
+
+- name: Install nvm
+  get_url:
+    url=https://raw.githubusercontent.com/creationix/nvm/v0.33.0/install.sh
+    dest=/home/lmsone/.nvm/nvm.sh
+
+- name: Install node and set version
+  shell: >
+    /bin/bash -c "source ~/.nvm/nvm.sh && nvm install v10.16.0 && nvm alias default v10.16.0"
+    creates=/home/lmsone/.nvm/alias
