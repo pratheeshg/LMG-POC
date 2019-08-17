@@ -18,12 +18,12 @@ pipeline {
           }
           stage ('Run terraform init') {
               steps {
-                  sh "terraform-init"
+                  sh "make terraform-init"
               }
             }
             stage ('Run terraform plan') {
                 steps {
-                    sh "terraform-plan"
+                    sh "make terraform-plan"
                 }
               }
         }
