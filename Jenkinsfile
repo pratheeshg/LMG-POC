@@ -13,8 +13,18 @@ pipeline {
         }
         stage ('Run Packer') {
             steps {
-                echo "Running Packer"
+                sh "make packer-build"
             }
           }
+          stage ('Run terraform init') {
+              steps {
+                  sh "terraform-init"
+              }
+            }
+            stage ('Run terraform plan') {
+                steps {
+                    sh "terraform-plan"
+                }
+              }
         }
-}    
+}
